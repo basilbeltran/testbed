@@ -1,21 +1,17 @@
-interested in demonstrating one or more of the following:
+Code intended to demonstrate one or more of the following:
   - Clean, secure, object oriented PHP.
   - Usable, modern, and reasonably standard HTML, CSS, and JavaScript.
   - Clear, sensible, and consistently formatted code.
-  - Sympathy for the plight of future maintainers.
-
-
+  - maintainability
+using
    * PHP 5.x
-   * HTML5 + CSS3 (knowledge of CSS libraries like Bootstrap is a plus)
-   * Modern JavaScript with an emphasis on open source libraries such as jQuery
-   * Designing/maintaining relational databases (MySQL 5.x / MariaDB 5.x)
-   * Knowledge of caching systems and noSQL stores (Varnish / Memcached / Redis / MongoDB)
-   * Strong object oriented development knowledge with an emphasis on MVC architecture
-   * Knowledge/experience working with modern version control systems (Git)
+   * HTML5 + CSS3 + Bootstrap +jQuery + MySQL + Mongo
+   * noSQL stores (Varnish / Memcached / Redis / MongoDB)
+   * MVC
 
 
-So I attempt to make a prototype framework for config and testing of various 
-persistence functionality as that seems to be the interest in the posting.
+testbed is a framework for config and testing of various 
+persistence functionality as that seems to be of interest 
 
 ---------------------------------------------------------------------------
 Steps to deploy the code
