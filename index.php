@@ -34,6 +34,10 @@ if (defined('ENVIRONMENT'))
 	{
 		case 'development':
 			error_reporting(E_ALL);
+                if (extension_loaded('redis')) {
+                ini_set('session.save_handler', 'redis');
+                ini_set('session.save_path', 'tcp://localhost:6379');
+            }
 		break;
 	
 		case 'testing':

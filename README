@@ -1,9 +1,70 @@
-we're most interested in submissions demonstrating one or more of the following:
-
+interested in demonstrating one or more of the following:
   - Clean, secure, object oriented PHP.
   - Usable, modern, and reasonably standard HTML, CSS, and JavaScript.
   - Clear, sensible, and consistently formatted code.
   - Sympathy for the plight of future maintainers.
 
-If you maintain or contribute to any open source projects, please supply links
-and a short description of your role in each project.
+
+   * PHP 5.x
+   * HTML5 + CSS3 (knowledge of CSS libraries like Bootstrap is a plus)
+   * Modern JavaScript with an emphasis on open source libraries such as jQuery
+   * Designing/maintaining relational databases (MySQL 5.x / MariaDB 5.x)
+   * Knowledge of caching systems and noSQL stores (Varnish / Memcached / Redis / MongoDB)
+   * Strong object oriented development knowledge with an emphasis on MVC architecture
+   * Knowledge/experience working with modern version control systems (Git)
+
+
+So I attempt to make a prototype framework for config and testing of various 
+persistence functionality as that seems to be the interest in the posting.
+
+---------------------------------------------------------------------------
+Steps to deploy the code
+1) edit ./application/config/database.php to include your MySQL instance
+2) deploy schema ./testbed/testbed.sql
+3) edit ./application/config/mongo.php 
+---------------------------------------------------------------------------
+
+Project integration log:
+
+1) Base framework CodeIgniter 2.1.2 supports a clean MVC implementation.
+    + http://codeigniter.com/user_guide/libraries/cart.html
+    + http://codeigniter.com/user_guide/libraries/sessions.html  
+
+    + Points of interest are contained in 
+        ./application/controller  (MVC)
+        ./application//models     (MVC)
+        ./application//views      (HTML, CSS, and JavaScript, Bootstrap)
+   
+  routes.php (and .htaccess) controls URI navigation behavior
+    + testCart as default page
+
+2) Configuration of naked CI framework involves adding libraries and tweaking /applications/config/?
+and includes:
+   /system/libraries/...  
+    + URLs
+    + Forms
+    + Cart
+    + Database (SQL)
+    + Redis   
+
+   /application/libraries/...      
+    + Mongo
+      
+
+3)  the /assets dir includes javascript, images, CSS, less files. 
+
+4)  DEFAULT PERSISTENCE OPTIONS FOR THE APP AS DELIVERED
+    + Sessions management = MongoDB 
+    + Product management  = MySQL
+    
+5) header.php under application/views/include will give an idea of the state
+   of the prototype and what functionality exists.
+
+That's all for now. 
+Basically the test cart and the options page.
+Sessions are using Mongo.
+No time to implement any Redis. bummer.  
+
+
+
+
