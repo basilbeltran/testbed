@@ -16,7 +16,7 @@ persistence functionality as that seems to be of interest
 ---------------------------------------------------------------------------
 Steps to deploy the code
 1) edit ./application/config/database.php to include your MySQL instance
-2) deploy schema ./testbed/testbed.sql
+2) deploy dump ./testbed/testbedDump.sql
 3) edit ./application/config/mongo.php 
 ---------------------------------------------------------------------------
 
