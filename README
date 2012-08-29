@@ -18,6 +18,9 @@ Steps to deploy the code
 1) edit ./application/config/database.php to include your MySQL instance
 2) deploy dump ./testbed/testbedDump.sql
 3) edit ./application/config/mongo.php 
+4) edit ./application/config/redis.php
+5) ensure mysql, mongo and redis are running
+6) access http://localhost/testbed/index.php/cartTest
 ---------------------------------------------------------------------------
 
 Project integration log:
