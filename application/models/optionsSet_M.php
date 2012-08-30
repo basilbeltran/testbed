@@ -23,9 +23,7 @@ class optionsSet_M extends CI_Model {
             $this->db->update('options', $updates, array(item => $item)); 
 	} //validate_update_persistence
 	
-        
-        
-        
+                
         
 } //class
 

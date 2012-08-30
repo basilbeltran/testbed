@@ -90,7 +90,7 @@
                     <li><a href=' <?php  echo  $link."/dbAdmin/index/3" ?>'>Memcached</a></li>
                     <li><a href=' <?php  echo  $link."/dbAdmin/index/4" ?>'>ElastiCache</a></li>
                     <li><a href=' <?php  echo  $link."/dbAdmin/index/5" ?>'>Redis</a></li>
-                    <li><a href=' <?php  echo  $link."/dbAdmin/index/6" ?>'>MySql</a></li>  
+                    <li><a href=' <?php  echo  $link."/dbMgmtSql/options" ?>'>MySql</a></li>  
                     <li><a href=' <?php  echo  $link."/dbAdmin/index/7" ?>'>Mongo</a></li> 
                     <li><a href=' <?php  echo  $link."/dbAdmin/index/8" ?>'>S3</a></li> 
                     <li><a href=' <?php  echo  $link."/dbAdmin/index/9" ?>'>RDS</a></li>
