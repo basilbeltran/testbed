@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "cartTest";
+$route['default_controller'] = "testbed";
 $route['404_override'] = '';
 
 

@@ -4,27 +4,16 @@
 <!-- THE MAIN CONTENT  -->
 <div class="container">                         
 <div class="row"> 
-
-
     
-<div class="span3"> 
     
-   <?php $this->view('cartTest_V/products'); ?>	
-</div> <!-- span3 -->
-
-
-
-<div class="span9">
-   <h3>Your shopping cart</h3>
-     <div id="cart_content">
-	<?php echo $this->view('cartTest_V/cart'); ?>
-     </div>
-</div> <!-- /span9 -->
-
+<div class="span12">                                
+	<?php $this->view('dbAdmin_V/dbMgmtSql_V'); ?>	
+</div> <!-- /span4 -->
 
 
 </div> <!-- /row -->
 </div> <!-- /container -->
+
 
 <?php $this->view('include/footer.php'); ?>
 

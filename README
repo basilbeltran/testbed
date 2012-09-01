@@ -58,6 +58,12 @@ and includes:
     
 5) header.php under application/views/include will give an idea of the state
    of the prototype and what functionality exists.
+6) MySQL management via grocer crud
+7) Centralized config settings abstraction vi app/libraries/Settings.php
+8) configMgmt provides centralized access to debugging variables
+9) MY_Controller implemented to implement optionsSet functionality
+10) dbAdmin will wrap both dbSource config settings and admin interface
+11) replaced Cache_memcached driver with Cache_memcache; Edit valid caches in Cache.php
 
 That's all for now. 
 Basically the test cart and the options page.

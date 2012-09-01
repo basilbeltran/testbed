@@ -4,18 +4,36 @@ class DbAdmin extends CI_Controller {
     function __construct()                          
     {
         parent::__construct();                      
-        //$this->load->model('dbAdmin_M');            
         
-    }//OptionsSet
+    }//__construct
     
     
     
     
-    function index(){                       
-        $db=$this->uri->segment(3);
-        print_r($db);
-        if ($db == 5) $this->load->view('readmin/index.php');   
+    function index(){  
+        $mgr = $this->uri->segment(3);
+        echo "Traveling to $mgr <br />";
+        switch ($mgr){
+                case "MySQL":
+                        redirect(dbMgmtSql);
+                        break;
+                case "file":
+                        echo "Bring an open mind";
+                        break;
+                case "Mongo":
+                        echo "Bring 15 bottles of SPF 50 Sunscreen";
+                        break;	
+                case "APC":
+                        echo "Bring lots of money";
+                        break;	
+                case "S3":
+                        echo "Bring a swimsuit";
+                        break; 	
+                default:
+                        echo "Store not found";
+                        break;
+        }//switch   
                 
-    }//update_option
+    }//index
 
-}
+}//class

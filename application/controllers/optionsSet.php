@@ -3,7 +3,8 @@
 class OptionsSet extends CI_Controller { 
     function __construct()                          
     {
-        parent::__construct();                      
+        parent::__construct();    
+        $this->output->cache(0);
         $this->load->model('optionsSet_M');            
         
     }//OptionsSet
@@ -22,9 +23,7 @@ class OptionsSet extends CI_Controller {
     function update_persistence(){                       
         $item=$this->uri->segment(3);
         $value=$this->uri->segment(4);
-        print_r($item);
-        print_r($value);
-        $this->optionsSet_M->validate_update_persistence( $item, $value );
+        $this->optionsSet_M->validate_update_persistence( $item, $value ); //write the passed tuple to storage
         redirect('optionsSet');   
                 
     }//update_option

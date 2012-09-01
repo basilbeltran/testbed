@@ -6,7 +6,7 @@ class CartTest extends CI_Controller {            // syntax changed from CI 1.x 
     function __construct()                          //"function CartTest_C(){" style is depricated in PHP5
     {
         parent::__construct();                      // as of CI 2.x PHP4 style was removed
-        $this->load->model('cart_model');           // Load MODEL; 
+        $this->load->model('cart_model_M');           // Load MODEL; 
         
     }//cartTest_C
 
