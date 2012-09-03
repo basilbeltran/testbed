@@ -31,7 +31,6 @@
     
 <body>
 <?php $link = "/testbed/index.php";  ?>
-<?php //$link = "";  ?>
 
 <!--THE NAV BAR -->
 <div class="navbar navbar-fixed-top">
@@ -73,9 +72,9 @@
                     <b class="caret"></b>  
                 </a>  
                 <ul class="dropdown-menu">  
-                    <li><a href="http://localhost/testbed/index.php/optionsSet/">Persistence Settings</a></li>
-                    <li><a href="http://localhost/testbed/index.php/configMgmt/">Stress Settings</a></li>
-                    <li><a href="http://localhost/testbed/index.php/configMgmt/">Current Settings</a></li>
+                    <li><a href='<?php  echo  $link."/optionsSet"?>'>Persistence Settings</a></li>
+                    <li><a href='<?php  echo  $link."/configMgmt"?>'>Stress Settings</a></li>
+                    <li><a href='<?php  echo  $link."/configMgmt"?>'>Current Settings</a></li>
                 </ul>  
                 </li>  
            </ul> 

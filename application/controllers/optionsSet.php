@@ -1,10 +1,10 @@
 <?php
 
-class OptionsSet extends CI_Controller { 
+class OptionsSet extends MY_Controller { 
     function __construct()                          
     {
         parent::__construct();    
-        $this->output->cache(0);
+        $this->output->cache(0); // DO NOT CHANGE - page must be cached
         $this->load->model('optionsSet_M');            
         
     }//OptionsSet

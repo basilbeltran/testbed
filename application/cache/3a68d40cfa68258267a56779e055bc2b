@@ -1,0 +1,2329 @@
+1346474664TS---><!--  the view is decomposed to allow reuse -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Testbed</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="description" content="">
+<meta name="author" content="">
+    <link href="http://localhost/testbed/assets/css/core.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap-combined.min.css" rel="stylesheet"> -->
+    <link href="http://localhost/testbed/assets/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" /> 
+    <link rel="shortcut icon" href="http://localhost/testbed/assets/ico/favicon.ico">
+
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+    
+<body>
+
+<!--THE NAV BAR -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            
+           <ul class="nav">  
+                <li class="active"> 
+                <a class="brand" href="#">Testbed</a>
+                </li>        
+                
+           </ul>
+            <ul class="nav">  
+                <li class="dropdown">  
+                <a href="#"  
+                    class="dropdown-toggle"  
+                    data-toggle="dropdown">  
+                    Tests  
+                    <b class="caret"></b>  
+                </a>  
+                <ul class="dropdown-menu"> 
+                    <li><a href='/testbed/index.php/cartTest'>Static</a></li>
+                    <li><a href='/testbed/index.php/cartTest'>Session</a></li>
+                    <li><a href='/testbed/index.php/cartTest'>Cart</a></li> 
+                    <li><a href='/testbed/index.php/cartTest'>Payment</a></li>
+                    <li><a href='/testbed/index.php/cartTest'>MultiMedia</a></li>
+
+                </ul>  
+                </li>  
+           </ul> 
+            
+           </ul>
+            <ul class="nav">  
+                <li class="dropdown">  
+                <a href="#"  
+                    class="dropdown-toggle"  
+                    data-toggle="dropdown">  
+                    Config  
+                    <b class="caret"></b>  
+                </a>  
+                <ul class="dropdown-menu">  
+                    <li><a href="http://localhost/testbed/index.php/optionsSet/">Persistence Settings</a></li>
+                    <li><a href="http://localhost/testbed/index.php/configMgmt/">Stress Settings</a></li>
+                    <li><a href="http://localhost/testbed/index.php/configMgmt/">Current Settings</a></li>
+                </ul>  
+                </li>  
+           </ul> 
+
+           
+            <ul class="nav">  
+                <li class="dropdown">  
+                <a href="#"  
+                    class="dropdown-toggle"  
+                    data-toggle="dropdown">  
+                    Admin  
+                    <b class="caret"></b>  
+                </a>  
+                <ul class="dropdown-menu">  
+                                                            <li>
+                     <a href=/testbed/index.php/dbAdmin/index/file >file</a> 
+                    </li>
+                                        <li>
+                     <a href=/testbed/index.php/dbAdmin/index/APC >APC</a> 
+                    </li>
+                                        <li>
+                     <a href=/testbed/index.php/dbAdmin/index/Memcached >Memcached</a> 
+                    </li>
+                                        <li>
+                     <a href=/testbed/index.php/dbAdmin/index/ElastiCache >ElastiCache</a> 
+                    </li>
+                                        <li>
+                     <a href=/testbed/index.php/dbAdmin/index/Redis >Redis</a> 
+                    </li>
+                                        <li>
+                     <a href=/testbed/index.php/dbAdmin/index/MySQL >MySQL</a> 
+                    </li>
+                                        <li>
+                     <a href=/testbed/index.php/dbAdmin/index/Mongo >Mongo</a> 
+                    </li>
+                                        <li>
+                     <a href=/testbed/index.php/dbAdmin/index/S3 >S3</a> 
+                    </li>
+                                        <li>
+                     <a href=/testbed/index.php/dbAdmin/index/RDS >RDS</a> 
+                    </li>
+                                        <li>
+                     <a href=/testbed/index.php/dbAdmin/index/DynamoDB >DynamoDB</a> 
+                    </li>
+                                        <li>
+                     <a href=/testbed/index.php/dbAdmin/index/Glacier >Glacier</a> 
+                    </li>
+                                        <li>
+                     <a href=/testbed/index.php/dbAdmin/index/BigTable >BigTable</a> 
+                    </li>
+                    
+                </ul>  
+                </li>  
+           </ul>  
+                        
+            <ul class="nav">  
+                <li class="dropdown">  
+                <a href="#"  
+                    class="dropdown-toggle"  
+                    data-toggle="dropdown">  
+                    Results  
+                    <b class="caret"></b>  
+                </a>  
+                <ul class="dropdown-menu">   
+                    <li><a href="#">Logs</a></li>
+                    <li><a href="#">Stats</a></li>
+                    <li><a href="#">Reporting</a></li>
+                </ul>  
+                </li>  
+           </ul> 
+           
+           
+           <form class="navbar-search pull-left">  
+              <input type="text" class="search-query" placeholder="Search">  
+           </form>        
+            
+        </div><!--/container -->
+    </div><!--/navbar-inner -->
+</div><!--/navbar navbar-fixed-top -->
+
+        
+<!-- THE MAIN CONTENT  -->
+
+<div                class="container-fluid">         
+     <div           class="accordion" id="accordion2">
+         
+         
+         
+            <div    class="accordion-group">  
+              <div  class="accordion-heading">  
+                <a  class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" 
+                    href="#collapseOne">  
+                  Cache  
+                </a>  
+              </div>  <!-- accordion-heading  -->
+              <div   class="accordion-body collapse" id="collapseOne" style="height: 0px; ">  
+                <div class="accordion-inner">  
+                                                <pre class="dump2"><span>array</span>(2) <code>{
+   "index.html" => <span>array</span>(5) <code>{
+      "name" => "index.html" (10)
+      "server_path" => "/Users/kandinski/Sites/testbed/application/cache/index.html" (59)
+      "size" => 114
+      "date" => 1345696033
+      "relative_path" => "application/cache/" (18)
+   }</code>
+   "storage" => <span>array</span>(5) <code>{
+      "name" => "storage" (7)
+      "server_path" => "/Users/kandinski/Sites/testbed/application/cache/storage" (56)
+      "size" => 922
+      "date" => 1346452730
+      "relative_path" => "application/cache/" (18)
+   }</code>
+}</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 18</small>
+</pre>
+                
+                </div> <!-- accordion-inner -->
+              </div>   <!-- accordion-body collapse -->
+            </div>     <!-- accordion-group -->
+
+            
+            
+         
+            <div   class="accordion-group">  
+              <div class="accordion-heading">  
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" 
+                   href="#collapseTwo">  
+                 File Cache  
+                </a>  
+              </div>   <!-- accordion-heading  -->
+              <div   class="accordion-body collapse" id="collapseTwo" >  
+                <div class="accordion-inner">  
+                                                <pre class="dump2"><span>array</span>(2) <code>{
+   "index.html" => <span>array</span>(5) <code>{
+      "name" => "index.html" (10)
+      "server_path" => "/Users/kandinski/Sites/testbed/application/cache/index.html" (59)
+      "size" => 114
+      "date" => 1345696033
+      "relative_path" => "application/cache/" (18)
+   }</code>
+   "storage" => <span>array</span>(5) <code>{
+      "name" => "storage" (7)
+      "server_path" => "/Users/kandinski/Sites/testbed/application/cache/storage" (56)
+      "size" => 922
+      "date" => 1346452730
+      "relative_path" => "application/cache/" (18)
+   }</code>
+}</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 35</small>
+</pre>
+                
+                </div> <!-- accordion-inner -->
+              </div>   <!-- accordion-body collapse -->
+            </div>     <!-- accordion-group -->
+         
+            
+            
+         
+            <div   class="accordion-group">  
+              <div class="accordion-heading">  
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" 
+                   href="#collapseThree">  
+                  APC Cache  
+                </a>  
+              </div>  
+              <div   class="accordion-body collapse" id="collapseThree">  
+                <div class="accordion-inner">  
+                                                <pre class="dump2"><span>array</span>(15) <code>{
+   "num_slots" => 1031
+   "ttl" => 0
+   "num_hits" => 2037.0
+   "num_misses" => 90.0
+   "num_inserts" => 90.0
+   "expunges" => 0.0
+   "start_time" => 1346454234
+   "mem_size" => 3436480.0
+   "num_entries" => 64
+   "file_upload_progress" => 1
+   "memory_type" => "mmap" (4)
+   "locking_type" => "pthread mutex Locks" (19)
+   "cache_list" => <span>array</span>(64) <code>[
+      0 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071101
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/optionsSet_V/options_V.php" (75)
+         "num_hits" => 2.0
+         "mtime" => 1346353396
+         "creation_time" => 1346473553
+         "deletion_time" => 0
+         "access_time" => 1346473948
+         "ref_count" => 0
+         "mem_size" => 16560
+      }</code>
+      1 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9240230
+         "filename" => "/Users/kandinski/Sites/testbed/application/core/MY_Controller.php" (65)
+         "num_hits" => 18.0
+         "mtime" => 1346473197
+         "creation_time" => 1346473202
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 12464
+      }</code>
+      2 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9255739
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/testbed_V/text.php" (67)
+         "num_hits" => 2.0
+         "mtime" => 1346472975
+         "creation_time" => 1346473066
+         "deletion_time" => 0
+         "access_time" => 1346473202
+         "ref_count" => 0
+         "mem_size" => 8368
+      }</code>
+      3 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071257
+         "filename" => "/Users/kandinski/Sites/testbed/index.php" (40)
+         "num_hits" => 56.0
+         "mtime" => 1346057470
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 24752
+      }</code>
+      4 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071270
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Benchmark.php" (56)
+         "num_hits" => 56.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 16592
+      }</code>
+      5 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071271
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/CodeIgniter.php" (58)
+         "num_hits" => 56.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 57520
+      }</code>
+      6 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071272
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Common.php" (53)
+         "num_hits" => 56.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 102928
+      }</code>
+      7 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071273
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Config.php" (53)
+         "num_hits" => 56.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 65968
+      }</code>
+      8 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071274
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Controller.php" (57)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 12496
+      }</code>
+      9 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071275
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Exceptions.php" (57)
+         "num_hits" => 33.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454865
+         "deletion_time" => 0
+         "access_time" => 1346473985
+         "ref_count" => 0
+         "mem_size" => 33072
+      }</code>
+      10 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071276
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Hooks.php" (52)
+         "num_hits" => 56.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 33008
+      }</code>
+      11 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071278
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Input.php" (52)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 152112
+      }</code>
+      12 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071279
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Lang.php" (51)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 28912
+      }</code>
+      13 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071280
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Loader.php" (53)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 226000
+      }</code>
+      14 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071281
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Model.php" (52)
+         "num_hits" => 13.0
+         "mtime" => 1345696033
+         "creation_time" => 1346471650
+         "deletion_time" => 0
+         "access_time" => 1346473948
+         "ref_count" => 0
+         "mem_size" => 8368
+      }</code>
+      15 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071282
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Output.php" (53)
+         "num_hits" => 41.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 86480
+      }</code>
+      16 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071283
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Router.php" (53)
+         "num_hits" => 56.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 90512
+      }</code>
+      17 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071284
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Security.php" (55)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 119344
+      }</code>
+      18 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071285
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/URI.php" (50)
+         "num_hits" => 56.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 107024
+      }</code>
+      19 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071286
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Utf8.php" (51)
+         "num_hits" => 56.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 20720
+      }</code>
+      20 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071288
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB.php" (53)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 32944
+      }</code>
+      21 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071289
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB_active_rec.php" (64)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 369904
+      }</code>
+      22 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071291
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB_driver.php" (60)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 234320
+      }</code>
+      23 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071293
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB_result.php" (60)
+         "num_hits" => 9.0
+         "mtime" => 1345696033
+         "creation_time" => 1346471958
+         "deletion_time" => 0
+         "access_time" => 1346473948
+         "ref_count" => 0
+         "mem_size" => 70128
+      }</code>
+      24 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071311
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/drivers/mysql/mysql_driver.php" (77)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 131760
+      }</code>
+      25 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071313
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/drivers/mysql/mysql_result.php" (77)
+         "num_hits" => 9.0
+         "mtime" => 1345696033
+         "creation_time" => 1346471958
+         "deletion_time" => 0
+         "access_time" => 1346473948
+         "ref_count" => 0
+         "mem_size" => 24848
+      }</code>
+      26 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9253813
+         "filename" => "/Users/kandinski/Sites/testbed/application/controllers/testbed.php" (66)
+         "num_hits" => 2.0
+         "mtime" => 1346473060
+         "creation_time" => 1346473066
+         "deletion_time" => 0
+         "access_time" => 1346473202
+         "ref_count" => 0
+         "mem_size" => 4240
+      }</code>
+      27 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071369
+         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/file_helper.php" (61)
+         "num_hits" => 25.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 102832
+      }</code>
+      28 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071370
+         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/form_helper.php" (61)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 201552
+      }</code>
+      29 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071379
+         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/string_helper.php" (63)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 49552
+      }</code>
+      30 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071382
+         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/url_helper.php" (60)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 123408
+      }</code>
+      31 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071403
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/Cache.php" (63)
+         "num_hits" => 25.0
+         "mtime" => 1346451895
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 29008
+      }</code>
+      32 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071405
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/drivers/Cache_apc.php" (75)
+         "num_hits" => 10.0
+         "mtime" => 1345696033
+         "creation_time" => 1346455456
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 20752
+      }</code>
+      33 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071407
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/drivers/Cache_file.php" (76)
+         "num_hits" => 25.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 28976
+      }</code>
+      34 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071410
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cart.php" (56)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 82352
+      }</code>
+      35 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071411
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Driver.php" (58)
+         "num_hits" => 25.0
+         "mtime" => 1346439179
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 41232
+      }</code>
+      36 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071421
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Log.php" (55)
+         "num_hits" => 56.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 24784
+      }</code>
+      37 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071426
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Redis.php" (57)
+         "num_hits" => 39.0
+         "mtime" => 1336338302
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 61872
+      }</code>
+      38 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071427
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Session.php" (59)
+         "num_hits" => 39.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 156304
+      }</code>
+      39 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9309638
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php" (71)
+         "num_hits" => 6.0
+         "mtime" => 1346460998
+         "creation_time" => 1346461004
+         "deletion_time" => 0
+         "access_time" => 1346474022
+         "ref_count" => 0
+         "mem_size" => 12464
+      }</code>
+      40 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070929
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/autoload.php" (62)
+         "num_hits" => 39.0
+         "mtime" => 1346442327
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 8368
+      }</code>
+      41 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070932
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/config.php" (60)
+         "num_hits" => 30.0
+         "mtime" => 1346470144
+         "creation_time" => 1346471650
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 16560
+      }</code>
+      42 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070933
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/constants.php" (63)
+         "num_hits" => 56.0
+         "mtime" => 1345846396
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 12464
+      }</code>
+      43 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070934
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/database.php" (62)
+         "num_hits" => 29.0
+         "mtime" => 1346470503
+         "creation_time" => 1346471650
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 12464
+      }</code>
+      44 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070941
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/mimes.php" (59)
+         "num_hits" => 41.0
+         "mtime" => 1345846396
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 24752
+      }</code>
+      45 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070942
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/mongo.php" (59)
+         "num_hits" => 39.0
+         "mtime" => 1346008111
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 4240
+      }</code>
+      46 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070945
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/redis.php" (59)
+         "num_hits" => 79.0
+         "mtime" => 1336338302
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 2
+         "mem_size" => 4240
+      }</code>
+      47 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070947
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/routes.php" (60)
+         "num_hits" => 56.0
+         "mtime" => 1346423964
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 4240
+      }</code>
+      48 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070953
+         "filename" => "/Users/kandinski/Sites/testbed/application/controllers/cartTest.php" (67)
+         "num_hits" => 2.0
+         "mtime" => 1346471950
+         "creation_time" => 1346471958
+         "deletion_time" => 0
+         "access_time" => 1346472345
+         "ref_count" => 0
+         "mem_size" => 12496
+      }</code>
+      49 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070956
+         "filename" => "/Users/kandinski/Sites/testbed/application/controllers/optionsSet.php" (69)
+         "num_hits" => 4.0
+         "mtime" => 1346473511
+         "creation_time" => 1346473553
+         "deletion_time" => 0
+         "access_time" => 1346473948
+         "ref_count" => 0
+         "mem_size" => 12496
+      }</code>
+      50 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070962
+         "filename" => "/Users/kandinski/Sites/testbed/application/errors/error_404.php" (63)
+         "num_hits" => 19.0
+         "mtime" => 1345696033
+         "creation_time" => 1346454865
+         "deletion_time" => 0
+         "access_time" => 1346473985
+         "ref_count" => 0
+         "mem_size" => 4240
+      }</code>
+      51 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070965
+         "filename" => "/Users/kandinski/Sites/testbed/application/errors/error_php.php" (63)
+         "num_hits" => 14.0
+         "mtime" => 1345696033
+         "creation_time" => 1346455456
+         "deletion_time" => 0
+         "access_time" => 1346473574
+         "ref_count" => 0
+         "mem_size" => 4240
+      }</code>
+      52 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9254495
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/testbed_V/index.php" (68)
+         "num_hits" => 7.0
+         "mtime" => 1346421859
+         "creation_time" => 1346469730
+         "deletion_time" => 0
+         "access_time" => 1346473202
+         "ref_count" => 0
+         "mem_size" => 4240
+      }</code>
+      53 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9197838
+         "filename" => "/Users/kandinski/Sites/testbed/application/controllers/configMgmt.php" (69)
+         "num_hits" => 0.0
+         "mtime" => 1346474575
+         "creation_time" => 1346474604
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 0
+         "mem_size" => 12464
+      }</code>
+      54 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9203034
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/dump_V/index.php" (65)
+         "num_hits" => 7.0
+         "mtime" => 1346460478
+         "creation_time" => 1346460495
+         "deletion_time" => 0
+         "access_time" => 1346474022
+         "ref_count" => 0
+         "mem_size" => 4240
+      }</code>
+      55 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071069
+         "filename" => "/Users/kandinski/Sites/testbed/application/libraries/Mongo_db.php" (65)
+         "num_hits" => 39.0
+         "mtime" => 1346008111
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 37232
+      }</code>
+      56 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071070
+         "filename" => "/Users/kandinski/Sites/testbed/application/libraries/MY_Session.php" (67)
+         "num_hits" => 39.0
+         "mtime" => 1345993507
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474604
+         "ref_count" => 1
+         "mem_size" => 86416
+      }</code>
+      57 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9202021
+         "filename" => "/Users/kandinski/Sites/testbed/application/helpers/debug_helper.php" (67)
+         "num_hits" => 12.0
+         "mtime" => 1346355413
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474022
+         "ref_count" => 0
+         "mem_size" => 82192
+      }</code>
+      58 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071085
+         "filename" => "/Users/kandinski/Sites/testbed/application/models/cart_test_m.php" (65)
+         "num_hits" => 2.0
+         "mtime" => 1346471934
+         "creation_time" => 1346471958
+         "deletion_time" => 0
+         "access_time" => 1346472345
+         "ref_count" => 0
+         "mem_size" => 20688
+      }</code>
+      59 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071086
+         "filename" => "/Users/kandinski/Sites/testbed/application/models/optionsset_m.php" (66)
+         "num_hits" => 8.0
+         "mtime" => 1346285894
+         "creation_time" => 1346472494
+         "deletion_time" => 0
+         "access_time" => 1346473948
+         "ref_count" => 0
+         "mem_size" => 8368
+      }</code>
+      60 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071093
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/cartTest_V/index.php" (69)
+         "num_hits" => 2.0
+         "mtime" => 1346459284
+         "creation_time" => 1346471958
+         "deletion_time" => 0
+         "access_time" => 1346472345
+         "ref_count" => 0
+         "mem_size" => 4240
+      }</code>
+      61 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071097
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/include/footer.php" (67)
+         "num_hits" => 19.0
+         "mtime" => 1346423637
+         "creation_time" => 1346454368
+         "deletion_time" => 0
+         "access_time" => 1346474022
+         "ref_count" => 0
+         "mem_size" => 12464
+      }</code>
+      62 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071098
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/include/header.php" (67)
+         "num_hits" => 12.0
+         "mtime" => 1346473137
+         "creation_time" => 1346473146
+         "deletion_time" => 0
+         "access_time" => 1346474022
+         "ref_count" => 0
+         "mem_size" => 12464
+      }</code>
+      63 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071100
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/optionsSet_V/index.php" (71)
+         "num_hits" => 6.0
+         "mtime" => 1346459151
+         "creation_time" => 1346472494
+         "deletion_time" => 0
+         "access_time" => 1346473948
+         "ref_count" => 0
+         "mem_size" => 4240
+      }</code>
+   ]</code>
+   "deleted_list" => <span>array</span>(0) 
+   "slot_distribution" => <span>array</span>(1031) <code>[
+      0 => 1
+      1 => 0
+      2 => 0
+      3 => 0
+      4 => 0
+      5 => 0
+      6 => 0
+      7 => 0
+      8 => 0
+      9 => 0
+      10 => 0
+      11 => 0
+      12 => 0
+      13 => 0
+      14 => 0
+      15 => 0
+      16 => 0
+      17 => 0
+      18 => 0
+      19 => 0
+      20 => 0
+      21 => 0
+      22 => 0
+      23 => 0
+      24 => 0
+      25 => 0
+      26 => 0
+      27 => 0
+      28 => 0
+      29 => 0
+      30 => 0
+      31 => 0
+      32 => 0
+      33 => 0
+      34 => 0
+      35 => 0
+      36 => 0
+      37 => 0
+      38 => 0
+      39 => 0
+      40 => 0
+      41 => 0
+      42 => 0
+      43 => 0
+      44 => 0
+      45 => 1
+      46 => 0
+      47 => 0
+      48 => 0
+      49 => 0
+      50 => 0
+      51 => 0
+      52 => 0
+      53 => 0
+      54 => 0
+      55 => 0
+      56 => 0
+      57 => 0
+      58 => 0
+      59 => 0
+      60 => 0
+      61 => 0
+      62 => 0
+      63 => 0
+      64 => 0
+      65 => 0
+      66 => 0
+      67 => 0
+      68 => 0
+      69 => 0
+      70 => 0
+      71 => 0
+      72 => 0
+      73 => 0
+      74 => 0
+      75 => 0
+      76 => 0
+      77 => 0
+      78 => 0
+      79 => 0
+      80 => 0
+      81 => 0
+      82 => 0
+      83 => 0
+      84 => 0
+      85 => 0
+      86 => 0
+      87 => 0
+      88 => 0
+      89 => 1
+      90 => 0
+      91 => 0
+      92 => 0
+      93 => 0
+      94 => 0
+      95 => 0
+      96 => 0
+      97 => 0
+      98 => 0
+      99 => 0
+      100 => 0
+      101 => 0
+      102 => 0
+      103 => 0
+      104 => 0
+      105 => 0
+      106 => 0
+      107 => 0
+      108 => 0
+      109 => 0
+      110 => 0
+      111 => 0
+      112 => 0
+      113 => 0
+      114 => 0
+      115 => 0
+      116 => 0
+      117 => 0
+      118 => 0
+      119 => 0
+      120 => 0
+      121 => 0
+      122 => 0
+      123 => 0
+      124 => 0
+      125 => 0
+      126 => 0
+      127 => 0
+      128 => 0
+      129 => 0
+      130 => 0
+      131 => 0
+      132 => 0
+      133 => 0
+      134 => 0
+      135 => 0
+      136 => 0
+      137 => 0
+      138 => 0
+      139 => 0
+      140 => 0
+      141 => 0
+      142 => 0
+      143 => 0
+      144 => 0
+      145 => 0
+      146 => 0
+      147 => 0
+      148 => 0
+      149 => 0
+      150 => 0
+      151 => 0
+      152 => 0
+      153 => 0
+      154 => 0
+      155 => 0
+      156 => 1
+      157 => 0
+      158 => 0
+      159 => 0
+      160 => 0
+      161 => 0
+      162 => 0
+      163 => 0
+      164 => 0
+      165 => 0
+      166 => 0
+      167 => 0
+      168 => 0
+      169 => 1
+      170 => 1
+      171 => 1
+      172 => 1
+      173 => 1
+      174 => 1
+      175 => 1
+      176 => 0
+      177 => 1
+      178 => 1
+      179 => 1
+      180 => 1
+      181 => 1
+      182 => 1
+      183 => 1
+      184 => 1
+      185 => 1
+      186 => 0
+      187 => 1
+      188 => 1
+      189 => 0
+      190 => 1
+      191 => 0
+      192 => 1
+      193 => 0
+      194 => 0
+      195 => 0
+      196 => 0
+      197 => 0
+      198 => 0
+      199 => 0
+      200 => 0
+      201 => 0
+      202 => 0
+      203 => 0
+      204 => 0
+      205 => 0
+      206 => 0
+      207 => 0
+      208 => 0
+      209 => 0
+      210 => 1
+      211 => 0
+      212 => 1
+      213 => 0
+      214 => 0
+      215 => 0
+      216 => 0
+      217 => 0
+      218 => 0
+      219 => 0
+      220 => 0
+      221 => 0
+      222 => 0
+      223 => 0
+      224 => 0
+      225 => 1
+      226 => 0
+      227 => 0
+      228 => 0
+      229 => 0
+      230 => 0
+      231 => 0
+      232 => 0
+      233 => 0
+      234 => 0
+      235 => 0
+      236 => 0
+      237 => 0
+      238 => 0
+      239 => 0
+      240 => 0
+      241 => 0
+      242 => 0
+      243 => 0
+      244 => 0
+      245 => 0
+      246 => 0
+      247 => 0
+      248 => 0
+      249 => 0
+      250 => 0
+      251 => 0
+      252 => 0
+      253 => 0
+      254 => 0
+      255 => 0
+      256 => 0
+      257 => 0
+      258 => 0
+      259 => 0
+      260 => 0
+      261 => 0
+      262 => 0
+      263 => 0
+      264 => 0
+      265 => 0
+      266 => 0
+      267 => 0
+      268 => 1
+      269 => 1
+      270 => 0
+      271 => 0
+      272 => 0
+      273 => 0
+      274 => 0
+      275 => 0
+      276 => 0
+      277 => 0
+      278 => 1
+      279 => 0
+      280 => 0
+      281 => 1
+      282 => 0
+      283 => 0
+      284 => 0
+      285 => 0
+      286 => 0
+      287 => 0
+      288 => 0
+      289 => 0
+      290 => 0
+      291 => 0
+      292 => 0
+      293 => 0
+      294 => 0
+      295 => 0
+      296 => 0
+      297 => 0
+      298 => 0
+      299 => 0
+      300 => 0
+      301 => 0
+      302 => 1
+      303 => 0
+      304 => 1
+      305 => 0
+      306 => 1
+      307 => 0
+      308 => 0
+      309 => 1
+      310 => 1
+      311 => 0
+      312 => 0
+      313 => 0
+      314 => 0
+      315 => 0
+      316 => 0
+      317 => 0
+      318 => 0
+      319 => 0
+      320 => 1
+      321 => 0
+      322 => 0
+      323 => 0
+      324 => 0
+      325 => 1
+      326 => 1
+      327 => 0
+      328 => 0
+      329 => 0
+      330 => 0
+      331 => 0
+      332 => 0
+      333 => 0
+      334 => 0
+      335 => 0
+      336 => 0
+      337 => 0
+      338 => 0
+      339 => 0
+      340 => 0
+      341 => 0
+      342 => 0
+      343 => 0
+      344 => 0
+      345 => 0
+      346 => 0
+      347 => 0
+      348 => 0
+      349 => 0
+      350 => 0
+      351 => 0
+      352 => 0
+      353 => 0
+      354 => 0
+      355 => 0
+      356 => 0
+      357 => 0
+      358 => 0
+      359 => 0
+      360 => 0
+      361 => 0
+      362 => 0
+      363 => 0
+      364 => 0
+      365 => 0
+      366 => 0
+      367 => 0
+      368 => 0
+      369 => 0
+      370 => 0
+      371 => 0
+      372 => 0
+      373 => 0
+      374 => 0
+      375 => 0
+      376 => 1
+      377 => 0
+      378 => 0
+      379 => 0
+      380 => 0
+      381 => 0
+      382 => 0
+      383 => 0
+      384 => 0
+      385 => 0
+      386 => 0
+      387 => 0
+      388 => 0
+      389 => 0
+      390 => 0
+      391 => 0
+      392 => 0
+      393 => 0
+      394 => 0
+      395 => 0
+      396 => 0
+      397 => 0
+      398 => 0
+      399 => 0
+      400 => 0
+      401 => 0
+      402 => 0
+      403 => 0
+      404 => 0
+      405 => 0
+      406 => 0
+      407 => 0
+      408 => 0
+      409 => 0
+      410 => 0
+      411 => 0
+      412 => 0
+      413 => 0
+      414 => 0
+      415 => 0
+      416 => 0
+      417 => 0
+      418 => 0
+      419 => 0
+      420 => 0
+      421 => 0
+      422 => 0
+      423 => 0
+      424 => 0
+      425 => 0
+      426 => 0
+      427 => 0
+      428 => 0
+      429 => 0
+      430 => 0
+      431 => 0
+      432 => 0
+      433 => 0
+      434 => 0
+      435 => 0
+      436 => 0
+      437 => 0
+      438 => 0
+      439 => 0
+      440 => 0
+      441 => 0
+      442 => 0
+      443 => 0
+      444 => 0
+      445 => 0
+      446 => 0
+      447 => 0
+      448 => 0
+      449 => 0
+      450 => 0
+      451 => 0
+      452 => 0
+      453 => 0
+      454 => 0
+      455 => 0
+      456 => 0
+      457 => 0
+      458 => 0
+      459 => 0
+      460 => 0
+      461 => 0
+      462 => 0
+      463 => 0
+      464 => 0
+      465 => 0
+      466 => 0
+      467 => 0
+      468 => 0
+      469 => 0
+      470 => 0
+      471 => 0
+      472 => 0
+      473 => 0
+      474 => 0
+      475 => 0
+      476 => 0
+      477 => 0
+      478 => 0
+      479 => 0
+      480 => 0
+      481 => 0
+      482 => 0
+      483 => 0
+      484 => 0
+      485 => 0
+      486 => 0
+      487 => 0
+      488 => 0
+      489 => 0
+      490 => 0
+      491 => 0
+      492 => 0
+      493 => 0
+      494 => 0
+      495 => 0
+      496 => 0
+      497 => 0
+      498 => 0
+      499 => 0
+      500 => 0
+      501 => 0
+      502 => 0
+      503 => 0
+      504 => 0
+      505 => 0
+      506 => 0
+      507 => 0
+      508 => 0
+      509 => 0
+      510 => 0
+      511 => 0
+      512 => 0
+      513 => 0
+      514 => 0
+      515 => 0
+      516 => 0
+      517 => 0
+      518 => 0
+      519 => 0
+      520 => 0
+      521 => 0
+      522 => 0
+      523 => 0
+      524 => 0
+      525 => 0
+      526 => 0
+      527 => 0
+      528 => 0
+      529 => 0
+      530 => 0
+      531 => 0
+      532 => 0
+      533 => 0
+      534 => 0
+      535 => 0
+      536 => 0
+      537 => 0
+      538 => 0
+      539 => 0
+      540 => 0
+      541 => 0
+      542 => 0
+      543 => 0
+      544 => 0
+      545 => 0
+      546 => 0
+      547 => 0
+      548 => 0
+      549 => 0
+      550 => 0
+      551 => 0
+      552 => 0
+      553 => 0
+      554 => 0
+      555 => 0
+      556 => 0
+      557 => 0
+      558 => 0
+      559 => 0
+      560 => 0
+      561 => 0
+      562 => 0
+      563 => 0
+      564 => 0
+      565 => 0
+      566 => 0
+      567 => 0
+      568 => 0
+      569 => 0
+      570 => 0
+      571 => 0
+      572 => 0
+      573 => 0
+      574 => 0
+      575 => 0
+      576 => 0
+      577 => 0
+      578 => 0
+      579 => 0
+      580 => 0
+      581 => 0
+      582 => 0
+      583 => 0
+      584 => 0
+      585 => 0
+      586 => 0
+      587 => 0
+      588 => 0
+      589 => 0
+      590 => 0
+      591 => 0
+      592 => 0
+      593 => 0
+      594 => 0
+      595 => 0
+      596 => 0
+      597 => 0
+      598 => 0
+      599 => 0
+      600 => 0
+      601 => 0
+      602 => 0
+      603 => 0
+      604 => 0
+      605 => 0
+      606 => 0
+      607 => 0
+      608 => 0
+      609 => 0
+      610 => 0
+      611 => 0
+      612 => 0
+      613 => 0
+      614 => 0
+      615 => 0
+      616 => 0
+      617 => 0
+      618 => 0
+      619 => 0
+      620 => 0
+      621 => 0
+      622 => 0
+      623 => 0
+      624 => 0
+      625 => 0
+      626 => 0
+      627 => 0
+      628 => 0
+      629 => 0
+      630 => 0
+      631 => 0
+      632 => 0
+      633 => 0
+      634 => 0
+      635 => 0
+      636 => 0
+      637 => 0
+      638 => 0
+      639 => 0
+      640 => 0
+      641 => 0
+      642 => 0
+      643 => 0
+      644 => 0
+      645 => 0
+      646 => 0
+      647 => 0
+      648 => 0
+      649 => 0
+      650 => 0
+      651 => 0
+      652 => 0
+      653 => 0
+      654 => 0
+      655 => 0
+      656 => 0
+      657 => 0
+      658 => 0
+      659 => 0
+      660 => 0
+      661 => 0
+      662 => 0
+      663 => 0
+      664 => 0
+      665 => 0
+      666 => 0
+      667 => 0
+      668 => 0
+      669 => 0
+      670 => 0
+      671 => 0
+      672 => 0
+      673 => 0
+      674 => 0
+      675 => 0
+      676 => 0
+      677 => 0
+      678 => 0
+      679 => 0
+      680 => 0
+      681 => 0
+      682 => 0
+      683 => 0
+      684 => 0
+      685 => 0
+      686 => 0
+      687 => 0
+      688 => 0
+      689 => 0
+      690 => 0
+      691 => 0
+      692 => 0
+      693 => 0
+      694 => 0
+      695 => 0
+      696 => 0
+      697 => 0
+      698 => 0
+      699 => 0
+      700 => 0
+      701 => 0
+      702 => 0
+      703 => 0
+      704 => 0
+      705 => 0
+      706 => 0
+      707 => 0
+      708 => 0
+      709 => 0
+      710 => 0
+      711 => 0
+      712 => 0
+      713 => 0
+      714 => 0
+      715 => 0
+      716 => 0
+      717 => 0
+      718 => 0
+      719 => 0
+      720 => 0
+      721 => 0
+      722 => 0
+      723 => 0
+      724 => 0
+      725 => 0
+      726 => 0
+      727 => 0
+      728 => 0
+      729 => 0
+      730 => 0
+      731 => 0
+      732 => 0
+      733 => 0
+      734 => 0
+      735 => 0
+      736 => 0
+      737 => 0
+      738 => 0
+      739 => 0
+      740 => 0
+      741 => 0
+      742 => 0
+      743 => 0
+      744 => 0
+      745 => 0
+      746 => 0
+      747 => 0
+      748 => 0
+      749 => 0
+      750 => 0
+      751 => 0
+      752 => 0
+      753 => 0
+      754 => 0
+      755 => 0
+      756 => 0
+      757 => 0
+      758 => 0
+      759 => 0
+      760 => 0
+      761 => 0
+      762 => 0
+      763 => 0
+      764 => 0
+      765 => 0
+      766 => 0
+      767 => 0
+      768 => 0
+      769 => 0
+      770 => 0
+      771 => 0
+      772 => 0
+      773 => 0
+      774 => 0
+      775 => 0
+      776 => 0
+      777 => 0
+      778 => 0
+      779 => 0
+      780 => 0
+      781 => 0
+      782 => 0
+      783 => 0
+      784 => 0
+      785 => 0
+      786 => 0
+      787 => 0
+      788 => 0
+      789 => 0
+      790 => 0
+      791 => 0
+      792 => 0
+      793 => 0
+      794 => 0
+      795 => 0
+      796 => 0
+      797 => 0
+      798 => 0
+      799 => 0
+      800 => 0
+      801 => 0
+      802 => 0
+      803 => 0
+      804 => 0
+      805 => 0
+      806 => 0
+      807 => 0
+      808 => 0
+      809 => 0
+      810 => 0
+      811 => 0
+      812 => 0
+      813 => 0
+      814 => 0
+      815 => 0
+      816 => 0
+      817 => 0
+      818 => 0
+      819 => 0
+      820 => 0
+      821 => 0
+      822 => 0
+      823 => 0
+      824 => 0
+      825 => 0
+      826 => 0
+      827 => 0
+      828 => 0
+      829 => 0
+      830 => 0
+      831 => 0
+      832 => 0
+      833 => 0
+      834 => 0
+      835 => 0
+      836 => 0
+      837 => 0
+      838 => 0
+      839 => 0
+      840 => 0
+      841 => 0
+      842 => 0
+      843 => 0
+      844 => 0
+      845 => 0
+      846 => 0
+      847 => 0
+      848 => 0
+      849 => 0
+      850 => 0
+      851 => 0
+      852 => 0
+      853 => 0
+      854 => 0
+      855 => 0
+      856 => 0
+      857 => 0
+      858 => 0
+      859 => 1
+      860 => 0
+      861 => 0
+      862 => 1
+      863 => 1
+      864 => 1
+      865 => 0
+      866 => 0
+      867 => 0
+      868 => 0
+      869 => 0
+      870 => 0
+      871 => 1
+      872 => 1
+      873 => 0
+      874 => 0
+      875 => 1
+      876 => 0
+      877 => 1
+      878 => 0
+      879 => 0
+      880 => 0
+      881 => 0
+      882 => 0
+      883 => 1
+      884 => 0
+      885 => 0
+      886 => 1
+      887 => 0
+      888 => 0
+      889 => 0
+      890 => 0
+      891 => 0
+      892 => 1
+      893 => 0
+      894 => 0
+      895 => 1
+      896 => 0
+      897 => 0
+      898 => 0
+      899 => 0
+      900 => 0
+      901 => 0
+      902 => 0
+      903 => 0
+      904 => 0
+      905 => 0
+      906 => 0
+      907 => 1
+      908 => 0
+      909 => 0
+      910 => 0
+      911 => 0
+      912 => 0
+      913 => 0
+      914 => 0
+      915 => 0
+      916 => 0
+      917 => 0
+      918 => 0
+      919 => 0
+      920 => 0
+      921 => 0
+      922 => 0
+      923 => 0
+      924 => 0
+      925 => 0
+      926 => 0
+      927 => 0
+      928 => 0
+      929 => 0
+      930 => 0
+      931 => 0
+      932 => 0
+      933 => 0
+      934 => 0
+      935 => 0
+      936 => 0
+      937 => 0
+      938 => 0
+      939 => 0
+      940 => 0
+      941 => 0
+      942 => 0
+      943 => 0
+      944 => 0
+      945 => 0
+      946 => 0
+      947 => 0
+      948 => 0
+      949 => 0
+      950 => 0
+      951 => 0
+      952 => 0
+      953 => 0
+      954 => 0
+      955 => 1
+      956 => 0
+      957 => 0
+      958 => 0
+      959 => 0
+      960 => 0
+      961 => 0
+      962 => 0
+      963 => 0
+      964 => 0
+      965 => 0
+      966 => 0
+      967 => 0
+      968 => 0
+      969 => 0
+      970 => 0
+      971 => 0
+      972 => 0
+      973 => 0
+      974 => 0
+      975 => 0
+      976 => 0
+      977 => 0
+      978 => 0
+      979 => 0
+      980 => 0
+      981 => 0
+      982 => 0
+      983 => 0
+      984 => 0
+      985 => 0
+      986 => 0
+      987 => 0
+      988 => 0
+      989 => 0
+      990 => 0
+      991 => 0
+      992 => 0
+      993 => 0
+      994 => 0
+      995 => 0
+      996 => 1
+      997 => 0
+      998 => 0
+      999 => 1
+      1000 => 1
+      1001 => 0
+      1002 => 0
+      1003 => 0
+      1004 => 0
+      1005 => 0
+      1006 => 0
+      1007 => 0
+      1008 => 0
+      1009 => 0
+      1010 => 0
+      1011 => 0
+      1012 => 0
+      1013 => 0
+      1014 => 1
+      1015 => 1
+      1016 => 1
+      1017 => 0
+      1018 => 0
+      1019 => 0
+      1020 => 0
+      1021 => 0
+      1022 => 0
+      1023 => 1
+      1024 => 0
+      1025 => 0
+      1026 => 0
+      1027 => 1
+      1028 => 1
+      1029 => 0
+      1030 => 1
+   ]</code>
+}</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 52</small>
+</pre>
+                
+                </div> <!-- accordion-inner -->
+              </div>   <!-- accordion-body collapse -->
+            </div>     <!-- accordion-group --> 
+
+            
+
+            <div   class="accordion-group">  
+              <div class="accordion-heading">  
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" 
+                   href="#collapseFour">  
+                  userdata  
+                </a>  
+              </div>  
+              <div  class="accordion-body collapse" id="collapseFour">  
+                <div class="accordion-inner">  
+                                                <pre class="dump2"><span>array</span>(4) <code>{
+   "session_id" => "42d04b2a02310631449505c7" (24)
+   "ip_address" => "127.0.0.1" (9)
+   "user_agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1 FirePHP/0.7.1" (97)
+   "last_activity" => 1346474604
+}</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 68</small>
+</pre>
+                
+                </div> <!-- accordion-inner -->
+              </div>   <!-- accordion-body collapse -->
+            </div>     <!-- accordion-group --> 
+            
+            
+            
+            
+            
+              <div   class="accordion-group">  
+              <div class="accordion-heading">  
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" 
+                   href="#collapseFive">  
+                 URI 
+                </a>  
+              </div>  
+              <div  class="accordion-body collapse" id="collapseFive">  
+                <div class="accordion-inner">  
+                                                <pre class="dump2"><span>array</span>(1) <code>{
+   "configMgmt" => FALSE
+}</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 86</small>
+</pre>
+                
+                </div> <!-- accordion-inner -->
+              </div>   <!-- accordion-body collapse -->
+            </div>     <!-- accordion-group --> 
+            
+            
+                    
+              <div class="accordion-group">  
+              <div class="accordion-heading">  
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" 
+                   href="#collapseSix">  
+                 config  
+                </a>  
+              </div>  
+              <div   class="accordion-body collapse"  id="collapseSix">  
+                <div class="accordion-inner">  
+                                                <pre class="dump2"><span>array</span>(48) <code>{
+   "base_url" => "http://localhost/testbed/" (25)
+   "index_page" => "index.php" (9)
+   "uri_protocol" => "AUTO" (4)
+   "url_suffix" => ""
+   "language" => "english" (7)
+   "charset" => "UTF-8" (5)
+   "enable_hooks" => FALSE
+   "subclass_prefix" => "MY_" (3)
+   "permitted_uri_chars" => "a-z 0-9~%.:_\-" (14)
+   "allow_get_array" => TRUE
+   "enable_query_strings" => FALSE
+   "controller_trigger" => "c"
+   "function_trigger" => "m"
+   "directory_trigger" => "d"
+   "log_threshold" => 4
+   "show_in_log" => <span>array</span>(3) <code>[
+      0 => "DEBUG" (5)
+      1 => "ERROR" (5)
+      2 => "INFO" (4)
+   ]</code>
+   "log_path" => "/private/var/log/apache2/" (25)
+   "log_date_format" => "Y-m-d H:i:s" (11)
+   "cache_path" => ""
+   "encryption_key" => "9a683f60a2998e80e2178362e7964c11" (32)
+   "sess_cookie_name" => "ci_session" (10)
+   "sess_expiration" => 7200
+   "sess_expire_on_close" => FALSE
+   "sess_encrypt_cookie" => FALSE
+   "sess_use_database" => TRUE
+   "sess_table_name" => "ci_sessions" (11)
+   "sess_match_ip" => FALSE
+   "sess_match_useragent" => TRUE
+   "sess_time_to_update" => 300
+   "cookie_prefix" => ""
+   "cookie_domain" => ""
+   "cookie_path" => "/"
+   "cookie_secure" => FALSE
+   "global_xss_filtering" => TRUE
+   "csrf_protection" => FALSE
+   "csrf_token_name" => "csrf_test_name" (14)
+   "csrf_cookie_name" => "csrf_cookie_name" (16)
+   "csrf_expire" => 7200
+   "compress_output" => FALSE
+   "time_reference" => "local" (5)
+   "rewrite_short_tags" => FALSE
+   "proxy_ips" => ""
+   "mongo_host" => "localhost" (9)
+   "mongo_port" => 27017
+   "mongo_database" => "mydb" (4)
+   "redis_host" => "localhost" (9)
+   "redis_port" => "6379" (4)
+   "redis_password" => ""
+}</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 102</small>
+</pre>
+                
+                </div> <!-- accordion-inner -->
+              </div>   <!-- accordion-body collapse -->
+            </div>     <!-- accordion-group --> 
+            
+            
+              
+              <div   class="accordion-group">  
+              <div class="accordion-heading">  
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" 
+                   href="#collapseSeven">  
+                  server  
+                </a>  
+              </div>  
+              <div  class="accordion-body collapse"  id="collapseSeven">  
+                <div class="accordion-inner">  
+                                                <pre class="dump2"><span>array</span>(33) <code>{
+   "HTTP_HOST" => "localhost" (9)
+   "HTTP_USER_AGENT" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1 FirePHP/0.7.1" (97)
+   "HTTP_ACCEPT" => "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" (63)
+   "HTTP_ACCEPT_LANGUAGE" => "en-us,en;q=0.5" (14)
+   "HTTP_ACCEPT_ENCODING" => "gzip, deflate" (13)
+   "HTTP_DNT" => "1"
+   "HTTP_CONNECTION" => "keep-alive" (10)
+   "HTTP_REFERER" => "http://localhost/testbed/index.php/configMgmt/" (46)
+   "HTTP_COOKIE" => "ZDEDebuggerPresent=php,phtml,php3; spy_repo=vmichnowicz%2Fci2_memcache; spy_repo_at=Fri%20Aug%2031%202012%2015%3A10%3A36%20GMT-0600%20(MDT); tracker=direct; __utma=1.1220392266.1346446637.1346446637.1346446637.1; __utmc=1; __utmz=1.1346446637.1.1.utm ... " (771)
+   "HTTP_X_INSIGHT" => "activate" (8)
+   "HTTP_PRAGMA" => "no-cache" (8)
+   "HTTP_CACHE_CONTROL" => "no-cache" (8)
+   "PATH" => "/usr/bin:/bin:/usr/sbin:/sbin" (29)
+   "SERVER_SIGNATURE" => "&lt;address&gt;Apache/2.2.21 (Unix) DAV/2 PHP/5.3.10 with Suhosin-Patch Server at localhost Port 80&lt;/address&gt;
+" (104)
+   "SERVER_SOFTWARE" => "Apache/2.2.21 (Unix) DAV/2 PHP/5.3.10 with Suhosin-Patch" (56)
+   "SERVER_NAME" => "localhost" (9)
+   "SERVER_ADDR" => "127.0.0.1" (9)
+   "SERVER_PORT" => "80" (2)
+   "REMOTE_ADDR" => "127.0.0.1" (9)
+   "DOCUMENT_ROOT" => "/Users/kandinski/Sites" (22)
+   "SERVER_ADMIN" => "accounts@quietretreatprivacy.com" (32)
+   "SCRIPT_FILENAME" => "/Users/kandinski/Sites/testbed/index.php" (40)
+   "REMOTE_PORT" => "58133" (5)
+   "GATEWAY_INTERFACE" => "CGI/1.1" (7)
+   "SERVER_PROTOCOL" => "HTTP/1.1" (8)
+   "REQUEST_METHOD" => "GET" (3)
+   "QUERY_STRING" => ""
+   "REQUEST_URI" => "/testbed/index.php/configMgmt/" (30)
+   "SCRIPT_NAME" => "/testbed/index.php" (18)
+   "PATH_INFO" => "/configMgmt/" (12)
+   "PATH_TRANSLATED" => "/Users/kandinski/Sites/configMgmt/" (34)
+   "PHP_SELF" => "/testbed/index.php/configMgmt/" (30)
+   "REQUEST_TIME" => 1346474604
+}</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 118</small>
+</pre>
+                
+                </div> <!-- accordion-inner -->
+              </div>   <!-- accordion-body collapse -->
+            </div>     <!-- accordion-group -->
+
+     </div>            <!-- accordion -->
+</div>                 <!-- container-fluid -->
+
+<!-- THE PAGE LOAD STAT -->
+      <footer>
+        <p>&copy; SparkFun 2012</p>
+          <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+      </footer>
+
+     
+
+<script type="text/javascript" src="http://localhost/testbed/assets/js/core.js"></script>
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/js/bootstrap.min.js"></script>
+<script src="http://localhost/testbed/assets/js/jquery-1.8.0.js"></script>
+    <script src="http://localhost/testbed/assets/js/bootstrap-transition.js"></script>
+    <script src="http://localhost/testbed/assets/js/bootstrap-alert.js"></script>
+    <script src="http://localhost/testbed/assets/js/bootstrap-modal.js"></script>
+    <script src="http://localhost/testbed/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://localhost/testbed/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://localhost/testbed/assets/js/bootstrap-tab.js"></script>
+    <script src="http://localhost/testbed/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://localhost/testbed/assets/js/bootstrap-popover.js"></script>
+    <script src=".http://localhost/testbed/assets/js/bootstrap-button.js"></script>
+    <script src="http://localhost/testbed/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://localhost/testbed/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://localhost/testbed/assets/js/bootstrap-typeahead.js"></script>
+
+</body>
+</html>
+

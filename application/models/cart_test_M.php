@@ -1,6 +1,6 @@
 <?php 
 
-class Cart_model extends CI_Model {
+class Cart_test_M extends CI_Model {
 
 // Function to retrieve an array with all product information
     function retrieve_products(){

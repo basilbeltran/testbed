@@ -1,2 +1,10 @@
 /nbproject/private
 .DS_Store
+/inc/DBs/memcached-1.4.14/.deps/
+/inc/DBs/pcre-8.31/.deps/
+/inc/DBs/pcre-8.31/.libs/
+/inc/UTILS/libevent-2.0.19-stable/.deps/
+/inc/UTILS/libevent-2.0.19-stable/.libs/
+/inc/UTILS/libevent-2.0.19-stable/sample/.libs/
+/inc/UTILS/libevent-2.0.19-stable/test/.deps/
+/inc/UTILS/libevent-2.0.19-stable/test/.libs/

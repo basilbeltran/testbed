@@ -1,13 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class dbMgmtSql extends CI_Controller {
+class dbMgmtSql extends MY_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		
 		$this->load->helper('url');
-		$this->load->library('grocery_crud');	
+		$this->load->library('grocery_crud');
+                //$crud = new grocery_CRUD();
 	}
 	
 	function _example_output($output = null)
@@ -17,8 +18,12 @@ class dbMgmtSql extends CI_Controller {
 	
 	
 	function index(){
+                $this->grocery_crud->set_table('products');
 		$output = $this->grocery_crud->render();
-		$this->_example_output($output);	             
+		$this->_example_output($output);
+            
+            
+
         }	
 	
         

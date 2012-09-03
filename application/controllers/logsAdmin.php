@@ -1,6 +1,6 @@
 <?php
 
-class Logger extends CI_Controller { 
+class Logger extends MY_Controller { 
 
 	function Logger()
 	{

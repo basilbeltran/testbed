@@ -1,6 +1,6 @@
 <?php
 
-class DbAdmin extends CI_Controller { 
+class DbAdmin extends MY_Controller { 
     function __construct()                          
     {
         parent::__construct();                      

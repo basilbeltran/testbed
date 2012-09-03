@@ -1,6 +1,6 @@
 <?php
 
-class Unit extends CI_Controller
+class Unit extends MY_Controller
 {
 
    public function index()

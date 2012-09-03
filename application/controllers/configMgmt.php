@@ -4,7 +4,7 @@ class ConfigMgmt extends MY_Controller {
     function __construct()                          
     {
         parent::__construct();                      
-        $this->output->cache(0);
+        $this->output->cache(0); //should remain low in QA/PROD
     }//OptionsSet
     
     
