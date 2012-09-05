@@ -80,9 +80,11 @@
                   can span the use of multiple machines for both performance and logical 
                   distribution.
               </p>
-              <p>Memcached</p>
+              <p>Memcached is a distributed caching system</p>
               
-              <p> http://devzone.zend.com/1812/using-apc-with-php/
+              <p>APC is mainly a PHP optimizer (optimizes by default as long as it's enabled), 
+                  and apc_store() is just an extra bonus on top of that.
+                  http://devzone.zend.com/1812/using-apc-with-php/
               </p>
             </div><!--/span-->
           </div><!--/row-->          

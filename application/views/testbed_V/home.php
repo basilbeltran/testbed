@@ -70,12 +70,16 @@
             
             <div class="span5">
               <h2>In Memory Caching</h2>
+              
               <p>Redis is a fast in-memory persistent "key-value store" (values being 
-                  strings, lists, hashes, sets, sorted sets) that is eventually persistent and
-                  can span the use of multiple machines for both performance and logical 
-                  distribution.
+                  strings, lists, hashes, sets, sorted sets) that is eventually persistent.
+                  Currently not distributed (next release).
               </p>
-              <p>Memcached</p>
+              
+              <p>Memcached: Memcached is a distributed caching system and
+                  can span the use of multiple machines for both performance and logical 
+                  distribution.</p>
+              
               <p>Alternative PHP Cache (APC) is an opcode cache for PHP. Its goal is to provide a 
                   robust framework for caching and optimizing PHP intermediate code. <code>apc_store()</code>
                   can be used as an additional caching mechanism.

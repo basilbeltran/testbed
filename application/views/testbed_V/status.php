@@ -54,10 +54,11 @@
                
             
             <div class="span5">
-              <h2>In Memory Caching</h2>
-              
+              <h2>In Memory Caching</h2>             
               <p>
-              Added front end for APC to ADMIN | APC    
+              Memcached, ACP and file options added to extended Controller.
+              Added front end for APC to ADMIN | APC  
+              http://www.electrictoolbox.com/apc-php-cache-information/
               </p>
             </div><!--/span-->
             
@@ -67,7 +68,7 @@
             <div class="span5">
               <h2>NoSQL Storage</h2>
               <p>
-                  
+               Session storage now defaults to Mongo   
               </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
             </div><!--/span-->
@@ -77,7 +78,7 @@
             <div class="span5">
               <h2>Cloud Storage</h2>
               <p>
-                  
+               Not yet implemented
               </p>
             </div><!--/span--   
           

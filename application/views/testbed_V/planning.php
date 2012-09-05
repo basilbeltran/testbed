@@ -103,11 +103,7 @@
           <div   class="row-fluid">          
             <div class="span5">
               <h2>NoSQL Storage</h2>
-              <p>Redis is a fast in-memory persistent "key-value store" (values being 
-                  strings, lists, hashes, sets, sorted sets) that is eventually persistent and
-                  can span the use of multiple machines for both performance and logical 
-                  distribution.
-                  
+              <p>
                   
                   
               </p>

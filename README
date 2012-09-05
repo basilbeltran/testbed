@@ -20,29 +20,20 @@ Steps to deploy the code
 3) edit ./application/config/mongo.php 
 4) edit ./application/config/redis.php
 5) ensure mysql, mongo and redis are running
-6) access http://localhost/testbed/index.php/cartTest
+6) access   http://localhost/testbed/index.php/
 ---------------------------------------------------------------------------
 
 Project integration log:
 
 1) Base framework CodeIgniter 2.1.2 supports a clean MVC implementation.
-    + http://codeigniter.com/user_guide/libraries/cart.html
-    + http://codeigniter.com/user_guide/libraries/sessions.html  
-
     + Points of interest are contained in 
         ./application/controller  (MVC)
         ./application//models     (MVC)
         ./application//views      (HTML, CSS, and JavaScript, Bootstrap)
    
-  routes.php (and .htaccess) controls URI navigation behavior
-    + testCart as default page
-
 2) Configuration of naked CI framework involves adding libraries and tweaking /applications/config/?
 and includes:
    /system/libraries/...  
-    + URLs
-    + Forms
-    + Cart
     + Database (SQL)
     + Redis   
 
@@ -58,18 +49,6 @@ and includes:
     
 5) header.php under application/views/include will give an idea of the state
    of the prototype and what functionality exists.
-6) MySQL management via grocer crud
-7) Centralized config settings abstraction vi app/libraries/Settings.php
-8) configMgmt provides centralized access to debugging variables
-9) MY_Controller implemented to implement optionsSet functionality
-10) dbAdmin will wrap both dbSource config settings and admin interface
-11) replaced Cache_memcached driver with Cache_memcache; Edit valid caches in Cache.php
-
-That's all for now. 
-Basically the test cart and the options page.
-Sessions are using Mongo.
-No time to implement any Redis. bummer.  
 
 
-
-
+Documentation continues on the Status Tab of the home page.
