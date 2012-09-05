@@ -41,7 +41,7 @@ class CI_Output {
 	 * @var int
 	 * @access 	protected
 	 */
-	protected $cache_expiration	= 0;
+	 protected $cache_expiration	= 0;
 	/**
 	 * List of server headers
 	 *

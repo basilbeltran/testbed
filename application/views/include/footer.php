@@ -1,7 +1,9 @@
 <!-- THE PAGE LOAD STAT -->
       <footer>
         <p>&copy; SparkFun 2012</p>
-          <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+          <p class="footer">    Time: <?php echo $this->benchmark->elapsed_time(); ?>  </p>
+          <p class="footer">    Mem: <?php echo $this->benchmark->memory_usage(); ?>  </p>
+
       </footer>
 
      

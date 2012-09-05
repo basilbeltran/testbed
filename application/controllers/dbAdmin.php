@@ -6,9 +6,7 @@ class DbAdmin extends MY_Controller {
         parent::__construct();                      
         
     }//__construct
-    
-    
-    
+     
     
     function index(){  
         $mgr = $this->uri->segment(3);
@@ -24,7 +22,7 @@ class DbAdmin extends MY_Controller {
                         echo "Bring 15 bottles of SPF 50 Sunscreen";
                         break;	
                 case "APC":
-                        echo "Bring lots of money";
+                    redirect(apc);                       
                         break;	
                 case "S3":
                         echo "Bring a swimsuit";

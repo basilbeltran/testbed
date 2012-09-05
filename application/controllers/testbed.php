@@ -7,6 +7,8 @@ class Testbed extends MY_Controller {               // syntax changed from CI 1.
     {
         parent::__construct();                      // as of CI 2.x PHP4 style was removed
         $this->output->cache(0);  // output page caching in minutes:  QA/PROD=60
+        print_r("DEV NOTICE: This page has output cache set for ".$this->output->get_expiration()." minutes");    
+
     }//cartTest_C
 
     

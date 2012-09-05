@@ -12,7 +12,7 @@
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" /> 
     <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/ico/favicon.ico">
 
-    <style type="text/css">
+    <style class="hnav" type="text/css">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
@@ -39,7 +39,7 @@
             
            <ul class="nav">  
                 <li class="active"> 
-                <a class="brand" href="#">Testbed</a>
+                <a class="brand" href='<?php  echo site_url()?>'>TESTBED</a>
                 </li>        
                 
            </ul>
@@ -52,11 +52,11 @@
                     <b class="caret"></b>  
                 </a>  
                 <ul class="dropdown-menu"> 
-                    <li><a href='<?php  echo  $link."/cartTest" ?>'>Static</a></li>
-                    <li><a href='<?php  echo  $link."/cartTest" ?>'>Session</a></li>
-                    <li><a href='<?php  echo  $link."/cartTest" ?>'>Cart</a></li> 
-                    <li><a href='<?php  echo  $link."/cartTest" ?>'>Payment</a></li>
-                    <li><a href='<?php  echo  $link."/cartTest" ?>'>MultiMedia</a></li>
+                    <li><a href='<?php  echo site_url("cartTest") ?>'>Cart</a></li> 
+<!--                    <li><a href='<?php  echo site_url("cartTest") ?>'>Static</a></li>
+                    <li><a href='<?php  echo site_url("cartTest") ?>'>Session</a></li>
+                    <li><a href='<?php  echo site_url("cartTest") ?>'>Payment</a></li>
+                    <li><a href='<?php  echo site_url("cartTest") ?>'>MultiMedia</a></li>-->
 
                 </ul>  
                 </li>  
@@ -72,9 +72,9 @@
                     <b class="caret"></b>  
                 </a>  
                 <ul class="dropdown-menu">  
-                    <li><a href='<?php  echo  $link."/optionsSet"?>'>Persistence Settings</a></li>
-                    <li><a href='<?php  echo  $link."/configMgmt"?>'>Stress Settings</a></li>
-                    <li><a href='<?php  echo  $link."/configMgmt"?>'>Current Settings</a></li>
+                    <li><a href='<?php  echo site_url("optionsSet") ?>'>Set Options</a></li>
+<!--                    <li><a href='<?php  echo site_url("configMgmt") ?>'>Stress Options</a></li>-->
+                    <li><a href='<?php  echo site_url("configMgmt") ?>'>Current Settings</a></li>
                 </ul>  
                 </li>  
            </ul> 

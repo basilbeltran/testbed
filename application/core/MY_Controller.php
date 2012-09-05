@@ -9,7 +9,6 @@ class MY_Controller extends CI_Controller
     // $this->load->driver('cache');        // file, APC, and Memcached *should* now enabled - failing
      $this->load->driver('cache', array('adapter' => 'file'));      
     // $this->load->driver('cache', array('adapter' => 'memcache'));  // loads but "non-object"
-    // $this->load->driver('cache', array('adapter' => 'memcached')); // no load
     // $this->load->driver('cache', array('adapter' => 'apc'));       
 
 

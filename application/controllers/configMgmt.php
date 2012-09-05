@@ -4,8 +4,9 @@ class ConfigMgmt extends MY_Controller {
     function __construct()                          
     {
         parent::__construct();                      
-        $this->output->cache(0); //should remain low in QA/PROD
-    }//OptionsSet
+        $this->output->cache(1);
+       print_r("DEV NOTICE: This page has output cache set for ".$this->output->get_expiration()." minute");    
+    }//ConfigMgmt
     
     
     
