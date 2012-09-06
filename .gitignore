@@ -1,4 +1,4 @@
 /nbproject/private
 .DS_Store
 /inc
-/application/cache/ 
+/application/cache/**/* 

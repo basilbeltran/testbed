@@ -3,14 +3,15 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Performance</li>
-              <li><a href="#">Blah</a></li>
-              <li><a href="#">Blah</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Frameworks</a></li>
               <li><a href="http://codeigniter.com/user_guide/libraries/caching.html" target="#HinFront">caching</a></li>
               <li class="nav-header">Scalability</li>
-              <li><a href="#">Blah</a></li>
-              <li><a href="#">In Blah</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Frameworks</a></li>
               <li class="nav-header">Reliability</li>
-              <li><a href="#">Blah</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Frameworks</a></li>
                   
             
             </ul>
@@ -48,9 +49,7 @@
             <div class="span5">
               <h2>Query Caching</h2>
               <p>Database caching will greatly reduce the load on your database and increase 
-                  the performance of your application as a result. Once you have query caching up 
-                  and running you will need to clear the caches whenever you do an update. 
-                  <code>$this->db->cache_delete('controller', 'method');</code> </p>
+                  the performance of your application as a result.  </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
             </div><!--/span-->
           </div><!--/row-->
@@ -85,9 +84,8 @@
                   can be used as an additional caching mechanism.
               </p>
             </div><!--/span-->
-          </div><!--/row-->          
-
-          <div   class="row-fluid">          
+</div><!--/row-->          
+<div   class="row-fluid">          
             <div class="span5">
               <h2>NoSQL Storage</h2>
               <p>Redis is a fast in-memory persistent "key-value store" (values being 
@@ -108,9 +106,9 @@
               <p>
                   
               </p>
-            </div><!--/span--   
+            </div> 
           
-        </div> <!--/HinFront-->  
-
+</div> <!--/Row-->  
+</div><!--/HinFront-->
 
 

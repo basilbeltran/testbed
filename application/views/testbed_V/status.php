@@ -1,29 +1,26 @@
       <div class="span2">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">MMP1</li>
-              <li><a href="#">Sprint1</a></li>
-              <li><a href="#">Sprint2</a></li>
-              <li class="nav-header">MMP2</li>
-              <li><a href="#">Sprint1</a></li>
-              <li><a href="#">Sprint2</a></li>
-
-                  
+              <li class="nav-header">Alpha Functionality</li>
+              <li><a href="#">APC & SQL Admin</a></li>
+              <li><a href="#">SQL, Mongo, APC, Redis, & Memcached available</a></li>
+              <li><a href="#">Current settings Config File Based</a></li>
+              <li><a href="#">crude data->store mapping interface uses SQL</a></li>
             
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
         
         
-<div class="span10" id="HinFront">
+<div class="span10" id="SinFront">
 <div   class="row-fluid">
 
             
             <div class="span5">
               <h2>Output Caching</h2>
-              <p> Currently configurable per controller. A (production) option is
-                  to set a large value in MY_Controller and use delete_cache($uri_string)
-                  with each DB write.
+              <p> Currently configurable per controller. 
+              <br/>Added an alert to notify developer that a page is cached.
+               
               </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
             </div><!--/span-->
@@ -33,8 +30,8 @@
              <div class="span5">
               <h2>Query Caching</h2>
               <p> Is currently implemented in MY_Controller for the 'storage'
-                  table and is used in the view/include/header to populate
-                  the admin dropdown. 
+                  table. [Storage] is used in the view/include/header to populate
+                  the Admin dropdown and Set Options to populate the buttons. 
               </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
             </div><!--/span-->
@@ -80,6 +77,6 @@
               <p>
                Not yet implemented
               </p>
-            </div><!--/span--   
-          
-        </div> <!--/HinFront-->  
+            </div><!--/span-->   
+ </div><!--/row-->  
+</div> <!--/HinFront-->  
