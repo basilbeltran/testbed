@@ -5,7 +5,7 @@ class DbAdmin extends MY_Controller {
     {
         parent::__construct();                      
         
-    }//__construct
+    }//__construct  
      
     
     function index(){  
@@ -28,9 +28,26 @@ class DbAdmin extends MY_Controller {
                         $this->load->view('include/headerFrame', $data);                       
                         break;	
                 case "S3":
-                        echo "Bring a swimsuit";
+                        $data['url']= "https://s3-console-us-standard.console.aws.amazon.com/GetResource/Console.html";
+                        $this->load->view('include/headerFrame', $data); 
+                        break; 
+                case "Glacier":
+                        $data['url']= "https://glacier-console-us-west-1.console.aws.amazon.com/GetResource/Console.html#details";
+                        $this->load->view('include/headerFrame', $data); 
                         break; 	
-                default:
+                case "DynamoDB":
+                        $data['url']= "https://console.aws.amazon.com/dynamodb/home#table:name=session;region=us-east-1";
+                        $this->load->view('include/headerFrame', $data); 
+                        break; 	                    
+                case "RDS":
+                        $data['url']= "https://console.aws.amazon.com/rds/home#dbinstances:sf=na;region=us-east-1";
+                        $this->load->view('include/headerFrame', $data); 
+                        break; 
+                case "ElastiCache":
+                        $data['url']= "https://console.aws.amazon.com/elasticache/home#cache-clusters:region=us-west-1";
+                        $this->load->view('include/headerFrame', $data); 
+                        break; 
+                    default:
                         echo "Admin UI not found";
                         break;
         }//switch   

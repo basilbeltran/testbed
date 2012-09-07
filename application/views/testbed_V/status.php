@@ -17,7 +17,7 @@
 
             
             <div class="span5">
-              <h2>Output Caching</h2>
+    <h2>Output Caching</h2>
               <p> Currently configurable per controller. 
               <br/>Added an alert to notify developer that a page is cached.
                
@@ -28,10 +28,27 @@
             
             
              <div class="span5">
-              <h2>Query Caching</h2>
+    <h2>Query Caching</h2>
               <p> Is currently implemented in MY_Controller for the 'storage'
-                  table. [Storage] is used in the view/include/header to populate
-                  the Admin dropdown and Set Options to populate the buttons. 
+                  table. $storage is used in the view/include/header to populate
+                  the "Admin" drop-down AND optionsSet to populate the buttons.
+                  
+                  <br/>9/12: set cache_delete in dbMgmtSql_M->set_basic_table()
+                       this should cover update / insert and any cruft.
+                       Implies cache entry name MUST be table name.
+                  <code>
+                        if($this->cache->get($this->table_name)){ 
+                        $this->cache->delete($this->table_name)};
+                  </code>
+                   <br/>At this point, since no controller has been called,
+                        the *file-based* cache entry "APPPATH/cache/storage"
+                        has been removed and not accessible to the NAV bar with
+                        <code>$sources = $this->cache->get('storage'); ?></code>
+                        and displays an error on the dropdown event. After ANY
+                        controller is called (they all extend MY_Controller) the Admin NAV
+                        then displays an out of date listing of the storage table.
+                        Why? Because the QUERY has been cached.
+                        
               </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
             </div><!--/span-->
@@ -79,4 +96,42 @@
               </p>
             </div><!--/span-->   
  </div><!--/row-->  
+ 
+         
+<div   class="row-fluid">          
+            <div class="span5">
+              <h2>Environment</h2>
+              <p><code>
+                extension=apc.so
+                extension=mongo.so
+                extension=redis.so
+
+                [xdebug]
+
+                xdebug.default_enable=1
+                xdebug.remote_enable=1
+                xdebug.remote_handler=dbgp
+                xdebug.remote_host=localhost
+                xdebug.remote_port=9000
+                xdebug.remote_autostart=1
+                zend_extension=/usr/lib/php/extensions/no-debug-non-zts-20090626/xdebug.so 
+                </code>
+              </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            
+            
+            
+            <div class="span5">
+              <h2>Cloud Storage</h2>
+              <p>
+               Amazon, RackSpace, and MongoLab implemented
+              </p>
+            </div><!--/span-->   
+ </div><!--/row-->  
+ 
+ 
+ 
+ 
+ 
 </div> <!--/HinFront-->  

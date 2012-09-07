@@ -62,14 +62,16 @@
                   solution? At what cost? How to determine what queries are candidates.
               <br/>call each time a write is made to a constituent table. Mapping needed.
                 <code>$this->db->cache_delete('controller', 'method');</code> 
+               <br/> How to get this more granular. EX: Is the NAV cached for each controller/method?
+                     How to expire [storage]?
               </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
             </div><!--/span-->
           </div><!--/row-->
           
           
-          <div   class="row-fluid">          
-            <div class="span5">
+<div   class="row-fluid">          
+<div class="span5">
 <h2>Object Caching</h2>
               <p>Flexible caching systems that write arbitrary objects (models , library calls)
                   to disk (like output and database caching) in a serialized format
@@ -115,12 +117,12 @@
             </div><!--/span-->
           </div><!--/row-->          
 
-          <div   class="row-fluid">          
-            <div class="span5">
+<div   class="row-fluid">          
+<div class="span5">
 <h2>NoSQL Storage</h2>
-              <p>
-                  
-                  
+              <p>https://github.com/mongodb/mongo-php-driver
+              <br/>https://mongolab.com/    
+    
                   
               </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
@@ -129,13 +131,16 @@
             
             
             <div class="span5">
-              <h2>Cloud Storage</h2>
+    <h2>Cloud Storage</h2>
               <p>
-                  
+                research notification systems ie: https://github.com/amazonwebservices/aws-sdk-for-php/blob/master/services/sns.class.php  
+              <br/>http://cloud.google.com/
+              <br/>https://mycloud.rackspace.com/
               </p>
             </div><!--/span-->   
           </div><!--/row-->            
         </div> <!--/HinFront-->  
+
 
 
 

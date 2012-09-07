@@ -251,6 +251,7 @@ class dbMgmtSql_M  extends CI_Model  {
     		return false;
     	
     	$this->table_name = $table_name;
+        if($this->cache->get($this->table_name)) $this->cache->delete($this->table_name);
     	
     	return true;
     }

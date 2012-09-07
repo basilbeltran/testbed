@@ -11,7 +11,7 @@ class MY_Controller extends CI_Controller
     // $this->load->driver('cache', array('adapter' => 'memcache'));  // loads but "non-object"
     // $this->load->driver('cache', array('adapter' => 'apc'));       
 
-
+     
         $result = $this->cache->get('storage');
         if(!$result){
             $this->load->model('optionsSet_M');  
