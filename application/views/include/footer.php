@@ -1,28 +1,40 @@
-<!-- THE PAGE LOAD STAT -->
-      <footer>
-        <p>&copy; SparkFun 2012</p>
-          <p class="footer">    Time: <?php echo $this->benchmark->elapsed_time(); ?>  </p>
-          <p class="footer">    Mem: <?php echo $this->benchmark->memory_usage(); ?>  </p>
 
+
+<!--  PAGE LOAD STATS -->
+      <footer>
+        <p>&copy; SparkFun 2012  
+            Time: <?php echo $this->benchmark->elapsed_time(); ?>  
+            Mem: <?php echo $this->benchmark->memory_usage(); ?>  
+        </p>
       </footer>
 
      
 
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/core.js"></script>
-<script type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/js/bootstrap.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery-1.8.0.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-transition.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-alert.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-modal.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-dropdown.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-scrollspy.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-tab.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-tooltip.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-popover.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-button.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-collapse.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-carousel.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-typeahead.js"></script>
 
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/core.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/prettify.js"></script>    
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+  
+    
+<!-- If needed, initialize scripts on this page -->
+
+<script>
+
+  // Activate Google Prettify for pretty-printing code
+  addEventListener('load', prettyPrint, false);
+
+  $(document).ready(function(){
+
+    // Add prettyprint class to pre elements
+    $('pre').addClass('prettyprint');
+
+    // Initialize tabs and pills
+    $('.note-tabs').tab();
+    
+    
+		
+  });
+</script>
 </body>
 </html>

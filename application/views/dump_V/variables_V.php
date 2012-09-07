@@ -161,13 +161,7 @@
                                 ob_start() ;
                                 phpinfo() ;
                                 $pinfo = ob_get_contents() ;
-                                ob_end_clean() ;
-//                                
-//                                    $pattern = '#<style\\s+type[^>]*>.*</style>(.*)#i';
-//                                    $replacement = '$1';
-//                                    $subject = $pinfo;
-//                                    echo preg_replace($pattern, $replacement, $subject);
-                                    
+                                ob_end_clean() ;                                    
                                 echo ( str_replace ( "Phar EXT version", "Phar_EXT_version", preg_replace ( '%^.*<body>(.*)</body>.*$%ms', '$1', $pinfo ) ) ) ;
 
                                 

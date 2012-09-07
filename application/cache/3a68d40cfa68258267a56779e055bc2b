@@ -1,4 +1,4 @@
-1346886482TS---><!--  the view is decomposed to allow reuse -->
+1347010569TS---><!--  the view is decomposed to allow reuse -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,11 +8,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <meta name="description" content="">
 <meta name="author" content="">
-    <link href="http://localhost/testbed/assets/css/core.css" media="screen" rel="stylesheet" type="text/css" />
-    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap-combined.min.css" rel="stylesheet"> -->
-    <link href="http://localhost/testbed/assets/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet"    href="http://localhost/testbed/assets/css/imported.css"  />
     <link rel="shortcut icon" href="http://localhost/testbed/assets/ico/favicon.ico">
-
+        
+        
     <style class="hnav" type="text/css">
       body {
         padding-top: 60px;
@@ -22,28 +21,32 @@
         padding: 9px 0;
       }
     </style>
+    
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
+
 </head>
     
 <body>
-
 <!--THE NAV BAR -->
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            
-           <ul class="nav">  
-                <li class="active"> 
-                <a class="brand" href='http://localhost/testbed/index.php'>TESTBED</a>
-                </li>        
-                
-           </ul>
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href='http://localhost/testbed/index.php'>TESTBED</a>
+
+          <div class="nav-collapse">
             <ul class="nav">  
+                <li class="active"><a href='http://localhost/testbed/index.php'><i class="icon-home icon-white"></i> Home</a>
+                </li>
                 <li class="dropdown">  
                 <a href="#"  
                     class="dropdown-toggle"  
@@ -53,7 +56,7 @@
                 </a>  
                 <ul class="dropdown-menu"> 
                     <li><a href='http://localhost/testbed/index.php/cartTest'>Cart</a></li> 
-<!--                    <li><a href='http://localhost/testbed/index.php/cartTest'>Static</a></li>
+<!--                <li><a href='http://localhost/testbed/index.php/cartTest'>Static</a></li>
                     <li><a href='http://localhost/testbed/index.php/cartTest'>Session</a></li>
                     <li><a href='http://localhost/testbed/index.php/cartTest'>Payment</a></li>
                     <li><a href='http://localhost/testbed/index.php/cartTest'>MultiMedia</a></li>-->
@@ -73,7 +76,7 @@
                 </a>  
                 <ul class="dropdown-menu">  
                     <li><a href='http://localhost/testbed/index.php/optionsSet'>Set Options</a></li>
-<!--                    <li><a href='http://localhost/testbed/index.php/configMgmt'>Stress Options</a></li>-->
+<!--                <li><a href='http://localhost/testbed/index.php/configMgmt'>Stress Options</a></li>-->
                     <li><a href='http://localhost/testbed/index.php/configMgmt'>Current Settings</a></li>
                 </ul>  
                 </li>  
@@ -147,14 +150,13 @@
            </ul> 
            
            
-           <form class="navbar-search pull-left">  
+           <form class="navbar-search pull-right">  
               <input type="text" class="search-query" placeholder="Search">  
            </form>        
-            
+          </div> <!-- /.nav-collapse -->  
         </div><!--/container -->
     </div><!--/navbar-inner -->
 </div><!--/navbar navbar-fixed-top -->
-
         
 <!-- THE MAIN CONTENT  -->
 
@@ -178,8 +180,8 @@
    "cartTest+index" => <span>array</span>(5) <code>{
       "name" => "cartTest+index" (14)
       "server_path" => "/Users/kandinski/Sites/testbed/application/cache/cartTest+index" (63)
-      "size" => 102
-      "date" => 1346637151
+      "size" => 136
+      "date" => 1346986488
       "relative_path" => "application/cache/" (18)
    }</code>
    "configMgmt+index" => <span>array</span>(5) <code>{
@@ -214,7 +216,7 @@
       "name" => "storage" (7)
       "server_path" => "/Users/kandinski/Sites/testbed/application/cache/storage" (56)
       "size" => 922
-      "date" => 1346809603
+      "date" => 1346986488
       "relative_path" => "application/cache/" (18)
    }</code>
 }</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 20</small>
@@ -240,8 +242,8 @@
    "cartTest+index" => <span>array</span>(5) <code>{
       "name" => "cartTest+index" (14)
       "server_path" => "/Users/kandinski/Sites/testbed/application/cache/cartTest+index" (63)
-      "size" => 102
-      "date" => 1346637151
+      "size" => 136
+      "date" => 1346986488
       "relative_path" => "application/cache/" (18)
    }</code>
    "configMgmt+index" => <span>array</span>(5) <code>{
@@ -276,7 +278,7 @@
       "name" => "storage" (7)
       "server_path" => "/Users/kandinski/Sites/testbed/application/cache/storage" (56)
       "size" => 922
-      "date" => 1346809603
+      "date" => 1346986488
       "relative_path" => "application/cache/" (18)
    }</code>
 }</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 37</small>
@@ -301,266 +303,643 @@
                                                 <pre class="dump2"><span>array</span>(15) <code>{
    "num_slots" => 1031
    "ttl" => 0
-   "num_hits" => 0.0
-   "num_misses" => 1612.0
-   "num_inserts" => 131.0
+   "num_hits" => 159.0
+   "num_misses" => 49.0
+   "num_inserts" => 49.0
    "expunges" => 0.0
-   "start_time" => 1346886092
-   "mem_size" => 0.0
-   "num_entries" => 0
+   "start_time" => 1347009589
+   "mem_size" => 5110400.0
+   "num_entries" => 48
    "file_upload_progress" => 1
    "memory_type" => "mmap" (4)
    "locking_type" => "pthread mutex Locks" (19)
-   "cache_list" => <span>array</span>(0) 
-   "deleted_list" => <span>array</span>(19) <code>[
+   "cache_list" => <span>array</span>(48) <code>[
       0 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9070947
-         "filename" => "/Users/kandinski/Sites/testbed/application/config/routes.php" (60)
-         "num_hits" => 185.0
-         "mtime" => 1346423964
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "inode" => 9240230
+         "filename" => "/Users/kandinski/Sites/testbed/application/core/MY_Controller.php" (65)
+         "num_hits" => 4.0
+         "mtime" => 1346863095
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 4240
+         "mem_size" => 12464
       }</code>
       1 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9070941
-         "filename" => "/Users/kandinski/Sites/testbed/application/config/mimes.php" (59)
-         "num_hits" => 178.0
-         "mtime" => 1345846396
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
-         "ref_count" => 0
-         "mem_size" => 24752
+         "inode" => 9071257
+         "filename" => "/Users/kandinski/Sites/testbed/index.php" (40)
+         "num_hits" => 4.0
+         "mtime" => 1346863095
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 32944
       }</code>
       2 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9070933
-         "filename" => "/Users/kandinski/Sites/testbed/application/config/constants.php" (63)
-         "num_hits" => 185.0
-         "mtime" => 1345846396
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "inode" => 9071270
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Benchmark.php" (56)
+         "num_hits" => 4.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 16560
+         "mem_size" => 20720
       }</code>
       3 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9070932
-         "filename" => "/Users/kandinski/Sites/testbed/application/config/config.php" (60)
-         "num_hits" => 185.0
-         "mtime" => 1346470144
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "inode" => 9071271
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/CodeIgniter.php" (58)
+         "num_hits" => 4.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 24752
+         "mem_size" => 90288
       }</code>
       4 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071421
-         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Log.php" (55)
-         "num_hits" => 185.0
+         "inode" => 9071272
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Common.php" (53)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 33008
+         "mem_size" => 139824
       }</code>
       5 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071286
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/Utf8.php" (51)
-         "num_hits" => 185.0
+         "inode" => 9071273
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Config.php" (53)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 33040
+         "mem_size" => 90544
       }</code>
       6 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071285
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/URI.php" (50)
-         "num_hits" => 185.0
+         "inode" => 9071274
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Controller.php" (57)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 152112
+         "mem_size" => 12464
       }</code>
       7 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071284
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/Security.php" (55)
-         "num_hits" => 166.0
+         "inode" => 9071276
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Hooks.php" (52)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
-         "ref_count" => 0
-         "mem_size" => 168560
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 49424
       }</code>
       8 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071283
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/Router.php" (53)
-         "num_hits" => 185.0
+         "inode" => 9071278
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Input.php" (52)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 139728
+         "mem_size" => 213680
       }</code>
       9 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071282
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/Output.php" (53)
-         "num_hits" => 99.0
-         "mtime" => 1346856055
-         "creation_time" => 1346856354
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "inode" => 9071279
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Lang.php" (51)
+         "num_hits" => 4.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 123344
+         "mem_size" => 37104
       }</code>
       10 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071279
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/Lang.php" (51)
-         "num_hits" => 166.0
+         "inode" => 9071280
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Loader.php" (53)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
-         "ref_count" => 0
-         "mem_size" => 37104
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 328560
       }</code>
       11 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071278
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/Input.php" (52)
-         "num_hits" => 166.0
-         "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
-         "ref_count" => 0
-         "mem_size" => 213680
+         "inode" => 9071282
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Output.php" (53)
+         "num_hits" => 4.0
+         "mtime" => 1346856055
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 123344
       }</code>
       12 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071276
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/Hooks.php" (52)
-         "num_hits" => 185.0
+         "inode" => 9071283
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Router.php" (53)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 49424
+         "mem_size" => 139728
       }</code>
       13 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071274
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/Controller.php" (57)
-         "num_hits" => 166.0
+         "inode" => 9071284
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Security.php" (55)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
-         "ref_count" => 0
-         "mem_size" => 12464
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 168560
       }</code>
       14 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071273
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/Config.php" (53)
-         "num_hits" => 185.0
+         "inode" => 9071285
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/URI.php" (50)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 90544
+         "mem_size" => 152112
       }</code>
       15 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071272
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/Common.php" (53)
-         "num_hits" => 185.0
+         "inode" => 9071286
+         "filename" => "/Users/kandinski/Sites/testbed/system/core/Utf8.php" (51)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 139824
+         "mem_size" => 33040
       }</code>
       16 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071271
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/CodeIgniter.php" (58)
-         "num_hits" => 185.0
+         "inode" => 9071288
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB.php" (53)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 90288
+         "mem_size" => 45232
       }</code>
       17 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071270
-         "filename" => "/Users/kandinski/Sites/testbed/system/core/Benchmark.php" (56)
-         "num_hits" => 185.0
+         "inode" => 9071289
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB_active_rec.php" (64)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1346798835
-         "deletion_time" => 1346886092
-         "access_time" => 1346886092
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 20720
+         "mem_size" => 533936
       }</code>
       18 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071257
-         "filename" => "/Users/kandinski/Sites/testbed/index.php" (40)
-         "num_hits" => 90.0
-         "mtime" => 1346057470
-         "creation_time" => 1346798835
-         "deletion_time" => 1346863099
-         "access_time" => 1346863060
+         "inode" => 9071291
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB_driver.php" (60)
+         "num_hits" => 4.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
          "ref_count" => 1
-         "mem_size" => 32944
+         "mem_size" => 324496
+      }</code>
+      19 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071311
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/drivers/mysql/mysql_driver.php" (77)
+         "num_hits" => 4.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 176880
+      }</code>
+      20 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9253813
+         "filename" => "/Users/kandinski/Sites/testbed/application/controllers/testbed.php" (66)
+         "num_hits" => 0.0
+         "mtime" => 1346864500
+         "creation_time" => 1347010430
+         "deletion_time" => 0
+         "access_time" => 1347010430
+         "ref_count" => 0
+         "mem_size" => 8368
+      }</code>
+      21 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071369
+         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/file_helper.php" (61)
+         "num_hits" => 1.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010502
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 139696
+      }</code>
+      22 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071370
+         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/form_helper.php" (61)
+         "num_hits" => 4.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 287568
+      }</code>
+      23 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071379
+         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/string_helper.php" (63)
+         "num_hits" => 4.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 70064
+      }</code>
+      24 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071382
+         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/url_helper.php" (60)
+         "num_hits" => 4.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 164400
+      }</code>
+      25 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071403
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/Cache.php" (63)
+         "num_hits" => 1.0
+         "mtime" => 1346451895
+         "creation_time" => 1347010502
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 37232
+      }</code>
+      26 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071405
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/drivers/Cache_apc.php" (75)
+         "num_hits" => 0.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010509
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 0
+         "mem_size" => 29008
+      }</code>
+      27 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071407
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/drivers/Cache_file.php" (76)
+         "num_hits" => 1.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010502
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 41296
+      }</code>
+      28 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071410
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cart.php" (56)
+         "num_hits" => 4.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 119248
+      }</code>
+      29 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071411
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Driver.php" (58)
+         "num_hits" => 1.0
+         "mtime" => 1346439179
+         "creation_time" => 1347010502
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 57648
+      }</code>
+      30 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071421
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Log.php" (55)
+         "num_hits" => 4.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 33008
+      }</code>
+      31 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071426
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Redis.php" (57)
+         "num_hits" => 2.0
+         "mtime" => 1336338302
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010430
+         "ref_count" => 0
+         "mem_size" => 94672
+      }</code>
+      32 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071427
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Session.php" (59)
+         "num_hits" => 4.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 217808
+      }</code>
+      33 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9620014
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/include/headerFrame.php" (72)
+         "num_hits" => 0.0
+         "mtime" => 1347006740
+         "creation_time" => 1347010502
+         "deletion_time" => 0
+         "access_time" => 1347010502
+         "ref_count" => 0
+         "mem_size" => 28880
+      }</code>
+      34 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9538780
+         "filename" => "/Users/kandinski/Sites/testbed/UTIL/apc.php" (43)
+         "num_hits" => 4.0
+         "mtime" => 1346885893
+         "creation_time" => 1347010500
+         "deletion_time" => 0
+         "access_time" => 1347010504
+         "ref_count" => 0
+         "mem_size" => 586352
+      }</code>
+      35 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070929
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/autoload.php" (62)
+         "num_hits" => 1.0
+         "mtime" => 1347010495
+         "creation_time" => 1347010502
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 12464
+      }</code>
+      36 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070932
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/config.php" (60)
+         "num_hits" => 4.0
+         "mtime" => 1346470144
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 24752
+      }</code>
+      37 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070933
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/constants.php" (63)
+         "num_hits" => 4.0
+         "mtime" => 1345846396
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 16560
+      }</code>
+      38 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070934
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/database.php" (62)
+         "num_hits" => 4.0
+         "mtime" => 1346470503
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 16560
+      }</code>
+      39 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070941
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/mimes.php" (59)
+         "num_hits" => 4.0
+         "mtime" => 1345846396
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 24752
+      }</code>
+      40 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070942
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/mongo.php" (59)
+         "num_hits" => 4.0
+         "mtime" => 1346008111
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 4240
+      }</code>
+      41 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070947
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/routes.php" (60)
+         "num_hits" => 4.0
+         "mtime" => 1346423964
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 4240
+      }</code>
+      42 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070954
+         "filename" => "/Users/kandinski/Sites/testbed/application/controllers/dbAdmin.php" (66)
+         "num_hits" => 1.0
+         "mtime" => 1347007929
+         "creation_time" => 1347010296
+         "deletion_time" => 0
+         "access_time" => 1347010502
+         "ref_count" => 0
+         "mem_size" => 16560
+      }</code>
+      43 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9197838
+         "filename" => "/Users/kandinski/Sites/testbed/application/controllers/configMgmt.php" (69)
+         "num_hits" => 1.0
+         "mtime" => 1346864373
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 16592
+      }</code>
+      44 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9517453
+         "filename" => "/Users/kandinski/Sites/testbed/application/core/MY_Output.php" (61)
+         "num_hits" => 4.0
+         "mtime" => 1346858066
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 8368
+      }</code>
+      45 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071069
+         "filename" => "/Users/kandinski/Sites/testbed/application/libraries/Mongo_db.php" (65)
+         "num_hits" => 4.0
+         "mtime" => 1346008111
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 70032
+      }</code>
+      46 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071070
+         "filename" => "/Users/kandinski/Sites/testbed/application/libraries/MY_Session.php" (67)
+         "num_hits" => 4.0
+         "mtime" => 1345993507
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 119184
+      }</code>
+      47 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9202021
+         "filename" => "/Users/kandinski/Sites/testbed/application/helpers/debug_helper.php" (67)
+         "num_hits" => 4.0
+         "mtime" => 1346812367
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347010509
+         "ref_count" => 1
+         "mem_size" => 135504
       }</code>
    ]</code>
+   "deleted_list" => <span>array</span>(0) 
    "slot_distribution" => <span>array</span>(1031) <code>[
       0 => 0
       1 => 0
@@ -607,7 +986,7 @@
       42 => 0
       43 => 0
       44 => 0
-      45 => 0
+      45 => 1
       46 => 0
       47 => 0
       48 => 0
@@ -718,7 +1097,7 @@
       153 => 0
       154 => 0
       155 => 0
-      156 => 0
+      156 => 1
       157 => 0
       158 => 0
       159 => 0
@@ -731,28 +1110,28 @@
       166 => 0
       167 => 0
       168 => 0
-      169 => 0
-      170 => 0
-      171 => 0
-      172 => 0
-      173 => 0
+      169 => 1
+      170 => 1
+      171 => 1
+      172 => 1
+      173 => 1
       174 => 0
-      175 => 0
+      175 => 1
       176 => 0
-      177 => 0
-      178 => 0
-      179 => 0
+      177 => 1
+      178 => 1
+      179 => 1
       180 => 0
-      181 => 0
-      182 => 0
-      183 => 0
-      184 => 0
-      185 => 0
+      181 => 1
+      182 => 1
+      183 => 1
+      184 => 1
+      185 => 1
       186 => 0
-      187 => 0
-      188 => 0
+      187 => 1
+      188 => 1
       189 => 0
-      190 => 0
+      190 => 1
       191 => 0
       192 => 0
       193 => 0
@@ -772,7 +1151,7 @@
       207 => 0
       208 => 0
       209 => 0
-      210 => 0
+      210 => 1
       211 => 0
       212 => 0
       213 => 0
@@ -787,7 +1166,7 @@
       222 => 0
       223 => 0
       224 => 0
-      225 => 0
+      225 => 1
       226 => 0
       227 => 0
       228 => 0
@@ -830,8 +1209,8 @@
       265 => 0
       266 => 0
       267 => 0
-      268 => 0
-      269 => 0
+      268 => 1
+      269 => 1
       270 => 0
       271 => 0
       272 => 0
@@ -840,10 +1219,10 @@
       275 => 0
       276 => 0
       277 => 0
-      278 => 0
+      278 => 1
       279 => 0
       280 => 0
-      281 => 0
+      281 => 1
       282 => 0
       283 => 0
       284 => 0
@@ -864,15 +1243,15 @@
       299 => 0
       300 => 0
       301 => 0
-      302 => 0
+      302 => 1
       303 => 0
-      304 => 0
+      304 => 1
       305 => 0
-      306 => 0
+      306 => 1
       307 => 0
       308 => 0
-      309 => 0
-      310 => 0
+      309 => 1
+      310 => 1
       311 => 0
       312 => 0
       313 => 0
@@ -882,13 +1261,13 @@
       317 => 0
       318 => 0
       319 => 0
-      320 => 0
+      320 => 1
       321 => 0
       322 => 0
       323 => 0
       324 => 0
-      325 => 0
-      326 => 0
+      325 => 1
+      326 => 1
       327 => 0
       328 => 0
       329 => 0
@@ -983,7 +1362,7 @@
       418 => 0
       419 => 0
       420 => 0
-      421 => 0
+      421 => 1
       422 => 0
       423 => 0
       424 => 0
@@ -1198,7 +1577,7 @@
       633 => 0
       634 => 0
       635 => 0
-      636 => 0
+      636 => 1
       637 => 0
       638 => 0
       639 => 0
@@ -1421,32 +1800,32 @@
       856 => 0
       857 => 0
       858 => 0
-      859 => 0
+      859 => 1
       860 => 0
       861 => 0
-      862 => 0
-      863 => 0
-      864 => 0
+      862 => 1
+      863 => 1
+      864 => 1
       865 => 0
       866 => 0
       867 => 0
       868 => 0
       869 => 0
       870 => 0
-      871 => 0
-      872 => 0
+      871 => 1
+      872 => 1
       873 => 0
       874 => 0
       875 => 0
       876 => 0
-      877 => 0
+      877 => 1
       878 => 0
       879 => 0
       880 => 0
       881 => 0
       882 => 0
       883 => 0
-      884 => 0
+      884 => 1
       885 => 0
       886 => 0
       887 => 0
@@ -1517,12 +1896,12 @@
       952 => 0
       953 => 0
       954 => 0
-      955 => 0
+      955 => 1
       956 => 0
       957 => 0
       958 => 0
       959 => 0
-      960 => 0
+      960 => 1
       961 => 0
       962 => 0
       963 => 0
@@ -1561,8 +1940,8 @@
       996 => 0
       997 => 0
       998 => 0
-      999 => 0
-      1000 => 0
+      999 => 1
+      1000 => 1
       1001 => 0
       1002 => 0
       1003 => 0
@@ -1576,7 +1955,7 @@
       1011 => 0
       1012 => 0
       1013 => 0
-      1014 => 0
+      1014 => 1
       1015 => 0
       1016 => 0
       1017 => 0
@@ -1612,11 +1991,31 @@
               </div>  
               <div  class="accordion-body collapse" id="collapseFour">  
                 <div class="accordion-inner">  
-                                                <pre class="dump2"><span>array</span>(4) <code>{
-   "session_id" => "c133508d83a27d02ef866be5" (24)
-   "ip_address" => "127.0.0.1" (9)
-   "user_agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1 FirePHP/0.7.1" (97)
-   "last_activity" => 1346886410
+                                                <pre class="dump2"><span>array</span>(5) <code>{
+   "session_id" => "d2f2335342a0f8741ab61163" (24)
+   "ip_address" => "::1" (3)
+   "user_agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1" (83)
+   "last_activity" => 1347010267
+   "cart_contents" => <span>array</span>(4) <code>{
+      "8b36cb431b5aa0d245be4e62cdb8e6b3" => <span>array</span>(6) <code>{
+         "rowid" => "8b36cb431b5aa0d245be4e62cdb8e6b3" (32)
+         "id" => "11454" (5)
+         "qty" => "1"
+         "price" => "1"
+         "name" => "Static Shielding Bag" (20)
+         "subtotal" => 1
+      }</code>
+      "ae4954bd7d1f28d4b124063731338ae0" => <span>array</span>(6) <code>{
+         "rowid" => "ae4954bd7d1f28d4b124063731338ae0" (32)
+         "id" => "11287" (5)
+         "qty" => "1"
+         "price" => "85" (2)
+         "name" => "Arduino Wi-Fi Shield " (21)
+         "subtotal" => 85
+      }</code>
+      "total_items" => 2
+      "cart_total" => 86
+   }</code>
 }</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 70</small>
 </pre>
                 
@@ -1657,7 +2056,7 @@
               </div>  
               <div   class="accordion-body collapse"  id="collapseSix">  
                 <div class="accordion-inner">  
-                                                <pre class="dump2"><span>array</span>(48) <code>{
+                                                <pre class="dump2"><span>array</span>(45) <code>{
    "base_url" => "http://localhost/testbed/" (25)
    "index_page" => "index.php" (9)
    "uri_protocol" => "AUTO" (4)
@@ -1707,9 +2106,6 @@
    "mongo_host" => "localhost" (9)
    "mongo_port" => 27017
    "mongo_database" => "mydb" (4)
-   "redis_host" => "localhost" (9)
-   "redis_port" => "6379" (4)
-   "redis_password" => ""
 }</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 104</small>
 </pre>
                 
@@ -1728,29 +2124,28 @@
               </div>  
               <div  class="accordion-body collapse"  id="collapseSeven">  
                 <div class="accordion-inner">  
-                                                <pre class="dump2"><span>array</span>(33) <code>{
+                                                <pre class="dump2"><span>array</span>(32) <code>{
    "HTTP_HOST" => "localhost" (9)
-   "HTTP_USER_AGENT" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1 FirePHP/0.7.1" (97)
+   "HTTP_USER_AGENT" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1" (83)
    "HTTP_ACCEPT" => "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" (63)
    "HTTP_ACCEPT_LANGUAGE" => "en-us,en;q=0.5" (14)
    "HTTP_ACCEPT_ENCODING" => "gzip, deflate" (13)
    "HTTP_DNT" => "1"
    "HTTP_CONNECTION" => "keep-alive" (10)
-   "HTTP_REFERER" => "http://localhost/testbed/index.php/optionsSet" (45)
-   "HTTP_COOKIE" => "ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%22c133508d83a27d02ef866be5%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A9%3A%22127.0.0.1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A97%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%2 ... " (390)
-   "HTTP_X_INSIGHT" => "activate" (8)
+   "HTTP_REFERER" => "http://localhost/testbed/index.php/dbAdmin/index/APC" (52)
+   "HTTP_COOKIE" => "ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=g1u39spcbl78ktm77s3vanlhk2; __utma=111872281.1186498135.1346923480.1346923480.1347007949.2; __utmc=111872281; __utmz=111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ci_session=a%3A4 ... " (624)
    "PATH" => "/usr/bin:/bin:/usr/sbin:/sbin" (29)
    "SERVER_SIGNATURE" => "&lt;address&gt;Apache/2.2.21 (Unix) DAV/2 PHP/5.3.10 with Suhosin-Patch Server at localhost Port 80&lt;/address&gt;
 " (104)
    "SERVER_SOFTWARE" => "Apache/2.2.21 (Unix) DAV/2 PHP/5.3.10 with Suhosin-Patch" (56)
    "SERVER_NAME" => "localhost" (9)
-   "SERVER_ADDR" => "127.0.0.1" (9)
+   "SERVER_ADDR" => "::1" (3)
    "SERVER_PORT" => "80" (2)
-   "REMOTE_ADDR" => "127.0.0.1" (9)
+   "REMOTE_ADDR" => "::1" (3)
    "DOCUMENT_ROOT" => "/Users/kandinski/Sites" (22)
    "SERVER_ADMIN" => "accounts@quietretreatprivacy.com" (32)
    "SCRIPT_FILENAME" => "/Users/kandinski/Sites/testbed/index.php" (40)
-   "REMOTE_PORT" => "51694" (5)
+   "REMOTE_PORT" => "54540" (5)
    "GATEWAY_INTERFACE" => "CGI/1.1" (7)
    "SERVER_PROTOCOL" => "HTTP/1.1" (8)
    "REQUEST_METHOD" => "GET" (3)
@@ -1762,7 +2157,7 @@
    "PHP_SELF" => "/testbed/index.php/configMgmt" (29)
    "PHP_AUTH_USER" => "apc" (3)
    "PHP_AUTH_PW" => "apc" (3)
-   "REQUEST_TIME" => 1346886422
+   "REQUEST_TIME" => 1347010509
 }</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 120</small>
 </pre>
                 
@@ -1874,27 +2269,26 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <table border="0" cellpadding="3" width="600">
 <tr class="h"><th>Variable</th><th>Value</th></tr>
 <tr><td class="e">HTTP_HOST </td><td class="v">localhost </td></tr>
-<tr><td class="e">HTTP_USER_AGENT </td><td class="v">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1 FirePHP/0.7.1 </td></tr>
+<tr><td class="e">HTTP_USER_AGENT </td><td class="v">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1 </td></tr>
 <tr><td class="e">HTTP_ACCEPT </td><td class="v">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 </td></tr>
 <tr><td class="e">HTTP_ACCEPT_LANGUAGE </td><td class="v">en-us,en;q=0.5 </td></tr>
 <tr><td class="e">HTTP_ACCEPT_ENCODING </td><td class="v">gzip, deflate </td></tr>
 <tr><td class="e">HTTP_DNT </td><td class="v">1 </td></tr>
 <tr><td class="e">HTTP_CONNECTION </td><td class="v">keep-alive </td></tr>
-<tr><td class="e">HTTP_REFERER </td><td class="v">http://localhost/testbed/index.php/optionsSet </td></tr>
-<tr><td class="e">HTTP_COOKIE </td><td class="v">ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%22c133508d83a27d02ef866be5%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A9%3A%22127.0.0.1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A97%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1+FirePHP%2F0.7.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1346886410%3B%7Dc990d4f25e5abbea63c17160248ac6fc </td></tr>
-<tr><td class="e">HTTP_X_INSIGHT </td><td class="v">activate </td></tr>
+<tr><td class="e">HTTP_REFERER </td><td class="v">http://localhost/testbed/index.php/dbAdmin/index/APC </td></tr>
+<tr><td class="e">HTTP_COOKIE </td><td class="v">ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=g1u39spcbl78ktm77s3vanlhk2; __utma=111872281.1186498135.1346923480.1346923480.1347007949.2; __utmc=111872281; __utmz=111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%22d2f2335342a0f8741ab61163%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A83%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1347010267%3B%7Deec30fd7556690d17f46e96910ea9726; rock_format=json </td></tr>
 <tr><td class="e">PATH </td><td class="v">/usr/bin:/bin:/usr/sbin:/sbin </td></tr>
 <tr><td class="e">SERVER_SIGNATURE </td><td class="v">&lt;address&gt;Apache/2.2.21 (Unix) DAV/2 PHP/5.3.10 with Suhosin-Patch Server at localhost Port 80&lt;/address&gt;
  </td></tr>
 <tr><td class="e">SERVER_SOFTWARE </td><td class="v">Apache/2.2.21 (Unix) DAV/2 PHP/5.3.10 with Suhosin-Patch </td></tr>
 <tr><td class="e">SERVER_NAME </td><td class="v">localhost </td></tr>
-<tr><td class="e">SERVER_ADDR </td><td class="v">127.0.0.1 </td></tr>
+<tr><td class="e">SERVER_ADDR </td><td class="v">::1 </td></tr>
 <tr><td class="e">SERVER_PORT </td><td class="v">80 </td></tr>
-<tr><td class="e">REMOTE_ADDR </td><td class="v">127.0.0.1 </td></tr>
+<tr><td class="e">REMOTE_ADDR </td><td class="v">::1 </td></tr>
 <tr><td class="e">DOCUMENT_ROOT </td><td class="v">/Users/kandinski/Sites </td></tr>
 <tr><td class="e">SERVER_ADMIN </td><td class="v">accounts@quietretreatprivacy.com </td></tr>
 <tr><td class="e">SCRIPT_FILENAME </td><td class="v">/Users/kandinski/Sites/testbed/index.php </td></tr>
-<tr><td class="e">REMOTE_PORT </td><td class="v">51694 </td></tr>
+<tr><td class="e">REMOTE_PORT </td><td class="v">54540 </td></tr>
 <tr><td class="e">GATEWAY_INTERFACE </td><td class="v">CGI/1.1 </td></tr>
 <tr><td class="e">SERVER_PROTOCOL </td><td class="v">HTTP/1.1 </td></tr>
 <tr><td class="e">REQUEST_METHOD </td><td class="v">GET </td></tr>
@@ -1909,16 +2303,15 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr class="h"><th colspan="2">HTTP Request Headers</th></tr>
 <tr><td class="e">HTTP Request </td><td class="v">GET /testbed/index.php/configMgmt HTTP/1.1 </td></tr>
 <tr><td class="e">Host </td><td class="v">localhost </td></tr>
-<tr><td class="e">User-Agent </td><td class="v">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1 FirePHP/0.7.1 </td></tr>
+<tr><td class="e">User-Agent </td><td class="v">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1 </td></tr>
 <tr><td class="e">Accept </td><td class="v">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 </td></tr>
 <tr><td class="e">Accept-Language </td><td class="v">en-us,en;q=0.5 </td></tr>
 <tr><td class="e">Accept-Encoding </td><td class="v">gzip, deflate </td></tr>
 <tr><td class="e">DNT </td><td class="v">1 </td></tr>
 <tr><td class="e">Connection </td><td class="v">keep-alive </td></tr>
-<tr><td class="e">Referer </td><td class="v">http://localhost/testbed/index.php/optionsSet </td></tr>
-<tr><td class="e">Cookie </td><td class="v">ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%22c133508d83a27d02ef866be5%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A9%3A%22127.0.0.1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A97%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1+FirePHP%2F0.7.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1346886410%3B%7Dc990d4f25e5abbea63c17160248ac6fc </td></tr>
+<tr><td class="e">Referer </td><td class="v">http://localhost/testbed/index.php/dbAdmin/index/APC </td></tr>
+<tr><td class="e">Cookie </td><td class="v">ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=g1u39spcbl78ktm77s3vanlhk2; __utma=111872281.1186498135.1346923480.1346923480.1347007949.2; __utmc=111872281; __utmz=111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%22d2f2335342a0f8741ab61163%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A83%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1347010267%3B%7Deec30fd7556690d17f46e96910ea9726; rock_format=json </td></tr>
 <tr><td class="e">Authorization </td><td class="v">Basic YXBjOmFwYw== </td></tr>
-<tr><td class="e">x-insight </td><td class="v">activate </td></tr>
 <tr class="h"><th colspan="2">HTTP Response Headers</th></tr>
 <tr><td class="e">X-Powered-By </td><td class="v">PHP/5.3.10 </td></tr>
 </table><br />
@@ -2359,33 +2752,33 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 </table><br />
 <table border="0" cellpadding="3" width="600">
 <tr class="h"><th>Client statistics</th><th> </th></tr>
-<tr><td class="e">bytes_sent </td><td class="v">270 </td></tr>
-<tr><td class="e">bytes_received </td><td class="v">898 </td></tr>
-<tr><td class="e">packets_sent </td><td class="v">22 </td></tr>
-<tr><td class="e">packets_received </td><td class="v">45 </td></tr>
-<tr><td class="e">protocol_overhead_in </td><td class="v">180 </td></tr>
-<tr><td class="e">protocol_overhead_out </td><td class="v">88 </td></tr>
-<tr><td class="e">bytes_received_ok_packet </td><td class="v">66 </td></tr>
-<tr><td class="e">bytes_received_eof_packet </td><td class="v">18 </td></tr>
-<tr><td class="e">bytes_received_rset_header_packet </td><td class="v">43 </td></tr>
-<tr><td class="e">bytes_received_rset_field_meta_packet </td><td class="v">321 </td></tr>
-<tr><td class="e">bytes_received_rset_row_packet </td><td class="v">362 </td></tr>
+<tr><td class="e">bytes_sent </td><td class="v">106 </td></tr>
+<tr><td class="e">bytes_received </td><td class="v">111 </td></tr>
+<tr><td class="e">packets_sent </td><td class="v">6 </td></tr>
+<tr><td class="e">packets_received </td><td class="v">4 </td></tr>
+<tr><td class="e">protocol_overhead_in </td><td class="v">16 </td></tr>
+<tr><td class="e">protocol_overhead_out </td><td class="v">24 </td></tr>
+<tr><td class="e">bytes_received_ok_packet </td><td class="v">22 </td></tr>
+<tr><td class="e">bytes_received_eof_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_rset_header_packet </td><td class="v">11 </td></tr>
+<tr><td class="e">bytes_received_rset_field_meta_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_rset_row_packet </td><td class="v">0 </td></tr>
 <tr><td class="e">bytes_received_prepare_response_packet </td><td class="v">0 </td></tr>
 <tr><td class="e">bytes_received_change_user_packet </td><td class="v">0 </td></tr>
-<tr><td class="e">packets_sent_command </td><td class="v">10 </td></tr>
-<tr><td class="e">packets_received_ok </td><td class="v">6 </td></tr>
-<tr><td class="e">packets_received_eof </td><td class="v">2 </td></tr>
-<tr><td class="e">packets_received_rset_header </td><td class="v">5 </td></tr>
-<tr><td class="e">packets_received_rset_field_meta </td><td class="v">5 </td></tr>
-<tr><td class="e">packets_received_rset_row </td><td class="v">26 </td></tr>
+<tr><td class="e">packets_sent_command </td><td class="v">2 </td></tr>
+<tr><td class="e">packets_received_ok </td><td class="v">2 </td></tr>
+<tr><td class="e">packets_received_eof </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_rset_header </td><td class="v">1 </td></tr>
+<tr><td class="e">packets_received_rset_field_meta </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_rset_row </td><td class="v">0 </td></tr>
 <tr><td class="e">packets_received_prepare_response </td><td class="v">0 </td></tr>
 <tr><td class="e">packets_received_change_user </td><td class="v">0 </td></tr>
-<tr><td class="e">result_set_queries </td><td class="v">2 </td></tr>
-<tr><td class="e">non_result_set_queries </td><td class="v">3 </td></tr>
-<tr><td class="e">no_index_used </td><td class="v">2 </td></tr>
+<tr><td class="e">result_set_queries </td><td class="v">0 </td></tr>
+<tr><td class="e">non_result_set_queries </td><td class="v">1 </td></tr>
+<tr><td class="e">no_index_used </td><td class="v">0 </td></tr>
 <tr><td class="e">bad_index_used </td><td class="v">0 </td></tr>
 <tr><td class="e">slow_queries </td><td class="v">0 </td></tr>
-<tr><td class="e">buffered_sets </td><td class="v">2 </td></tr>
+<tr><td class="e">buffered_sets </td><td class="v">0 </td></tr>
 <tr><td class="e">unbuffered_sets </td><td class="v">0 </td></tr>
 <tr><td class="e">ps_buffered_sets </td><td class="v">0 </td></tr>
 <tr><td class="e">ps_unbuffered_sets </td><td class="v">0 </td></tr>
@@ -2393,25 +2786,25 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">flushed_ps_sets </td><td class="v">0 </td></tr>
 <tr><td class="e">ps_prepared_never_executed </td><td class="v">0 </td></tr>
 <tr><td class="e">ps_prepared_once_executed </td><td class="v">0 </td></tr>
-<tr><td class="e">rows_fetched_from_server_normal </td><td class="v">24 </td></tr>
+<tr><td class="e">rows_fetched_from_server_normal </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_fetched_from_server_ps </td><td class="v">0 </td></tr>
-<tr><td class="e">rows_buffered_from_client_normal </td><td class="v">24 </td></tr>
+<tr><td class="e">rows_buffered_from_client_normal </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_buffered_from_client_ps </td><td class="v">0 </td></tr>
-<tr><td class="e">rows_fetched_from_client_normal_buffered </td><td class="v">24 </td></tr>
+<tr><td class="e">rows_fetched_from_client_normal_buffered </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_fetched_from_client_normal_unbuffered </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_fetched_from_client_ps_buffered </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_fetched_from_client_ps_unbuffered </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_fetched_from_client_ps_cursor </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_affected_normal </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_affected_ps </td><td class="v">0 </td></tr>
-<tr><td class="e">rows_skipped_normal </td><td class="v">24 </td></tr>
+<tr><td class="e">rows_skipped_normal </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_skipped_ps </td><td class="v">0 </td></tr>
-<tr><td class="e">copy_on_write_saved </td><td class="v">24 </td></tr>
-<tr><td class="e">copy_on_write_performed </td><td class="v">36 </td></tr>
+<tr><td class="e">copy_on_write_saved </td><td class="v">0 </td></tr>
+<tr><td class="e">copy_on_write_performed </td><td class="v">0 </td></tr>
 <tr><td class="e">command_buffer_too_small </td><td class="v">0 </td></tr>
 <tr><td class="e">connect_success </td><td class="v">1 </td></tr>
 <tr><td class="e">connect_failure </td><td class="v">0 </td></tr>
-<tr><td class="e">connection_reused </td><td class="v">2 </td></tr>
+<tr><td class="e">connection_reused </td><td class="v">0 </td></tr>
 <tr><td class="e">reconnect </td><td class="v">0 </td></tr>
 <tr><td class="e">pconnect_success </td><td class="v">1 </td></tr>
 <tr><td class="e">active_connections </td><td class="v">1 </td></tr>
@@ -2420,7 +2813,7 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">implicit_close </td><td class="v">0 </td></tr>
 <tr><td class="e">disconnect_close </td><td class="v">0 </td></tr>
 <tr><td class="e">in_middle_of_command_close </td><td class="v">0 </td></tr>
-<tr><td class="e">explicit_free_result </td><td class="v">2 </td></tr>
+<tr><td class="e">explicit_free_result </td><td class="v">0 </td></tr>
 <tr><td class="e">implicit_free_result </td><td class="v">0 </td></tr>
 <tr><td class="e">explicit_stmt_close </td><td class="v">0 </td></tr>
 <tr><td class="e">implicit_stmt_close </td><td class="v">0 </td></tr>
@@ -2449,7 +2842,7 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">proto_text_fetched_tinyint </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_short </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_int24 </td><td class="v">0 </td></tr>
-<tr><td class="e">proto_text_fetched_int </td><td class="v">36 </td></tr>
+<tr><td class="e">proto_text_fetched_int </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_bigint </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_decimal </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_float </td><td class="v">0 </td></tr>
@@ -2459,7 +2852,7 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">proto_text_fetched_time </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_datetime </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_timestamp </td><td class="v">0 </td></tr>
-<tr><td class="e">proto_text_fetched_string </td><td class="v">24 </td></tr>
+<tr><td class="e">proto_text_fetched_string </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_blob </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_enum </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_set </td><td class="v">0 </td></tr>
@@ -2489,8 +2882,8 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">init_command_executed_count </td><td class="v">0 </td></tr>
 <tr><td class="e">init_command_failed_count </td><td class="v">0 </td></tr>
 <tr><td class="e">com_quit </td><td class="v">0 </td></tr>
-<tr><td class="e">com_init_db </td><td class="v">3 </td></tr>
-<tr><td class="e">com_query </td><td class="v">5 </td></tr>
+<tr><td class="e">com_init_db </td><td class="v">1 </td></tr>
+<tr><td class="e">com_query </td><td class="v">1 </td></tr>
 <tr><td class="e">com_field_list </td><td class="v">0 </td></tr>
 <tr><td class="e">com_create_db </td><td class="v">0 </td></tr>
 <tr><td class="e">com_drop_db </td><td class="v">0 </td></tr>
@@ -2501,7 +2894,7 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">com_connect </td><td class="v">0 </td></tr>
 <tr><td class="e">com_process_kill </td><td class="v">0 </td></tr>
 <tr><td class="e">com_debug </td><td class="v">0 </td></tr>
-<tr><td class="e">com_ping </td><td class="v">2 </td></tr>
+<tr><td class="e">com_ping </td><td class="v">0 </td></tr>
 <tr><td class="e">com_time </td><td class="v">0 </td></tr>
 <tr><td class="e">com_delayed_insert </td><td class="v">0 </td></tr>
 <tr><td class="e">com_change_user </td><td class="v">0 </td></tr>
@@ -2517,7 +2910,7 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">com_stmt_set_option </td><td class="v">0 </td></tr>
 <tr><td class="e">com_stmt_fetch </td><td class="v">0 </td></tr>
 <tr><td class="e">com_deamon </td><td class="v">0 </td></tr>
-<tr><td class="e">bytes_received_real_data_normal </td><td class="v">198 </td></tr>
+<tr><td class="e">bytes_received_real_data_normal </td><td class="v">0 </td></tr>
 <tr><td class="e">bytes_received_real_data_ps </td><td class="v">0 </td></tr>
 </table><br />
 <h2><a name="module_odbc">odbc</a></h2>
@@ -2630,6 +3023,11 @@ Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar full
 <table border="0" cellpadding="3" width="600">
 <tr><td class="e">Revision </td><td class="v">$Revision: 321634 $ </td></tr>
 </table><br />
+<h2><a name="module_redis">redis</a></h2>
+<table border="0" cellpadding="3" width="600">
+<tr class="h"><th>Redis Support</th><th>enabled</th></tr>
+<tr><td class="e">Redis Version </td><td class="v">2.2.1 </td></tr>
+</table><br />
 <h2><a name="module_Reflection">Reflection</a></h2>
 <table border="0" cellpadding="3" width="600">
 <tr class="h"><th>Reflection</th><th>enabled</th></tr>
@@ -2638,7 +3036,7 @@ Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar full
 <h2><a name="module_session">session</a></h2>
 <table border="0" cellpadding="3" width="600">
 <tr><td class="e">Session Support </td><td class="v">enabled </td></tr>
-<tr><td class="e">Registered save handlers </td><td class="v">files user sqlite  </td></tr>
+<tr><td class="e">Registered save handlers </td><td class="v">files user sqlite redis  </td></tr>
 <tr><td class="e">Registered serializer handlers </td><td class="v">php php_binary wddx  </td></tr>
 </table><br />
 <table border="0" cellpadding="3" width="600">
@@ -2662,8 +3060,8 @@ Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar full
 <tr><td class="e">session.hash_function</td><td class="v">0</td><td class="v">0</td></tr>
 <tr><td class="e">session.name</td><td class="v">PHPSESSID</td><td class="v">PHPSESSID</td></tr>
 <tr><td class="e">session.referer_check</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
-<tr><td class="e">session.save_handler</td><td class="v">files</td><td class="v">files</td></tr>
-<tr><td class="e">session.save_path</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.save_handler</td><td class="v">redis</td><td class="v">files</td></tr>
+<tr><td class="e">session.save_path</td><td class="v">tcp://localhost:6379</td><td class="v"><i>no value</i></td></tr>
 <tr><td class="e">session.serialize_handler</td><td class="v">php</td><td class="v">php</td></tr>
 <tr><td class="e">session.use_cookies</td><td class="v">On</td><td class="v">On</td></tr>
 <tr><td class="e">session.use_only_cookies</td><td class="v">On</td><td class="v">On</td></tr>
@@ -2903,29 +3301,34 @@ Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar full
 <h2>PHP Variables</h2>
 <table border="0" cellpadding="3" width="600">
 <tr class="h"><th>Variable</th><th>Value</th></tr>
-<tr><td class="e">_COOKIE["ci_session"]</td><td class="v">a:4:{s:10:&quot;session_id&quot;;s:24:&quot;c133508d83a27d02ef866be5&quot;;s:10:&quot;ip_address&quot;;s:9:&quot;127.0.0.1&quot;;s:10:&quot;user_agent&quot;;s:97:&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1 FirePHP/0.7.1&quot;;s:13:&quot;last_activity&quot;;i:1346886410;}c990d4f25e5abbea63c17160248ac6fc</td></tr>
+<tr><td class="e">_COOKIE["ZDEDebuggerPresent"]</td><td class="v">php,phtml,php3</td></tr>
+<tr><td class="e">_COOKIE["PHPSESSID"]</td><td class="v">g1u39spcbl78ktm77s3vanlhk2</td></tr>
+<tr><td class="e">_COOKIE["__utma"]</td><td class="v">111872281.1186498135.1346923480.1346923480.1347007949.2</td></tr>
+<tr><td class="e">_COOKIE["__utmc"]</td><td class="v">111872281</td></tr>
+<tr><td class="e">_COOKIE["__utmz"]</td><td class="v">111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)</td></tr>
+<tr><td class="e">_COOKIE["ci_session"]</td><td class="v">a:4:{s:10:&quot;session_id&quot;;s:24:&quot;d2f2335342a0f8741ab61163&quot;;s:10:&quot;ip_address&quot;;s:3:&quot;::1&quot;;s:10:&quot;user_agent&quot;;s:83:&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1&quot;;s:13:&quot;last_activity&quot;;i:1347010267;}eec30fd7556690d17f46e96910ea9726</td></tr>
+<tr><td class="e">_COOKIE["rock_format"]</td><td class="v">json</td></tr>
 <tr><td class="e">_SERVER["HTTP_HOST"]</td><td class="v">localhost</td></tr>
-<tr><td class="e">_SERVER["HTTP_USER_AGENT"]</td><td class="v">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1 FirePHP/0.7.1</td></tr>
+<tr><td class="e">_SERVER["HTTP_USER_AGENT"]</td><td class="v">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1</td></tr>
 <tr><td class="e">_SERVER["HTTP_ACCEPT"]</td><td class="v">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</td></tr>
 <tr><td class="e">_SERVER["HTTP_ACCEPT_LANGUAGE"]</td><td class="v">en-us,en;q=0.5</td></tr>
 <tr><td class="e">_SERVER["HTTP_ACCEPT_ENCODING"]</td><td class="v">gzip, deflate</td></tr>
 <tr><td class="e">_SERVER["HTTP_DNT"]</td><td class="v">1</td></tr>
 <tr><td class="e">_SERVER["HTTP_CONNECTION"]</td><td class="v">keep-alive</td></tr>
-<tr><td class="e">_SERVER["HTTP_REFERER"]</td><td class="v">http://localhost/testbed/index.php/optionsSet</td></tr>
-<tr><td class="e">_SERVER["HTTP_COOKIE"]</td><td class="v">ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%22c133508d83a27d02ef866be5%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A9%3A%22127.0.0.1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A97%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1+FirePHP%2F0.7.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1346886410%3B%7Dc990d4f25e5abbea63c17160248ac6fc</td></tr>
-<tr><td class="e">_SERVER["HTTP_X_INSIGHT"]</td><td class="v">activate</td></tr>
+<tr><td class="e">_SERVER["HTTP_REFERER"]</td><td class="v">http://localhost/testbed/index.php/dbAdmin/index/APC</td></tr>
+<tr><td class="e">_SERVER["HTTP_COOKIE"]</td><td class="v">ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=g1u39spcbl78ktm77s3vanlhk2; __utma=111872281.1186498135.1346923480.1346923480.1347007949.2; __utmc=111872281; __utmz=111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%22d2f2335342a0f8741ab61163%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A83%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1347010267%3B%7Deec30fd7556690d17f46e96910ea9726; rock_format=json</td></tr>
 <tr><td class="e">_SERVER["PATH"]</td><td class="v">/usr/bin:/bin:/usr/sbin:/sbin</td></tr>
 <tr><td class="e">_SERVER["SERVER_SIGNATURE"]</td><td class="v">&lt;address&gt;Apache/2.2.21 (Unix) DAV/2 PHP/5.3.10 with Suhosin-Patch Server at localhost Port 80&lt;/address&gt;
 </td></tr>
 <tr><td class="e">_SERVER["SERVER_SOFTWARE"]</td><td class="v">Apache/2.2.21 (Unix) DAV/2 PHP/5.3.10 with Suhosin-Patch</td></tr>
 <tr><td class="e">_SERVER["SERVER_NAME"]</td><td class="v">localhost</td></tr>
-<tr><td class="e">_SERVER["SERVER_ADDR"]</td><td class="v">127.0.0.1</td></tr>
+<tr><td class="e">_SERVER["SERVER_ADDR"]</td><td class="v">::1</td></tr>
 <tr><td class="e">_SERVER["SERVER_PORT"]</td><td class="v">80</td></tr>
-<tr><td class="e">_SERVER["REMOTE_ADDR"]</td><td class="v">127.0.0.1</td></tr>
+<tr><td class="e">_SERVER["REMOTE_ADDR"]</td><td class="v">::1</td></tr>
 <tr><td class="e">_SERVER["DOCUMENT_ROOT"]</td><td class="v">/Users/kandinski/Sites</td></tr>
 <tr><td class="e">_SERVER["SERVER_ADMIN"]</td><td class="v">accounts@quietretreatprivacy.com</td></tr>
 <tr><td class="e">_SERVER["SCRIPT_FILENAME"]</td><td class="v">/Users/kandinski/Sites/testbed/index.php</td></tr>
-<tr><td class="e">_SERVER["REMOTE_PORT"]</td><td class="v">51694</td></tr>
+<tr><td class="e">_SERVER["REMOTE_PORT"]</td><td class="v">54540</td></tr>
 <tr><td class="e">_SERVER["GATEWAY_INTERFACE"]</td><td class="v">CGI/1.1</td></tr>
 <tr><td class="e">_SERVER["SERVER_PROTOCOL"]</td><td class="v">HTTP/1.1</td></tr>
 <tr><td class="e">_SERVER["REQUEST_METHOD"]</td><td class="v">GET</td></tr>
@@ -2937,7 +3340,7 @@ Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar full
 <tr><td class="e">_SERVER["PHP_SELF"]</td><td class="v">/testbed/index.php/configMgmt</td></tr>
 <tr><td class="e">_SERVER["PHP_AUTH_USER"]</td><td class="v">apc</td></tr>
 <tr><td class="e">_SERVER["PHP_AUTH_PW"]</td><td class="v">apc</td></tr>
-<tr><td class="e">_SERVER["REQUEST_TIME"]</td><td class="v">1346886422</td></tr>
+<tr><td class="e">_SERVER["REQUEST_TIME"]</td><td class="v">1347010509</td></tr>
 </table><br />
 <h2>PHP License</h2>
 <table border="0" cellpadding="3" width="600">
@@ -2959,32 +3362,44 @@ This program is free software; you can redistribute it and/or modify it under th
      </div>            <!-- accordion -->
 </div>                 <!-- container-fluid -->
 
-<!-- THE PAGE LOAD STAT -->
-      <footer>
-        <p>&copy; SparkFun 2012</p>
-          <p class="footer">    Time: {elapsed_time}  </p>
-          <p class="footer">    Mem: {memory_usage}  </p>
 
+
+<!--  PAGE LOAD STATS -->
+      <footer>
+        <p>&copy; SparkFun 2012  
+            Time: {elapsed_time}  
+            Mem: {memory_usage}  
+        </p>
       </footer>
 
      
 
-<script type="text/javascript" src="http://localhost/testbed/assets/js/core.js"></script>
-<script type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/js/bootstrap.min.js"></script>
-<script src="http://localhost/testbed/assets/js/jquery-1.8.0.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-transition.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-alert.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-modal.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-dropdown.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-tab.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-tooltip.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-popover.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-button.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-collapse.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-carousel.js"></script>
-    <script src="http://localhost/testbed/assets/js/bootstrap-typeahead.js"></script>
 
+<script type="text/javascript" src="http://localhost/testbed/assets/js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="http://localhost/testbed/assets/js/core.js"></script>
+<script type="text/javascript" src="http://localhost/testbed/assets/js/prettify.js"></script>    
+<script type="text/javascript" src="http://localhost/testbed/assets/js/bootstrap.min.js"></script>
+  
+    
+<!-- If needed, initialize scripts on this page -->
+
+<script>
+
+  // Activate Google Prettify for pretty-printing code
+  addEventListener('load', prettyPrint, false);
+
+  $(document).ready(function(){
+
+    // Add prettyprint class to pre elements
+    $('pre').addClass('prettyprint');
+
+    // Initialize tabs and pills
+    $('.note-tabs').tab();
+    
+    
+		
+  });
+</script>
 </body>
 </html>
 

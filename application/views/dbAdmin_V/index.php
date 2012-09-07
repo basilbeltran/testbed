@@ -7,7 +7,7 @@
     
     
 <div class="span12">                                
-	<?php $this->view('dbAdmin_V/dbMgmtSql_V'); ?>	
+	<?php $this->view('dbAdmin_V/'.$target, $output); ?>	
 </div> <!-- /span4 -->
 
 

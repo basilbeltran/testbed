@@ -3,9 +3,9 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Performance</li>
-              <li><a href="#">PHP</a></li>
+              <li><a href="http://phplens.com/lens/php-book/optimizing-debugging-php.php">PHP</a></li>
               <li><a href="#">Frameworks</a></li>
-              <li><a href="http://codeigniter.com/user_guide/libraries/caching.html" target="#HinFront">caching</a></li>
+              <li><a href="#">caching</a></li>
               <li class="nav-header">Scalability</li>
               <li><a href="#">PHP</a></li>
               <li><a href="#">Frameworks</a></li>
@@ -89,9 +89,9 @@
             <div class="span5">
               <h2>NoSQL Storage</h2>
               <p>Redis is a fast in-memory persistent "key-value store" (values being 
-                  strings, lists, hashes, sets, sorted sets) that is eventually persistent and
-                  can span the use of multiple machines for both performance and logical 
-                  distribution.
+                  strings, lists, hashes, sets, sorted sets) that is eventually persistent.
+                  <br/>MongoDB is a scalable, high-performance, document database featuring
+                  indexing, auto-sharding and map-reduce capabilities.
                   
                   
                   

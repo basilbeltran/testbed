@@ -15,20 +15,23 @@ class DbAdmin extends MY_Controller {
                 case "MySQL":
                         redirect(dbMgmtSql);
                         break;
-                case "file":
-                        echo "Bring an open mind";
+                case "Redis":
+                        $data['url']= "http://127.0.0.1:8080/";
+                        $this->load->view('include/headerFrame', $data);
                         break;
                 case "Mongo":
-                        echo "Bring 15 bottles of SPF 50 Sunscreen";
+                        $data['url']= "http://localhost/testbed/UTIL/rockmongo/index.php";
+                        $this->load->view('include/headerFrame', $data);	                       
                         break;	
                 case "APC":
-                    redirect(apc);                       
+                        $data['url']= "http://localhost/testbed/UTIL/apc.php";
+                        $this->load->view('include/headerFrame', $data);                       
                         break;	
                 case "S3":
                         echo "Bring a swimsuit";
                         break; 	
                 default:
-                        echo "Store not found";
+                        echo "Admin UI not found";
                         break;
         }//switch   
                 

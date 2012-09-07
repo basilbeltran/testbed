@@ -126,3 +126,16 @@
         </div><!--/container -->
     </div><!--/navbar-inner -->
 </div><!--/navbar navbar-fixed-top -->
+
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/core.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/prettify.js"></script>    
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+  
+    
+<!-- If needed, initialize scripts on this page -->
+
+
+<iframe src="<?php echo $url ?>" marginheight="0px" width="100%" height="1000px" name="viewport" frameborder="0" id="viewport"></iframe>
+</body>
+</html>

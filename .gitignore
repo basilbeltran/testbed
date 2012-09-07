@@ -2,3 +2,4 @@
 .DS_Store
 /inc
 /application/cache/**/* 
+/UTIL/readmin/nbproject/private/

@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class dbMgmtSql extends MY_Controller {
+class DbMgmtSql extends MY_Controller {
 
 	function __construct()
 	{
@@ -13,7 +13,10 @@ class dbMgmtSql extends MY_Controller {
 	
 	function _example_output($output = null)
 	{
-		$this->load->view('dbAdmin_V/index',$output);	
+               $data['target']= "dbMgmtSql_V";
+               $data['output']= $output;
+
+		$this->load->view('dbAdmin_V/index',$data);	
 	}
 	
 	

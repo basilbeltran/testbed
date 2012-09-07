@@ -2,9 +2,6 @@
 <?php $this->view('include/header.php'); ?>        
 
 <!-- THE MAIN CONTENT  -->
-<!--<div class="container">                         
-<div class="row"> 
-<div class="span12">  -->
     
     <div class="tabbable">
     <ul class="nav nav-tabs" id="navtabs">
@@ -37,19 +34,6 @@
     </div>  <!-- /tab-content -->    
     </div>  <!-- /tabbable -->  
    
-<!--<script>
-$(function () {
-$('#navtabs a:last').tab('show');
-})
-</script>-->
-   
-    
-                               
- <!-- 	
-</div>  /span12 
-</div>   <!-- /row
-</div>   <!-- /container 
--->
 
 
 <?php $this->view('include/footer.php'); ?>
