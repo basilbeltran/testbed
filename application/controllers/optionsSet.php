@@ -13,8 +13,7 @@ class OptionsSet extends MY_Controller {
 	
     function index()
     {   
-        $data['options'] = $this->optionsSet_M->retrieve_options(); // Retrieve configurable items	
-        $data['storage'] = $this->optionsSet_M->retrieve_storage(); // Retrieve storage options		
+	
         $this->load->view('optionsSet_V/index', $data);             // Display the page
     }//index
     
@@ -23,17 +22,26 @@ class OptionsSet extends MY_Controller {
     function update_persistence(){                       
         $item=$this->uri->segment(3);
         $value=$this->uri->segment(4);
-        $this->optionsSet_M->validate_update_persistence( $item, $value ); //write the passed tuple to storage
+        $this->optionsSet_M->update_persistence( $item, $value ); //write the passed tuple to storage
         redirect('optionsSet');   
                 
     }//update_option
-	
-    function redis_sessions(){    
-         if (extension_loaded('redis')) {
-           ini_set('session.save_handler', 'redis');
-           ini_set('session.save_path', 'tcp://localhost:6379');
-         }
+
+    function retrieve_options(){    
+        $data['options'] = $this->optionsSet_M->retrieve_options(); // Retrieve configurable items
     }
+    
+    function retrieve_storage(){    
+        $data['storage'] = $this->optionsSet_M->retrieve_storage(); // Retrieve storage options		
+
+    }
+         
+//    function redis_sessions(){    
+//         if (extension_loaded('redis')) {
+//           ini_set('session.save_handler', 'redis');
+//           ini_set('session.save_path', 'tcp://localhost:6379');
+//         }
+//    }
 
 }//class
 

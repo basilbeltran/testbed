@@ -21,6 +21,10 @@
       }
     </style>
     
+<script>    
+    $('body').hide();
+    $(window).load(function(){ $('body').show(); }); 
+</script> 
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>

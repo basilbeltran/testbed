@@ -29,25 +29,33 @@
             
              <div class="span5">
     <h2>Query Caching</h2>
-              <p> Is currently implemented in MY_Controller for the 'storage'
+              <p> $storage is currently implemented in MY_Controller for the 'storage'
                   table. $storage is used in the view/include/header to populate
                   the "Admin" drop-down AND optionsSet to populate the buttons.
                   
                   <br/>9/12: set cache_delete in dbMgmtSql_M->set_basic_table()
-                       this should cover update / insert and any cruft.
-                       Implies cache entry name MUST be table name.
+                             this should cover system maintenance through the dbMgmtSql
+                             controller. This case does not cover user CRUD activities.
                   <code>
                         if($this->cache->get($this->table_name)){ 
                         $this->cache->delete($this->table_name)};
                   </code>
-                   <br/>At this point, since no controller has been called,
-                        the *file-based* cache entry "APPPATH/cache/storage"
-                        has been removed and not accessible to the NAV bar with
+                       
+                       Implies general cache entries (currently; file, memcached, APC)  
+                       dependant on SQL must be keyed with the table name.
+                       (CRUD is not limited to dbMgmtSql_M. We may need crudController)
+
+                   <br/>At this point, since no controller has been called and
+                        the FILE cache entry "APPPATH/cache/storage"
+                        has been removed, NAV bar errors on drop-down event.
                         <code>$sources = $this->cache->get('storage'); ?></code>
-                        and displays an error on the dropdown event. After ANY
-                        controller is called (they all extend MY_Controller) the Admin NAV
+                        After ANY MY_Controller use, the Admin NAV
                         then displays an out of date listing of the storage table.
-                        Why? Because the QUERY has been cached.
+                        Why? Because the QUERY has been cached in "APPPATH/cache/dbMgmtSql+storage"
+              <br/><H2>==> BP1: create and invalidate all QUERY caching in the models: write() informs refresh()</H2>
+                        <code>$this->db->cache_delete('dbMgmtSql', 'storage');</code>
+                        When this happens make a call to regenerate $storage the header NAV 
+                        (no controller) use.
                         
               </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>

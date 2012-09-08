@@ -55,15 +55,31 @@
             
             <div class="span5">
 <h2>Query Caching</h2>
-              <p>Once you have query caching up and running you will need to clear the 
-                 caches whenever you do an update. Seems like it's not as wild as Output.
-                 Simply invalidate after every write. 
-              <br/>Open question: would memory caching add significantly to this file based
-                  solution? At what cost? How to determine what queries are candidates.
-              <br/>call each time a write is made to a constituent table. Mapping needed.
-                <code>$this->db->cache_delete('controller', 'method');</code> 
-               <br/> How to get this more granular. EX: Is the NAV cached for each controller/method?
-                     How to expire [storage]?
+              <p>If query caching's involved, you will need to invalidate  
+                 <br/>in *whatever* "OH MY GOD" controller (model?) 
+                 <br/>whenever you do a write. 
+              <br/>(Would memory caching differ significantly to this file based caching?) 
+                    <br/>At what cost? 
+                    <br/>There needs to be a matrix.
+              <br/>Data_Type X Persistence_Type  X Cashing_Type X Invalidate/Delete_Strategy X Refresh_Strategy
+              <br/><b>A profile of the system under load would be best inform the following process.</b>
+                    <li>Determine what info are candidates for persistence </li>
+                    <li>Which mechanism (everything in memory... obviously - skip the caching and go right to caching) </li>
+                    <li>Determine what info are candidates for caching </li>
+                    <li>Which mechanism</li>
+                    <li>When does the info become stale?</li>
+                    <li>How you gonna fix stale? (Maybe cache pro-actively instead of by TTL) </li>
+              <h3>Example</h3>
+              <br/><code>$this->db->cache_delete('controller', 'method');</code> 
+              <br/>So call refresh() each time a write is made to a constituent table. ("A table of interest?") 
+              <br/>A controller - model mapping is needed. That brittle.
+              Why invalidate via controller calls ? Should I make a controller for each model?
+               <br/><code>$this->db->cache_delete_all() </code>is recommended after writes. 
+                   Seems like a waste of warmth. A granular refresh() is called for?
+                   <code>cat < ls -R /cache [all varieties] | grep "myString" </code>
+                   I think in that search I want to return TTL also.
+               <br/>
+                     
               </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
             </div><!--/span-->

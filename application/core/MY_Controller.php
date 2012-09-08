@@ -12,15 +12,12 @@ class MY_Controller extends CI_Controller
     // $this->load->driver('cache', array('adapter' => 'apc'));       
 
      
-        $result = $this->cache->get('storage');
+        $result = $this->cache->get('storage');  //set $storage if its not 
         if(!$result){
-            $this->load->model('optionsSet_M');  
-            $this->db->cache_on();
+            $this->load->model('optionsSet_M');
             $result=$this->optionsSet_M->retrieve_storage();
-            $this->db->cache_off();                                      // we have STORAGE
-
-            $this->cache->save('storage', $result, 86400);               //(in seconds)
-        }//set $storage if its not  
+            $this->cache->save('storage', $result, 60);               //(in seconds)
+        } 
 
    //print_r( $this->cache->file->get('storage') );
 

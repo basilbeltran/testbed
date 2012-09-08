@@ -1,4 +1,4 @@
-1347042751TS---><!--  the view is decomposed to allow reuse -->
+1347052227TS---><!--  the view is decomposed to allow reuse -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -176,7 +176,7 @@
               </div>  <!-- accordion-heading  -->
               <div   class="accordion-body collapse" id="collapseOne" style="height: 0px; ">  
                 <div class="accordion-inner">  
-                                                <pre class="dump2"><span>array</span>(6) <code>{
+                                                <pre class="dump2"><span>array</span>(7) <code>{
    "cartTest+index" => <span>array</span>(5) <code>{
       "name" => "cartTest+index" (14)
       "server_path" => "/Users/kandinski/Sites/testbed/application/cache/cartTest+index" (63)
@@ -198,6 +198,13 @@
       "date" => 1346715307
       "relative_path" => "application/cache/" (18)
    }</code>
+   "dbMgmtSql+storage" => <span>array</span>(5) <code>{
+      "name" => "dbMgmtSql+storage" (17)
+      "server_path" => "/Users/kandinski/Sites/testbed/application/cache/dbMgmtSql+storage" (66)
+      "size" => 102
+      "date" => 1347044220
+      "relative_path" => "application/cache/" (18)
+   }</code>
    "default+index" => <span>array</span>(5) <code>{
       "name" => "default+index" (13)
       "server_path" => "/Users/kandinski/Sites/testbed/application/cache/default+index" (62)
@@ -216,7 +223,7 @@
       "name" => "storage" (7)
       "server_path" => "/Users/kandinski/Sites/testbed/application/cache/storage" (56)
       "size" => 922
-      "date" => 1346986488
+      "date" => 1347044750
       "relative_path" => "application/cache/" (18)
    }</code>
 }</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 20</small>
@@ -238,7 +245,7 @@
               </div>   <!-- accordion-heading  -->
               <div   class="accordion-body collapse" id="collapseTwo" >  
                 <div class="accordion-inner">  
-                                                <pre class="dump2"><span>array</span>(6) <code>{
+                                                <pre class="dump2"><span>array</span>(7) <code>{
    "cartTest+index" => <span>array</span>(5) <code>{
       "name" => "cartTest+index" (14)
       "server_path" => "/Users/kandinski/Sites/testbed/application/cache/cartTest+index" (63)
@@ -260,6 +267,13 @@
       "date" => 1346715307
       "relative_path" => "application/cache/" (18)
    }</code>
+   "dbMgmtSql+storage" => <span>array</span>(5) <code>{
+      "name" => "dbMgmtSql+storage" (17)
+      "server_path" => "/Users/kandinski/Sites/testbed/application/cache/dbMgmtSql+storage" (66)
+      "size" => 102
+      "date" => 1347044220
+      "relative_path" => "application/cache/" (18)
+   }</code>
    "default+index" => <span>array</span>(5) <code>{
       "name" => "default+index" (13)
       "server_path" => "/Users/kandinski/Sites/testbed/application/cache/default+index" (62)
@@ -278,7 +292,7 @@
       "name" => "storage" (7)
       "server_path" => "/Users/kandinski/Sites/testbed/application/cache/storage" (56)
       "size" => 922
-      "date" => 1346986488
+      "date" => 1347044750
       "relative_path" => "application/cache/" (18)
    }</code>
 }</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 37</small>
@@ -303,29 +317,29 @@
                                                 <pre class="dump2"><span>array</span>(15) <code>{
    "num_slots" => 1031
    "ttl" => 0
-   "num_hits" => 1947.0
-   "num_misses" => 134.0
-   "num_inserts" => 134.0
+   "num_hits" => 2482.0
+   "num_misses" => 145.0
+   "num_inserts" => 145.0
    "expunges" => 0.0
    "start_time" => 1347009589
-   "mem_size" => 10601856.0
-   "num_entries" => 126
+   "mem_size" => 10816464.0
+   "num_entries" => 133
    "file_upload_progress" => 1
    "memory_type" => "mmap" (4)
    "locking_type" => "pthread mutex Locks" (19)
-   "cache_list" => <span>array</span>(126) <code>[
+   "cache_list" => <span>array</span>(133) <code>[
       0 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9240230
          "filename" => "/Users/kandinski/Sites/testbed/application/core/MY_Controller.php" (65)
-         "num_hits" => 37.0
-         "mtime" => 1346863095
-         "creation_time" => 1347010267
+         "num_hits" => 1.0
+         "mtime" => 1347047709
+         "creation_time" => 1347050104
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 12464
+         "mem_size" => 16560
       }</code>
       1 => <span>array</span>(11) <code>{
          "type" => "file" (4)
@@ -345,11 +359,11 @@
          "device" => 234881026
          "inode" => 9162997
          "filename" => "/Users/kandinski/Sites/testbed/application/config/grocery_crud.php" (66)
-         "num_hits" => 29.0
+         "num_hits" => 41.0
          "mtime" => 1346772066
          "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347041122
+         "access_time" => 1347044262
          "ref_count" => 0
          "mem_size" => 8368
       }</code>
@@ -358,11 +372,11 @@
          "device" => 234881026
          "inode" => 9162999
          "filename" => "/Users/kandinski/Sites/testbed/application/controllers/dbMgmtSql.php" (68)
-         "num_hits" => 14.0
+         "num_hits" => 20.0
          "mtime" => 1347001299
          "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347041122
+         "access_time" => 1347044262
          "ref_count" => 0
          "mem_size" => 33136
       }</code>
@@ -371,11 +385,11 @@
          "device" => 234881026
          "inode" => 9163001
          "filename" => "/Users/kandinski/Sites/testbed/application/libraries/Grocery_crud.php" (69)
-         "num_hits" => 14.0
+         "num_hits" => 20.0
          "mtime" => 1346284949
          "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347041122
+         "access_time" => 1347044262
          "ref_count" => 0
          "mem_size" => 1813904
       }</code>
@@ -384,24 +398,24 @@
          "device" => 234881026
          "inode" => 9163004
          "filename" => "/Users/kandinski/Sites/testbed/application/models/dbmgmtsql_m.php" (65)
-         "num_hits" => 14.0
-         "mtime" => 1346284696
-         "creation_time" => 1347033110
+         "num_hits" => 5.0
+         "mtime" => 1347044005
+         "creation_time" => 1347044180
          "deletion_time" => 0
-         "access_time" => 1347041122
+         "access_time" => 1347044262
          "ref_count" => 0
-         "mem_size" => 275312
+         "mem_size" => 283536
       }</code>
       6 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9163006
          "filename" => "/Users/kandinski/Sites/testbed/application/views/dbAdmin_V/dbMgmtSql_V.php" (74)
-         "num_hits" => 12.0
+         "num_hits" => 17.0
          "mtime" => 1347001054
          "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347041122
+         "access_time" => 1347044262
          "ref_count" => 0
          "mem_size" => 16560
       }</code>
@@ -410,11 +424,11 @@
          "device" => 234881026
          "inode" => 9071257
          "filename" => "/Users/kandinski/Sites/testbed/index.php" (40)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1346863095
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 32944
       }</code>
@@ -423,11 +437,11 @@
          "device" => 234881026
          "inode" => 9071270
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Benchmark.php" (56)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 20720
       }</code>
@@ -436,11 +450,11 @@
          "device" => 234881026
          "inode" => 9071271
          "filename" => "/Users/kandinski/Sites/testbed/system/core/CodeIgniter.php" (58)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 90288
       }</code>
@@ -449,11 +463,11 @@
          "device" => 234881026
          "inode" => 9071272
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Common.php" (53)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 139824
       }</code>
@@ -462,11 +476,11 @@
          "device" => 234881026
          "inode" => 9071273
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Config.php" (53)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 90544
       }</code>
@@ -475,11 +489,11 @@
          "device" => 234881026
          "inode" => 9071274
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Controller.php" (57)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 12464
       }</code>
@@ -488,11 +502,11 @@
          "device" => 234881026
          "inode" => 9071275
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Exceptions.php" (57)
-         "num_hits" => 2.0
+         "num_hits" => 7.0
          "mtime" => 1345696033
          "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347036020
+         "access_time" => 1347044262
          "ref_count" => 0
          "mem_size" => 41296
       }</code>
@@ -501,11 +515,11 @@
          "device" => 234881026
          "inode" => 9071276
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Hooks.php" (52)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 49424
       }</code>
@@ -514,11 +528,11 @@
          "device" => 234881026
          "inode" => 9071278
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Input.php" (52)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 213680
       }</code>
@@ -527,11 +541,11 @@
          "device" => 234881026
          "inode" => 9071279
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Lang.php" (51)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 37104
       }</code>
@@ -540,11 +554,11 @@
          "device" => 234881026
          "inode" => 9071280
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Loader.php" (53)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 328560
       }</code>
@@ -553,11 +567,11 @@
          "device" => 234881026
          "inode" => 9071281
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Model.php" (52)
-         "num_hits" => 14.0
+         "num_hits" => 21.0
          "mtime" => 1345696033
          "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347041122
+         "access_time" => 1347044750
          "ref_count" => 0
          "mem_size" => 8368
       }</code>
@@ -566,11 +580,11 @@
          "device" => 234881026
          "inode" => 9071282
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Output.php" (53)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1346856055
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 123344
       }</code>
@@ -579,11 +593,11 @@
          "device" => 234881026
          "inode" => 9071283
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Router.php" (53)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 139728
       }</code>
@@ -592,11 +606,11 @@
          "device" => 234881026
          "inode" => 9071284
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Security.php" (55)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 168560
       }</code>
@@ -605,11 +619,11 @@
          "device" => 234881026
          "inode" => 9071285
          "filename" => "/Users/kandinski/Sites/testbed/system/core/URI.php" (50)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 152112
       }</code>
@@ -618,11 +632,11 @@
          "device" => 234881026
          "inode" => 9071286
          "filename" => "/Users/kandinski/Sites/testbed/system/core/Utf8.php" (51)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 33040
       }</code>
@@ -631,11 +645,11 @@
          "device" => 234881026
          "inode" => 9071288
          "filename" => "/Users/kandinski/Sites/testbed/system/database/DB.php" (53)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 45232
       }</code>
@@ -644,67 +658,80 @@
          "device" => 234881026
          "inode" => 9071289
          "filename" => "/Users/kandinski/Sites/testbed/system/database/DB_active_rec.php" (64)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 533936
       }</code>
       26 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071291
-         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB_driver.php" (60)
-         "num_hits" => 37.0
+         "inode" => 9071290
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB_cache.php" (59)
+         "num_hits" => 4.0
          "mtime" => 1345696033
-         "creation_time" => 1347010267
+         "creation_time" => 1347044220
          "deletion_time" => 0
-         "access_time" => 1347042691
-         "ref_count" => 1
-         "mem_size" => 324496
+         "access_time" => 1347044750
+         "ref_count" => 0
+         "mem_size" => 61744
       }</code>
       27 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071293
-         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB_result.php" (60)
-         "num_hits" => 14.0
+         "inode" => 9071291
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB_driver.php" (60)
+         "num_hits" => 47.0
          "mtime" => 1345696033
-         "creation_time" => 1347033110
+         "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347041122
-         "ref_count" => 0
-         "mem_size" => 98800
+         "access_time" => 1347052167
+         "ref_count" => 1
+         "mem_size" => 324496
       }</code>
       28 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071311
-         "filename" => "/Users/kandinski/Sites/testbed/system/database/drivers/mysql/mysql_driver.php" (77)
-         "num_hits" => 37.0
+         "inode" => 9071293
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/DB_result.php" (60)
+         "num_hits" => 21.0
          "mtime" => 1345696033
-         "creation_time" => 1347010267
+         "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347042691
-         "ref_count" => 1
-         "mem_size" => 176880
+         "access_time" => 1347044750
+         "ref_count" => 0
+         "mem_size" => 98800
       }</code>
       29 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
+         "inode" => 9071311
+         "filename" => "/Users/kandinski/Sites/testbed/system/database/drivers/mysql/mysql_driver.php" (77)
+         "num_hits" => 47.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347052167
+         "ref_count" => 1
+         "mem_size" => 176880
+      }</code>
+      30 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
          "inode" => 9071313
          "filename" => "/Users/kandinski/Sites/testbed/system/database/drivers/mysql/mysql_result.php" (77)
-         "num_hits" => 14.0
+         "num_hits" => 21.0
          "mtime" => 1345696033
          "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347041122
+         "access_time" => 1347044750
          "ref_count" => 0
          "mem_size" => 37200
       }</code>
-      30 => <span>array</span>(11) <code>{
+      31 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9438357
@@ -717,7 +744,7 @@
          "ref_count" => 0
          "mem_size" => 8368
       }</code>
-      31 => <span>array</span>(11) <code>{
+      32 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9253813
@@ -730,150 +757,150 @@
          "ref_count" => 0
          "mem_size" => 8368
       }</code>
-      32 => <span>array</span>(11) <code>{
+      33 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9071369
          "filename" => "/Users/kandinski/Sites/testbed/system/helpers/file_helper.php" (61)
-         "num_hits" => 34.0
+         "num_hits" => 44.0
          "mtime" => 1345696033
          "creation_time" => 1347010502
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 139696
-      }</code>
-      33 => <span>array</span>(11) <code>{
-         "type" => "file" (4)
-         "device" => 234881026
-         "inode" => 9071370
-         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/form_helper.php" (61)
-         "num_hits" => 37.0
-         "mtime" => 1345696033
-         "creation_time" => 1347010267
-         "deletion_time" => 0
-         "access_time" => 1347042691
-         "ref_count" => 1
-         "mem_size" => 287568
       }</code>
       34 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071379
-         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/string_helper.php" (63)
-         "num_hits" => 37.0
+         "inode" => 9071370
+         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/form_helper.php" (61)
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 70064
+         "mem_size" => 287568
       }</code>
       35 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071382
-         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/url_helper.php" (60)
-         "num_hits" => 37.0
+         "inode" => 9071379
+         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/string_helper.php" (63)
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 164400
+         "mem_size" => 70064
       }</code>
       36 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071403
-         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/Cache.php" (63)
-         "num_hits" => 34.0
-         "mtime" => 1346451895
-         "creation_time" => 1347010502
+         "inode" => 9071382
+         "filename" => "/Users/kandinski/Sites/testbed/system/helpers/url_helper.php" (60)
+         "num_hits" => 47.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 37232
+         "mem_size" => 164400
       }</code>
       37 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071405
-         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/drivers/Cache_apc.php" (75)
-         "num_hits" => 1.0
-         "mtime" => 1345696033
-         "creation_time" => 1347010509
+         "inode" => 9071403
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/Cache.php" (63)
+         "num_hits" => 44.0
+         "mtime" => 1346451895
+         "creation_time" => 1347010502
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 29008
+         "mem_size" => 37232
       }</code>
       38 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071407
-         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/drivers/Cache_file.php" (76)
-         "num_hits" => 34.0
+         "inode" => 9071405
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/drivers/Cache_apc.php" (75)
+         "num_hits" => 3.0
          "mtime" => 1345696033
-         "creation_time" => 1347010502
+         "creation_time" => 1347010509
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 41296
+         "mem_size" => 29008
       }</code>
       39 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071410
-         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cart.php" (56)
-         "num_hits" => 37.0
+         "inode" => 9071407
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cache/drivers/Cache_file.php" (76)
+         "num_hits" => 44.0
          "mtime" => 1345696033
-         "creation_time" => 1347010267
+         "creation_time" => 1347010502
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 119248
+         "mem_size" => 41296
       }</code>
       40 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071411
-         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Driver.php" (58)
-         "num_hits" => 34.0
-         "mtime" => 1346439179
-         "creation_time" => 1347010502
+         "inode" => 9071410
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Cart.php" (56)
+         "num_hits" => 47.0
+         "mtime" => 1345696033
+         "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 57648
+         "mem_size" => 119248
       }</code>
       41 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071414
-         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Form_validation.php" (67)
-         "num_hits" => 14.0
-         "mtime" => 1345696033
-         "creation_time" => 1347033110
+         "inode" => 9071411
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Driver.php" (58)
+         "num_hits" => 44.0
+         "mtime" => 1346439179
+         "creation_time" => 1347010502
          "deletion_time" => 0
-         "access_time" => 1347041122
-         "ref_count" => 0
-         "mem_size" => 320432
+         "access_time" => 1347052167
+         "ref_count" => 1
+         "mem_size" => 57648
       }</code>
       42 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
+         "inode" => 9071414
+         "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Form_validation.php" (67)
+         "num_hits" => 20.0
+         "mtime" => 1345696033
+         "creation_time" => 1347033110
+         "deletion_time" => 0
+         "access_time" => 1347044262
+         "ref_count" => 0
+         "mem_size" => 320432
+      }</code>
+      43 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
          "inode" => 9071421
          "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Log.php" (55)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 33008
       }</code>
-      43 => <span>array</span>(11) <code>{
+      44 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9071426
@@ -886,33 +913,33 @@
          "ref_count" => 0
          "mem_size" => 94672
       }</code>
-      44 => <span>array</span>(11) <code>{
+      45 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9071427
          "filename" => "/Users/kandinski/Sites/testbed/system/libraries/Session.php" (59)
-         "num_hits" => 37.0
+         "num_hits" => 47.0
          "mtime" => 1345696033
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 217808
       }</code>
-      45 => <span>array</span>(11) <code>{
+      46 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9309638
          "filename" => "/Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php" (71)
-         "num_hits" => 0.0
+         "num_hits" => 2.0
          "mtime" => 1346957335
          "creation_time" => 1347010509
          "deletion_time" => 0
-         "access_time" => 1347010509
+         "access_time" => 1347050104
          "ref_count" => 0
          "mem_size" => 24784
       }</code>
-      46 => <span>array</span>(11) <code>{
+      47 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9620014
@@ -925,7 +952,7 @@
          "ref_count" => 0
          "mem_size" => 28880
       }</code>
-      47 => <span>array</span>(11) <code>{
+      48 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609707
@@ -938,7 +965,7 @@
          "ref_count" => 0
          "mem_size" => 127472
       }</code>
-      48 => <span>array</span>(11) <code>{
+      49 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609709
@@ -951,7 +978,7 @@
          "ref_count" => 0
          "mem_size" => 37136
       }</code>
-      49 => <span>array</span>(11) <code>{
+      50 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609710
@@ -964,7 +991,7 @@
          "ref_count" => 0
          "mem_size" => 135568
       }</code>
-      50 => <span>array</span>(11) <code>{
+      51 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609712
@@ -977,7 +1004,7 @@
          "ref_count" => 0
          "mem_size" => 4240
       }</code>
-      51 => <span>array</span>(11) <code>{
+      52 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609714
@@ -990,7 +1017,7 @@
          "ref_count" => 0
          "mem_size" => 49456
       }</code>
-      52 => <span>array</span>(11) <code>{
+      53 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609718
@@ -1003,7 +1030,7 @@
          "ref_count" => 0
          "mem_size" => 8368
       }</code>
-      53 => <span>array</span>(11) <code>{
+      54 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609719
@@ -1016,7 +1043,7 @@
          "ref_count" => 0
          "mem_size" => 32976
       }</code>
-      54 => <span>array</span>(11) <code>{
+      55 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609721
@@ -1029,7 +1056,7 @@
          "ref_count" => 0
          "mem_size" => 143792
       }</code>
-      55 => <span>array</span>(11) <code>{
+      56 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609723
@@ -1042,7 +1069,7 @@
          "ref_count" => 0
          "mem_size" => 57584
       }</code>
-      56 => <span>array</span>(11) <code>{
+      57 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609724
@@ -1055,7 +1082,7 @@
          "ref_count" => 0
          "mem_size" => 197168
       }</code>
-      57 => <span>array</span>(11) <code>{
+      58 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609725
@@ -1068,7 +1095,7 @@
          "ref_count" => 0
          "mem_size" => 74128
       }</code>
-      58 => <span>array</span>(11) <code>{
+      59 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609728
@@ -1081,7 +1108,7 @@
          "ref_count" => 0
          "mem_size" => 65744
       }</code>
-      59 => <span>array</span>(11) <code>{
+      60 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609730
@@ -1094,7 +1121,7 @@
          "ref_count" => 0
          "mem_size" => 65712
       }</code>
-      60 => <span>array</span>(11) <code>{
+      61 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609732
@@ -1107,7 +1134,7 @@
          "ref_count" => 0
          "mem_size" => 65744
       }</code>
-      61 => <span>array</span>(11) <code>{
+      62 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609734
@@ -1120,7 +1147,7 @@
          "ref_count" => 0
          "mem_size" => 69840
       }</code>
-      62 => <span>array</span>(11) <code>{
+      63 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609736
@@ -1133,7 +1160,7 @@
          "ref_count" => 0
          "mem_size" => 65712
       }</code>
-      63 => <span>array</span>(11) <code>{
+      64 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609738
@@ -1146,7 +1173,7 @@
          "ref_count" => 0
          "mem_size" => 24752
       }</code>
-      64 => <span>array</span>(11) <code>{
+      65 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609740
@@ -1159,7 +1186,7 @@
          "ref_count" => 0
          "mem_size" => 24752
       }</code>
-      65 => <span>array</span>(11) <code>{
+      66 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609742
@@ -1172,7 +1199,7 @@
          "ref_count" => 0
          "mem_size" => 69840
       }</code>
-      66 => <span>array</span>(11) <code>{
+      67 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609744
@@ -1185,7 +1212,7 @@
          "ref_count" => 0
          "mem_size" => 24752
       }</code>
-      67 => <span>array</span>(11) <code>{
+      68 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609746
@@ -1198,7 +1225,7 @@
          "ref_count" => 0
          "mem_size" => 24752
       }</code>
-      68 => <span>array</span>(11) <code>{
+      69 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609749
@@ -1211,7 +1238,7 @@
          "ref_count" => 0
          "mem_size" => 28912
       }</code>
-      69 => <span>array</span>(11) <code>{
+      70 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609750
@@ -1224,7 +1251,7 @@
          "ref_count" => 0
          "mem_size" => 33040
       }</code>
-      70 => <span>array</span>(11) <code>{
+      71 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609751
@@ -1237,7 +1264,7 @@
          "ref_count" => 0
          "mem_size" => 41264
       }</code>
-      71 => <span>array</span>(11) <code>{
+      72 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609753
@@ -1250,20 +1277,20 @@
          "ref_count" => 0
          "mem_size" => 24848
       }</code>
-      72 => <span>array</span>(11) <code>{
+      73 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9169529
          "filename" => "/Users/kandinski/Sites/testbed/assets/grocery_crud/themes/flexigrid/config.php" (78)
-         "num_hits" => 12.0
+         "num_hits" => 17.0
          "mtime" => 1346095176
          "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347041122
+         "access_time" => 1347044262
          "ref_count" => 0
          "mem_size" => 4240
       }</code>
-      73 => <span>array</span>(11) <code>{
+      74 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609775
@@ -1276,7 +1303,7 @@
          "ref_count" => 0
          "mem_size" => 33008
       }</code>
-      74 => <span>array</span>(11) <code>{
+      75 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609776
@@ -1289,7 +1316,7 @@
          "ref_count" => 0
          "mem_size" => 24784
       }</code>
-      75 => <span>array</span>(11) <code>{
+      76 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609777
@@ -1302,7 +1329,7 @@
          "ref_count" => 0
          "mem_size" => 16592
       }</code>
-      76 => <span>array</span>(11) <code>{
+      77 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609778
@@ -1315,7 +1342,7 @@
          "ref_count" => 0
          "mem_size" => 139920
       }</code>
-      77 => <span>array</span>(11) <code>{
+      78 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609779
@@ -1328,7 +1355,7 @@
          "ref_count" => 0
          "mem_size" => 53648
       }</code>
-      78 => <span>array</span>(11) <code>{
+      79 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609782
@@ -1341,7 +1368,7 @@
          "ref_count" => 0
          "mem_size" => 16560
       }</code>
-      79 => <span>array</span>(11) <code>{
+      80 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609783
@@ -1354,7 +1381,7 @@
          "ref_count" => 0
          "mem_size" => 16560
       }</code>
-      80 => <span>array</span>(11) <code>{
+      81 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609795
@@ -1367,46 +1394,46 @@
          "ref_count" => 0
          "mem_size" => 275152
       }</code>
-      81 => <span>array</span>(11) <code>{
+      82 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9169572
          "filename" => "/Users/kandinski/Sites/testbed/assets/grocery_crud/themes/flexigrid/views/add.php" (81)
-         "num_hits" => 1.0
+         "num_hits" => 3.0
          "mtime" => 1346095176
          "creation_time" => 1347036031
          "deletion_time" => 0
-         "access_time" => 1347041091
+         "access_time" => 1347044259
          "ref_count" => 0
          "mem_size" => 37040
-      }</code>
-      82 => <span>array</span>(11) <code>{
-         "type" => "file" (4)
-         "device" => 234881026
-         "inode" => 9169574
-         "filename" => "/Users/kandinski/Sites/testbed/assets/grocery_crud/themes/flexigrid/views/list.php" (82)
-         "num_hits" => 10.0
-         "mtime" => 1346095176
-         "creation_time" => 1347033110
-         "deletion_time" => 0
-         "access_time" => 1347041122
-         "ref_count" => 0
-         "mem_size" => 45232
       }</code>
       83 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9169575
-         "filename" => "/Users/kandinski/Sites/testbed/assets/grocery_crud/themes/flexigrid/views/list_template.php" (91)
-         "num_hits" => 10.0
+         "inode" => 9169574
+         "filename" => "/Users/kandinski/Sites/testbed/assets/grocery_crud/themes/flexigrid/views/list.php" (82)
+         "num_hits" => 13.0
          "mtime" => 1346095176
          "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347041122
+         "access_time" => 1347044262
+         "ref_count" => 0
+         "mem_size" => 45232
+      }</code>
+      84 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9169575
+         "filename" => "/Users/kandinski/Sites/testbed/assets/grocery_crud/themes/flexigrid/views/list_template.php" (91)
+         "num_hits" => 13.0
+         "mtime" => 1346095176
+         "creation_time" => 1347033110
+         "deletion_time" => 0
+         "access_time" => 1347044262
          "ref_count" => 0
          "mem_size" => 61648
       }</code>
-      84 => <span>array</span>(11) <code>{
+      85 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609843
@@ -1419,7 +1446,7 @@
          "ref_count" => 0
          "mem_size" => 49328
       }</code>
-      85 => <span>array</span>(11) <code>{
+      86 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609844
@@ -1432,7 +1459,7 @@
          "ref_count" => 0
          "mem_size" => 32944
       }</code>
-      86 => <span>array</span>(11) <code>{
+      87 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609845
@@ -1445,7 +1472,7 @@
          "ref_count" => 0
          "mem_size" => 32944
       }</code>
-      87 => <span>array</span>(11) <code>{
+      88 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609874
@@ -1458,7 +1485,7 @@
          "ref_count" => 0
          "mem_size" => 4240
       }</code>
-      88 => <span>array</span>(11) <code>{
+      89 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609875
@@ -1471,7 +1498,7 @@
          "ref_count" => 0
          "mem_size" => 4240
       }</code>
-      89 => <span>array</span>(11) <code>{
+      90 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609878
@@ -1484,7 +1511,7 @@
          "ref_count" => 0
          "mem_size" => 28848
       }</code>
-      90 => <span>array</span>(11) <code>{
+      91 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9609884
@@ -1497,20 +1524,20 @@
          "ref_count" => 0
          "mem_size" => 32944
       }</code>
-      91 => <span>array</span>(11) <code>{
+      92 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9203695
          "filename" => "/Users/kandinski/Sites/testbed/application/views/dbAdmin_V/index.php" (68)
-         "num_hits" => 12.0
+         "num_hits" => 17.0
          "mtime" => 1347001590
          "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347041122
+         "access_time" => 1347044262
          "ref_count" => 0
          "mem_size" => 8368
       }</code>
-      92 => <span>array</span>(11) <code>{
+      93 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9538780
@@ -1523,7 +1550,7 @@
          "ref_count" => 0
          "mem_size" => 586352
       }</code>
-      93 => <span>array</span>(11) <code>{
+      94 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563656
@@ -1536,7 +1563,7 @@
          "ref_count" => 0
          "mem_size" => 12496
       }</code>
-      94 => <span>array</span>(11) <code>{
+      95 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563661
@@ -1549,7 +1576,7 @@
          "ref_count" => 0
          "mem_size" => 8368
       }</code>
-      95 => <span>array</span>(11) <code>{
+      96 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563663
@@ -1562,7 +1589,7 @@
          "ref_count" => 0
          "mem_size" => 37072
       }</code>
-      96 => <span>array</span>(11) <code>{
+      97 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563670
@@ -1575,7 +1602,7 @@
          "ref_count" => 0
          "mem_size" => 8368
       }</code>
-      97 => <span>array</span>(11) <code>{
+      98 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563674
@@ -1588,7 +1615,7 @@
          "ref_count" => 0
          "mem_size" => 16560
       }</code>
-      98 => <span>array</span>(11) <code>{
+      99 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563675
@@ -1601,7 +1628,7 @@
          "ref_count" => 0
          "mem_size" => 82416
       }</code>
-      99 => <span>array</span>(11) <code>{
+      100 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563676
@@ -1614,7 +1641,7 @@
          "ref_count" => 0
          "mem_size" => 24848
       }</code>
-      100 => <span>array</span>(11) <code>{
+      101 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563677
@@ -1627,7 +1654,7 @@
          "ref_count" => 0
          "mem_size" => 4240
       }</code>
-      101 => <span>array</span>(11) <code>{
+      102 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563679
@@ -1640,7 +1667,7 @@
          "ref_count" => 0
          "mem_size" => 16560
       }</code>
-      102 => <span>array</span>(11) <code>{
+      103 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563680
@@ -1653,7 +1680,7 @@
          "ref_count" => 0
          "mem_size" => 4240
       }</code>
-      103 => <span>array</span>(11) <code>{
+      104 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563681
@@ -1666,7 +1693,7 @@
          "ref_count" => 0
          "mem_size" => 4240
       }</code>
-      104 => <span>array</span>(11) <code>{
+      105 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563684
@@ -1679,7 +1706,7 @@
          "ref_count" => 0
          "mem_size" => 12464
       }</code>
-      105 => <span>array</span>(11) <code>{
+      106 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9563741
@@ -1692,124 +1719,137 @@
          "ref_count" => 0
          "mem_size" => 28880
       }</code>
-      106 => <span>array</span>(11) <code>{
+      107 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9070929
          "filename" => "/Users/kandinski/Sites/testbed/application/config/autoload.php" (62)
-         "num_hits" => 34.0
+         "num_hits" => 44.0
          "mtime" => 1347010495
          "creation_time" => 1347010502
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 12464
-      }</code>
-      107 => <span>array</span>(11) <code>{
-         "type" => "file" (4)
-         "device" => 234881026
-         "inode" => 9070932
-         "filename" => "/Users/kandinski/Sites/testbed/application/config/config.php" (60)
-         "num_hits" => 37.0
-         "mtime" => 1346470144
-         "creation_time" => 1347010267
-         "deletion_time" => 0
-         "access_time" => 1347042691
-         "ref_count" => 1
-         "mem_size" => 24752
       }</code>
       108 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9070933
-         "filename" => "/Users/kandinski/Sites/testbed/application/config/constants.php" (63)
-         "num_hits" => 37.0
-         "mtime" => 1345846396
+         "inode" => 9070932
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/config.php" (60)
+         "num_hits" => 47.0
+         "mtime" => 1346470144
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 16560
+         "mem_size" => 24752
       }</code>
       109 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9070934
-         "filename" => "/Users/kandinski/Sites/testbed/application/config/database.php" (62)
-         "num_hits" => 37.0
-         "mtime" => 1346470503
+         "inode" => 9070933
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/constants.php" (63)
+         "num_hits" => 47.0
+         "mtime" => 1345846396
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 16560
       }</code>
       110 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9070941
-         "filename" => "/Users/kandinski/Sites/testbed/application/config/mimes.php" (59)
-         "num_hits" => 37.0
-         "mtime" => 1345846396
+         "inode" => 9070934
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/database.php" (62)
+         "num_hits" => 47.0
+         "mtime" => 1346470503
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 24752
+         "mem_size" => 16560
       }</code>
       111 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9070942
-         "filename" => "/Users/kandinski/Sites/testbed/application/config/mongo.php" (59)
-         "num_hits" => 37.0
-         "mtime" => 1346008111
+         "inode" => 9070941
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/mimes.php" (59)
+         "num_hits" => 47.0
+         "mtime" => 1345846396
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 4240
+         "mem_size" => 24752
       }</code>
       112 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9070947
-         "filename" => "/Users/kandinski/Sites/testbed/application/config/routes.php" (60)
-         "num_hits" => 37.0
-         "mtime" => 1346423964
+         "inode" => 9070942
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/mongo.php" (59)
+         "num_hits" => 47.0
+         "mtime" => 1346008111
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 4240
       }</code>
       113 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9070954
-         "filename" => "/Users/kandinski/Sites/testbed/application/controllers/dbAdmin.php" (66)
-         "num_hits" => 0.0
-         "mtime" => 1347035413
-         "creation_time" => 1347036020
+         "inode" => 9070947
+         "filename" => "/Users/kandinski/Sites/testbed/application/config/routes.php" (60)
+         "num_hits" => 47.0
+         "mtime" => 1346423964
+         "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347036020
-         "ref_count" => 0
-         "mem_size" => 28848
+         "access_time" => 1347052167
+         "ref_count" => 1
+         "mem_size" => 4240
       }</code>
       114 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
+         "inode" => 9070953
+         "filename" => "/Users/kandinski/Sites/testbed/application/controllers/cartTest.php" (67)
+         "num_hits" => 0.0
+         "mtime" => 1346521364
+         "creation_time" => 1347044750
+         "deletion_time" => 0
+         "access_time" => 1347044750
+         "ref_count" => 0
+         "mem_size" => 20752
+      }</code>
+      115 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9070954
+         "filename" => "/Users/kandinski/Sites/testbed/application/controllers/dbAdmin.php" (66)
+         "num_hits" => 1.0
+         "mtime" => 1347035413
+         "creation_time" => 1347036020
+         "deletion_time" => 0
+         "access_time" => 1347044180
+         "ref_count" => 0
+         "mem_size" => 28848
+      }</code>
+      116 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
          "inode" => 9070965
          "filename" => "/Users/kandinski/Sites/testbed/application/errors/error_php.php" (63)
-         "num_hits" => 2.0
+         "num_hits" => 7.0
          "mtime" => 1345696033
          "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347036020
+         "access_time" => 1347044262
          "ref_count" => 0
          "mem_size" => 4240
       }</code>
-      115 => <span>array</span>(11) <code>{
+      117 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9254495
@@ -1822,7 +1862,7 @@
          "ref_count" => 0
          "mem_size" => 12464
       }</code>
-      116 => <span>array</span>(11) <code>{
+      118 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9355557
@@ -1835,120 +1875,185 @@
          "ref_count" => 0
          "mem_size" => 12464
       }</code>
-      117 => <span>array</span>(11) <code>{
+      119 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
          "inode" => 9197838
          "filename" => "/Users/kandinski/Sites/testbed/application/controllers/configMgmt.php" (69)
-         "num_hits" => 2.0
+         "num_hits" => 4.0
          "mtime" => 1346864373
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
          "mem_size" => 16592
-      }</code>
-      118 => <span>array</span>(11) <code>{
-         "type" => "file" (4)
-         "device" => 234881026
-         "inode" => 9167939
-         "filename" => "/Users/kandinski/Sites/testbed/assets/grocery_crud/languages/english.php" (72)
-         "num_hits" => 14.0
-         "mtime" => 1346095176
-         "creation_time" => 1347033110
-         "deletion_time" => 0
-         "access_time" => 1347041122
-         "ref_count" => 0
-         "mem_size" => 28848
-      }</code>
-      119 => <span>array</span>(11) <code>{
-         "type" => "file" (4)
-         "device" => 234881026
-         "inode" => 9517453
-         "filename" => "/Users/kandinski/Sites/testbed/application/core/MY_Output.php" (61)
-         "num_hits" => 37.0
-         "mtime" => 1346858066
-         "creation_time" => 1347010267
-         "deletion_time" => 0
-         "access_time" => 1347042691
-         "ref_count" => 1
-         "mem_size" => 8368
       }</code>
       120 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9203034
-         "filename" => "/Users/kandinski/Sites/testbed/application/views/dump_V/index.php" (65)
-         "num_hits" => 0.0
-         "mtime" => 1346460478
-         "creation_time" => 1347010509
+         "inode" => 9167939
+         "filename" => "/Users/kandinski/Sites/testbed/assets/grocery_crud/languages/english.php" (72)
+         "num_hits" => 20.0
+         "mtime" => 1346095176
+         "creation_time" => 1347033110
          "deletion_time" => 0
-         "access_time" => 1347010509
+         "access_time" => 1347044262
          "ref_count" => 0
-         "mem_size" => 8368
+         "mem_size" => 28848
       }</code>
       121 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071069
-         "filename" => "/Users/kandinski/Sites/testbed/application/libraries/Mongo_db.php" (65)
-         "num_hits" => 37.0
-         "mtime" => 1346008111
+         "inode" => 9517453
+         "filename" => "/Users/kandinski/Sites/testbed/application/core/MY_Output.php" (61)
+         "num_hits" => 47.0
+         "mtime" => 1346858066
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 70032
+         "mem_size" => 8368
       }</code>
       122 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071070
-         "filename" => "/Users/kandinski/Sites/testbed/application/libraries/MY_Session.php" (67)
-         "num_hits" => 37.0
-         "mtime" => 1345993507
-         "creation_time" => 1347010267
+         "inode" => 9203034
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/dump_V/index.php" (65)
+         "num_hits" => 2.0
+         "mtime" => 1346460478
+         "creation_time" => 1347010509
          "deletion_time" => 0
-         "access_time" => 1347042691
-         "ref_count" => 1
-         "mem_size" => 119184
+         "access_time" => 1347050104
+         "ref_count" => 0
+         "mem_size" => 8368
       }</code>
       123 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9202021
-         "filename" => "/Users/kandinski/Sites/testbed/application/helpers/debug_helper.php" (67)
-         "num_hits" => 37.0
-         "mtime" => 1346812367
+         "inode" => 9071069
+         "filename" => "/Users/kandinski/Sites/testbed/application/libraries/Mongo_db.php" (65)
+         "num_hits" => 47.0
+         "mtime" => 1346008111
          "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347042691
+         "access_time" => 1347052167
          "ref_count" => 1
-         "mem_size" => 135504
+         "mem_size" => 70032
       }</code>
       124 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
-         "inode" => 9071097
-         "filename" => "/Users/kandinski/Sites/testbed/application/views/include/footer.php" (67)
-         "num_hits" => 15.0
-         "mtime" => 1347005010
-         "creation_time" => 1347010509
+         "inode" => 9071070
+         "filename" => "/Users/kandinski/Sites/testbed/application/libraries/MY_Session.php" (67)
+         "num_hits" => 47.0
+         "mtime" => 1345993507
+         "creation_time" => 1347010267
          "deletion_time" => 0
-         "access_time" => 1347041178
-         "ref_count" => 0
-         "mem_size" => 12464
+         "access_time" => 1347052167
+         "ref_count" => 1
+         "mem_size" => 119184
       }</code>
       125 => <span>array</span>(11) <code>{
          "type" => "file" (4)
          "device" => 234881026
+         "inode" => 9202021
+         "filename" => "/Users/kandinski/Sites/testbed/application/helpers/debug_helper.php" (67)
+         "num_hits" => 47.0
+         "mtime" => 1346812367
+         "creation_time" => 1347010267
+         "deletion_time" => 0
+         "access_time" => 1347052167
+         "ref_count" => 1
+         "mem_size" => 135504
+      }</code>
+      126 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071085
+         "filename" => "/Users/kandinski/Sites/testbed/application/models/cart_test_m.php" (65)
+         "num_hits" => 0.0
+         "mtime" => 1346471934
+         "creation_time" => 1347044750
+         "deletion_time" => 0
+         "access_time" => 1347044750
+         "ref_count" => 0
+         "mem_size" => 33008
+      }</code>
+      127 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071086
+         "filename" => "/Users/kandinski/Sites/testbed/application/models/optionsset_m.php" (66)
+         "num_hits" => 4.0
+         "mtime" => 1346285894
+         "creation_time" => 1347044220
+         "deletion_time" => 0
+         "access_time" => 1347044750
+         "ref_count" => 0
+         "mem_size" => 16624
+      }</code>
+      128 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071092
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/cartTest_V/cart.php" (68)
+         "num_hits" => 0.0
+         "mtime" => 1346019607
+         "creation_time" => 1347044750
+         "deletion_time" => 0
+         "access_time" => 1347044750
+         "ref_count" => 0
+         "mem_size" => 24752
+      }</code>
+      129 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071093
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/cartTest_V/index.php" (69)
+         "num_hits" => 0.0
+         "mtime" => 1346959762
+         "creation_time" => 1347044750
+         "deletion_time" => 0
+         "access_time" => 1347044750
+         "ref_count" => 0
+         "mem_size" => 12464
+      }</code>
+      130 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071094
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/cartTest_V/products.php" (72)
+         "num_hits" => 0.0
+         "mtime" => 1346983848
+         "creation_time" => 1347044750
+         "deletion_time" => 0
+         "access_time" => 1347044750
+         "ref_count" => 0
+         "mem_size" => 32944
+      }</code>
+      131 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
+         "inode" => 9071097
+         "filename" => "/Users/kandinski/Sites/testbed/application/views/include/footer.php" (67)
+         "num_hits" => 23.0
+         "mtime" => 1347005010
+         "creation_time" => 1347010509
+         "deletion_time" => 0
+         "access_time" => 1347050104
+         "ref_count" => 0
+         "mem_size" => 12464
+      }</code>
+      132 => <span>array</span>(11) <code>{
+         "type" => "file" (4)
+         "device" => 234881026
          "inode" => 9071098
          "filename" => "/Users/kandinski/Sites/testbed/application/views/include/header.php" (67)
-         "num_hits" => 3.0
-         "mtime" => 1347036203
-         "creation_time" => 1347036206
+         "num_hits" => 0.0
+         "mtime" => 1347047252
+         "creation_time" => 1347050104
          "deletion_time" => 0
-         "access_time" => 1347041178
+         "access_time" => 1347050104
          "ref_count" => 0
          "mem_size" => 24784
       }</code>
@@ -2144,7 +2249,7 @@
       186 => 0
       187 => 1
       188 => 1
-      189 => 0
+      189 => 1
       190 => 1
       191 => 0
       192 => 1
@@ -2838,7 +2943,7 @@
       880 => 0
       881 => 0
       882 => 0
-      883 => 0
+      883 => 1
       884 => 1
       885 => 0
       886 => 0
@@ -2970,16 +3075,16 @@
       1012 => 0
       1013 => 0
       1014 => 1
-      1015 => 0
-      1016 => 0
+      1015 => 1
+      1016 => 1
       1017 => 0
       1018 => 0
       1019 => 0
       1020 => 0
       1021 => 0
-      1022 => 0
-      1023 => 0
-      1024 => 0
+      1022 => 1
+      1023 => 1
+      1024 => 1
       1025 => 0
       1026 => 0
       1027 => 1
@@ -3006,10 +3111,10 @@
               <div  class="accordion-body collapse" id="collapseFour">  
                 <div class="accordion-inner">  
                                                 <pre class="dump2"><span>array</span>(4) <code>{
-   "session_id" => "11cabd897171eaf369596b86" (24)
+   "session_id" => "ff23a6bdf9033db892406198" (24)
    "ip_address" => "::1" (3)
    "user_agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1" (83)
-   "last_activity" => 1347042691
+   "last_activity" => 1347052167
 }</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 70</small>
 </pre>
                 
@@ -3118,7 +3223,7 @@
               </div>  
               <div  class="accordion-body collapse"  id="collapseSeven">  
                 <div class="accordion-inner">  
-                                                <pre class="dump2"><span>array</span>(32) <code>{
+                                                <pre class="dump2"><span>array</span>(34) <code>{
    "HTTP_HOST" => "localhost" (9)
    "HTTP_USER_AGENT" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1" (83)
    "HTTP_ACCEPT" => "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" (63)
@@ -3126,8 +3231,10 @@
    "HTTP_ACCEPT_ENCODING" => "gzip, deflate" (13)
    "HTTP_DNT" => "1"
    "HTTP_CONNECTION" => "keep-alive" (10)
-   "HTTP_REFERER" => "http://localhost/testbed/index.php" (34)
+   "HTTP_REFERER" => "http://localhost/testbed/index.php/cartTest" (43)
    "HTTP_COOKIE" => "ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=g1u39spcbl78ktm77s3vanlhk2; __utma=111872281.1186498135.1346923480.1347007949.1347010543.3; __utmc=111872281; __utmz=111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); rock_format=json ... " (624)
+   "HTTP_PRAGMA" => "no-cache" (8)
+   "HTTP_CACHE_CONTROL" => "no-cache" (8)
    "PATH" => "/usr/bin:/bin:/usr/sbin:/sbin" (29)
    "SERVER_SIGNATURE" => "&lt;address&gt;Apache/2.2.21 (Unix) DAV/2 PHP/5.3.10 with Suhosin-Patch Server at localhost Port 80&lt;/address&gt;
 " (104)
@@ -3139,7 +3246,7 @@
    "DOCUMENT_ROOT" => "/Users/kandinski/Sites" (22)
    "SERVER_ADMIN" => "accounts@quietretreatprivacy.com" (32)
    "SCRIPT_FILENAME" => "/Users/kandinski/Sites/testbed/index.php" (40)
-   "REMOTE_PORT" => "55916" (5)
+   "REMOTE_PORT" => "56293" (5)
    "GATEWAY_INTERFACE" => "CGI/1.1" (7)
    "SERVER_PROTOCOL" => "HTTP/1.1" (8)
    "REQUEST_METHOD" => "GET" (3)
@@ -3151,7 +3258,7 @@
    "PHP_SELF" => "/testbed/index.php/configMgmt" (29)
    "PHP_AUTH_USER" => "apc" (3)
    "PHP_AUTH_PW" => "apc" (3)
-   "REQUEST_TIME" => 1347042691
+   "REQUEST_TIME" => 1347052167
 }</code> <small>in file /Users/kandinski/Sites/testbed/application/views/dump_V/variables_V.php on line 120</small>
 </pre>
                 
@@ -3269,8 +3376,10 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">HTTP_ACCEPT_ENCODING </td><td class="v">gzip, deflate </td></tr>
 <tr><td class="e">HTTP_DNT </td><td class="v">1 </td></tr>
 <tr><td class="e">HTTP_CONNECTION </td><td class="v">keep-alive </td></tr>
-<tr><td class="e">HTTP_REFERER </td><td class="v">http://localhost/testbed/index.php </td></tr>
-<tr><td class="e">HTTP_COOKIE </td><td class="v">ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=g1u39spcbl78ktm77s3vanlhk2; __utma=111872281.1186498135.1346923480.1347007949.1347010543.3; __utmc=111872281; __utmz=111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); rock_format=json; ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%2263b89fa2ee713d345e045c2b%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A83%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1347041091%3B%7D03023817ea1dd6fb0ff8259056abefdf </td></tr>
+<tr><td class="e">HTTP_REFERER </td><td class="v">http://localhost/testbed/index.php/cartTest </td></tr>
+<tr><td class="e">HTTP_COOKIE </td><td class="v">ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=g1u39spcbl78ktm77s3vanlhk2; __utma=111872281.1186498135.1346923480.1347007949.1347010543.3; __utmc=111872281; __utmz=111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); rock_format=json; ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%2236d6503d4871af30abfbc023%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A83%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1347050105%3B%7D91db3c6fca3a9e3e787463cd374c182f </td></tr>
+<tr><td class="e">HTTP_PRAGMA </td><td class="v">no-cache </td></tr>
+<tr><td class="e">HTTP_CACHE_CONTROL </td><td class="v">no-cache </td></tr>
 <tr><td class="e">PATH </td><td class="v">/usr/bin:/bin:/usr/sbin:/sbin </td></tr>
 <tr><td class="e">SERVER_SIGNATURE </td><td class="v">&lt;address&gt;Apache/2.2.21 (Unix) DAV/2 PHP/5.3.10 with Suhosin-Patch Server at localhost Port 80&lt;/address&gt;
  </td></tr>
@@ -3282,7 +3391,7 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">DOCUMENT_ROOT </td><td class="v">/Users/kandinski/Sites </td></tr>
 <tr><td class="e">SERVER_ADMIN </td><td class="v">accounts@quietretreatprivacy.com </td></tr>
 <tr><td class="e">SCRIPT_FILENAME </td><td class="v">/Users/kandinski/Sites/testbed/index.php </td></tr>
-<tr><td class="e">REMOTE_PORT </td><td class="v">55916 </td></tr>
+<tr><td class="e">REMOTE_PORT </td><td class="v">56293 </td></tr>
 <tr><td class="e">GATEWAY_INTERFACE </td><td class="v">CGI/1.1 </td></tr>
 <tr><td class="e">SERVER_PROTOCOL </td><td class="v">HTTP/1.1 </td></tr>
 <tr><td class="e">REQUEST_METHOD </td><td class="v">GET </td></tr>
@@ -3303,13 +3412,14 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">Accept-Encoding </td><td class="v">gzip, deflate </td></tr>
 <tr><td class="e">DNT </td><td class="v">1 </td></tr>
 <tr><td class="e">Connection </td><td class="v">keep-alive </td></tr>
-<tr><td class="e">Referer </td><td class="v">http://localhost/testbed/index.php </td></tr>
-<tr><td class="e">Cookie </td><td class="v">ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=g1u39spcbl78ktm77s3vanlhk2; __utma=111872281.1186498135.1346923480.1347007949.1347010543.3; __utmc=111872281; __utmz=111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); rock_format=json; ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%2263b89fa2ee713d345e045c2b%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A83%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1347041091%3B%7D03023817ea1dd6fb0ff8259056abefdf </td></tr>
+<tr><td class="e">Referer </td><td class="v">http://localhost/testbed/index.php/cartTest </td></tr>
+<tr><td class="e">Cookie </td><td class="v">ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=g1u39spcbl78ktm77s3vanlhk2; __utma=111872281.1186498135.1346923480.1347007949.1347010543.3; __utmc=111872281; __utmz=111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); rock_format=json; ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%2236d6503d4871af30abfbc023%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A83%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1347050105%3B%7D91db3c6fca3a9e3e787463cd374c182f </td></tr>
 <tr><td class="e">Authorization </td><td class="v">Basic YXBjOmFwYw== </td></tr>
+<tr><td class="e">Pragma </td><td class="v">no-cache </td></tr>
+<tr><td class="e">Cache-Control </td><td class="v">no-cache </td></tr>
 <tr class="h"><th colspan="2">HTTP Response Headers</th></tr>
 <tr><td class="e">X-Powered-By </td><td class="v">PHP/5.3.10 </td></tr>
-<tr><td class="e">Set-Cookie </td><td class="v">ci_session=a%3A0%3A%7B%7D; expires=Fri, 09-Sep-2011 04:31:31 GMT; path=/ </td></tr>
-<tr><td class="e">Set-Cookie </td><td class="v">ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%2211cabd897171eaf369596b86%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A83%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1347042691%3B%7Def65820e856839023f0cb16ceac5eb46; expires=Fri, 07-Sep-2012 20:31:31 GMT; path=/ </td></tr>
+<tr><td class="e">Set-Cookie </td><td class="v">ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%22ff23a6bdf9033db892406198%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A83%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1347052167%3B%7Dab93049cb9d719ccc48133e99d538c6c; expires=Fri, 07-Sep-2012 23:09:27 GMT; path=/ </td></tr>
 </table><br />
 <h2><a name="module_apc">apc</a></h2>
 <table border="0" cellpadding="3" width="600">
@@ -3748,33 +3858,33 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 </table><br />
 <table border="0" cellpadding="3" width="600">
 <tr class="h"><th>Client statistics</th><th> </th></tr>
-<tr><td class="e">bytes_sent </td><td class="v">106 </td></tr>
-<tr><td class="e">bytes_received </td><td class="v">111 </td></tr>
-<tr><td class="e">packets_sent </td><td class="v">6 </td></tr>
-<tr><td class="e">packets_received </td><td class="v">4 </td></tr>
-<tr><td class="e">protocol_overhead_in </td><td class="v">16 </td></tr>
-<tr><td class="e">protocol_overhead_out </td><td class="v">24 </td></tr>
-<tr><td class="e">bytes_received_ok_packet </td><td class="v">22 </td></tr>
-<tr><td class="e">bytes_received_eof_packet </td><td class="v">0 </td></tr>
-<tr><td class="e">bytes_received_rset_header_packet </td><td class="v">11 </td></tr>
-<tr><td class="e">bytes_received_rset_field_meta_packet </td><td class="v">0 </td></tr>
-<tr><td class="e">bytes_received_rset_row_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_sent </td><td class="v">1521 </td></tr>
+<tr><td class="e">bytes_received </td><td class="v">14284 </td></tr>
+<tr><td class="e">packets_sent </td><td class="v">104 </td></tr>
+<tr><td class="e">packets_received </td><td class="v">389 </td></tr>
+<tr><td class="e">protocol_overhead_in </td><td class="v">1556 </td></tr>
+<tr><td class="e">protocol_overhead_out </td><td class="v">416 </td></tr>
+<tr><td class="e">bytes_received_ok_packet </td><td class="v">154 </td></tr>
+<tr><td class="e">bytes_received_eof_packet </td><td class="v">270 </td></tr>
+<tr><td class="e">bytes_received_rset_header_packet </td><td class="v">238 </td></tr>
+<tr><td class="e">bytes_received_rset_field_meta_packet </td><td class="v">10156 </td></tr>
+<tr><td class="e">bytes_received_rset_row_packet </td><td class="v">3238 </td></tr>
 <tr><td class="e">bytes_received_prepare_response_packet </td><td class="v">0 </td></tr>
 <tr><td class="e">bytes_received_change_user_packet </td><td class="v">0 </td></tr>
-<tr><td class="e">packets_sent_command </td><td class="v">2 </td></tr>
-<tr><td class="e">packets_received_ok </td><td class="v">2 </td></tr>
-<tr><td class="e">packets_received_eof </td><td class="v">0 </td></tr>
-<tr><td class="e">packets_received_rset_header </td><td class="v">1 </td></tr>
-<tr><td class="e">packets_received_rset_field_meta </td><td class="v">0 </td></tr>
-<tr><td class="e">packets_received_rset_row </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_sent_command </td><td class="v">51 </td></tr>
+<tr><td class="e">packets_received_ok </td><td class="v">14 </td></tr>
+<tr><td class="e">packets_received_eof </td><td class="v">30 </td></tr>
+<tr><td class="e">packets_received_rset_header </td><td class="v">38 </td></tr>
+<tr><td class="e">packets_received_rset_field_meta </td><td class="v">140 </td></tr>
+<tr><td class="e">packets_received_rset_row </td><td class="v">166 </td></tr>
 <tr><td class="e">packets_received_prepare_response </td><td class="v">0 </td></tr>
 <tr><td class="e">packets_received_change_user </td><td class="v">0 </td></tr>
-<tr><td class="e">result_set_queries </td><td class="v">0 </td></tr>
-<tr><td class="e">non_result_set_queries </td><td class="v">1 </td></tr>
-<tr><td class="e">no_index_used </td><td class="v">0 </td></tr>
+<tr><td class="e">result_set_queries </td><td class="v">30 </td></tr>
+<tr><td class="e">non_result_set_queries </td><td class="v">8 </td></tr>
+<tr><td class="e">no_index_used </td><td class="v">30 </td></tr>
 <tr><td class="e">bad_index_used </td><td class="v">0 </td></tr>
 <tr><td class="e">slow_queries </td><td class="v">0 </td></tr>
-<tr><td class="e">buffered_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">buffered_sets </td><td class="v">30 </td></tr>
 <tr><td class="e">unbuffered_sets </td><td class="v">0 </td></tr>
 <tr><td class="e">ps_buffered_sets </td><td class="v">0 </td></tr>
 <tr><td class="e">ps_unbuffered_sets </td><td class="v">0 </td></tr>
@@ -3782,25 +3892,25 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">flushed_ps_sets </td><td class="v">0 </td></tr>
 <tr><td class="e">ps_prepared_never_executed </td><td class="v">0 </td></tr>
 <tr><td class="e">ps_prepared_once_executed </td><td class="v">0 </td></tr>
-<tr><td class="e">rows_fetched_from_server_normal </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_server_normal </td><td class="v">136 </td></tr>
 <tr><td class="e">rows_fetched_from_server_ps </td><td class="v">0 </td></tr>
-<tr><td class="e">rows_buffered_from_client_normal </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_buffered_from_client_normal </td><td class="v">136 </td></tr>
 <tr><td class="e">rows_buffered_from_client_ps </td><td class="v">0 </td></tr>
-<tr><td class="e">rows_fetched_from_client_normal_buffered </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_normal_buffered </td><td class="v">104 </td></tr>
 <tr><td class="e">rows_fetched_from_client_normal_unbuffered </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_fetched_from_client_ps_buffered </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_fetched_from_client_ps_unbuffered </td><td class="v">0 </td></tr>
 <tr><td class="e">rows_fetched_from_client_ps_cursor </td><td class="v">0 </td></tr>
-<tr><td class="e">rows_affected_normal </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_affected_normal </td><td class="v">1 </td></tr>
 <tr><td class="e">rows_affected_ps </td><td class="v">0 </td></tr>
-<tr><td class="e">rows_skipped_normal </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_skipped_normal </td><td class="v">136 </td></tr>
 <tr><td class="e">rows_skipped_ps </td><td class="v">0 </td></tr>
-<tr><td class="e">copy_on_write_saved </td><td class="v">0 </td></tr>
-<tr><td class="e">copy_on_write_performed </td><td class="v">0 </td></tr>
+<tr><td class="e">copy_on_write_saved </td><td class="v">236 </td></tr>
+<tr><td class="e">copy_on_write_performed </td><td class="v">166 </td></tr>
 <tr><td class="e">command_buffer_too_small </td><td class="v">0 </td></tr>
 <tr><td class="e">connect_success </td><td class="v">1 </td></tr>
 <tr><td class="e">connect_failure </td><td class="v">0 </td></tr>
-<tr><td class="e">connection_reused </td><td class="v">0 </td></tr>
+<tr><td class="e">connection_reused </td><td class="v">6 </td></tr>
 <tr><td class="e">reconnect </td><td class="v">0 </td></tr>
 <tr><td class="e">pconnect_success </td><td class="v">1 </td></tr>
 <tr><td class="e">active_connections </td><td class="v">1 </td></tr>
@@ -3809,7 +3919,7 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">implicit_close </td><td class="v">0 </td></tr>
 <tr><td class="e">disconnect_close </td><td class="v">0 </td></tr>
 <tr><td class="e">in_middle_of_command_close </td><td class="v">0 </td></tr>
-<tr><td class="e">explicit_free_result </td><td class="v">0 </td></tr>
+<tr><td class="e">explicit_free_result </td><td class="v">30 </td></tr>
 <tr><td class="e">implicit_free_result </td><td class="v">0 </td></tr>
 <tr><td class="e">explicit_stmt_close </td><td class="v">0 </td></tr>
 <tr><td class="e">implicit_stmt_close </td><td class="v">0 </td></tr>
@@ -3838,7 +3948,7 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">proto_text_fetched_tinyint </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_short </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_int24 </td><td class="v">0 </td></tr>
-<tr><td class="e">proto_text_fetched_int </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_int </td><td class="v">32 </td></tr>
 <tr><td class="e">proto_text_fetched_bigint </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_decimal </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_float </td><td class="v">0 </td></tr>
@@ -3848,8 +3958,8 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">proto_text_fetched_time </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_datetime </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_timestamp </td><td class="v">0 </td></tr>
-<tr><td class="e">proto_text_fetched_string </td><td class="v">0 </td></tr>
-<tr><td class="e">proto_text_fetched_blob </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_string </td><td class="v">266 </td></tr>
+<tr><td class="e">proto_text_fetched_blob </td><td class="v">52 </td></tr>
 <tr><td class="e">proto_text_fetched_enum </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_set </td><td class="v">0 </td></tr>
 <tr><td class="e">proto_text_fetched_geometry </td><td class="v">0 </td></tr>
@@ -3878,8 +3988,8 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">init_command_executed_count </td><td class="v">0 </td></tr>
 <tr><td class="e">init_command_failed_count </td><td class="v">0 </td></tr>
 <tr><td class="e">com_quit </td><td class="v">0 </td></tr>
-<tr><td class="e">com_init_db </td><td class="v">1 </td></tr>
-<tr><td class="e">com_query </td><td class="v">1 </td></tr>
+<tr><td class="e">com_init_db </td><td class="v">7 </td></tr>
+<tr><td class="e">com_query </td><td class="v">38 </td></tr>
 <tr><td class="e">com_field_list </td><td class="v">0 </td></tr>
 <tr><td class="e">com_create_db </td><td class="v">0 </td></tr>
 <tr><td class="e">com_drop_db </td><td class="v">0 </td></tr>
@@ -3890,7 +4000,7 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">com_connect </td><td class="v">0 </td></tr>
 <tr><td class="e">com_process_kill </td><td class="v">0 </td></tr>
 <tr><td class="e">com_debug </td><td class="v">0 </td></tr>
-<tr><td class="e">com_ping </td><td class="v">0 </td></tr>
+<tr><td class="e">com_ping </td><td class="v">6 </td></tr>
 <tr><td class="e">com_time </td><td class="v">0 </td></tr>
 <tr><td class="e">com_delayed_insert </td><td class="v">0 </td></tr>
 <tr><td class="e">com_change_user </td><td class="v">0 </td></tr>
@@ -3906,7 +4016,7 @@ This program makes use of the Zend Scripting Language Engine:<br />Zend&nbsp;Eng
 <tr><td class="e">com_stmt_set_option </td><td class="v">0 </td></tr>
 <tr><td class="e">com_stmt_fetch </td><td class="v">0 </td></tr>
 <tr><td class="e">com_deamon </td><td class="v">0 </td></tr>
-<tr><td class="e">bytes_received_real_data_normal </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_real_data_normal </td><td class="v">1735 </td></tr>
 <tr><td class="e">bytes_received_real_data_ps </td><td class="v">0 </td></tr>
 </table><br />
 <h2><a name="module_odbc">odbc</a></h2>
@@ -4303,7 +4413,7 @@ Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar full
 <tr><td class="e">_COOKIE["__utmc"]</td><td class="v">111872281</td></tr>
 <tr><td class="e">_COOKIE["__utmz"]</td><td class="v">111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)</td></tr>
 <tr><td class="e">_COOKIE["rock_format"]</td><td class="v">json</td></tr>
-<tr><td class="e">_COOKIE["ci_session"]</td><td class="v">a:4:{s:10:&quot;session_id&quot;;s:24:&quot;63b89fa2ee713d345e045c2b&quot;;s:10:&quot;ip_address&quot;;s:3:&quot;::1&quot;;s:10:&quot;user_agent&quot;;s:83:&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1&quot;;s:13:&quot;last_activity&quot;;i:1347041091;}03023817ea1dd6fb0ff8259056abefdf</td></tr>
+<tr><td class="e">_COOKIE["ci_session"]</td><td class="v">a:4:{s:10:&quot;session_id&quot;;s:24:&quot;36d6503d4871af30abfbc023&quot;;s:10:&quot;ip_address&quot;;s:3:&quot;::1&quot;;s:10:&quot;user_agent&quot;;s:83:&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1&quot;;s:13:&quot;last_activity&quot;;i:1347050105;}91db3c6fca3a9e3e787463cd374c182f</td></tr>
 <tr><td class="e">_SERVER["HTTP_HOST"]</td><td class="v">localhost</td></tr>
 <tr><td class="e">_SERVER["HTTP_USER_AGENT"]</td><td class="v">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1</td></tr>
 <tr><td class="e">_SERVER["HTTP_ACCEPT"]</td><td class="v">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</td></tr>
@@ -4311,8 +4421,10 @@ Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar full
 <tr><td class="e">_SERVER["HTTP_ACCEPT_ENCODING"]</td><td class="v">gzip, deflate</td></tr>
 <tr><td class="e">_SERVER["HTTP_DNT"]</td><td class="v">1</td></tr>
 <tr><td class="e">_SERVER["HTTP_CONNECTION"]</td><td class="v">keep-alive</td></tr>
-<tr><td class="e">_SERVER["HTTP_REFERER"]</td><td class="v">http://localhost/testbed/index.php</td></tr>
-<tr><td class="e">_SERVER["HTTP_COOKIE"]</td><td class="v">ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=g1u39spcbl78ktm77s3vanlhk2; __utma=111872281.1186498135.1346923480.1347007949.1347010543.3; __utmc=111872281; __utmz=111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); rock_format=json; ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%2263b89fa2ee713d345e045c2b%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A83%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1347041091%3B%7D03023817ea1dd6fb0ff8259056abefdf</td></tr>
+<tr><td class="e">_SERVER["HTTP_REFERER"]</td><td class="v">http://localhost/testbed/index.php/cartTest</td></tr>
+<tr><td class="e">_SERVER["HTTP_COOKIE"]</td><td class="v">ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=g1u39spcbl78ktm77s3vanlhk2; __utma=111872281.1186498135.1346923480.1347007949.1347010543.3; __utmc=111872281; __utmz=111872281.1346923480.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); rock_format=json; ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A24%3A%2236d6503d4871af30abfbc023%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A83%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.7%3B+rv%3A14.0%29+Gecko%2F20100101+Firefox%2F14.0.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1347050105%3B%7D91db3c6fca3a9e3e787463cd374c182f</td></tr>
+<tr><td class="e">_SERVER["HTTP_PRAGMA"]</td><td class="v">no-cache</td></tr>
+<tr><td class="e">_SERVER["HTTP_CACHE_CONTROL"]</td><td class="v">no-cache</td></tr>
 <tr><td class="e">_SERVER["PATH"]</td><td class="v">/usr/bin:/bin:/usr/sbin:/sbin</td></tr>
 <tr><td class="e">_SERVER["SERVER_SIGNATURE"]</td><td class="v">&lt;address&gt;Apache/2.2.21 (Unix) DAV/2 PHP/5.3.10 with Suhosin-Patch Server at localhost Port 80&lt;/address&gt;
 </td></tr>
@@ -4324,7 +4436,7 @@ Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar full
 <tr><td class="e">_SERVER["DOCUMENT_ROOT"]</td><td class="v">/Users/kandinski/Sites</td></tr>
 <tr><td class="e">_SERVER["SERVER_ADMIN"]</td><td class="v">accounts@quietretreatprivacy.com</td></tr>
 <tr><td class="e">_SERVER["SCRIPT_FILENAME"]</td><td class="v">/Users/kandinski/Sites/testbed/index.php</td></tr>
-<tr><td class="e">_SERVER["REMOTE_PORT"]</td><td class="v">55916</td></tr>
+<tr><td class="e">_SERVER["REMOTE_PORT"]</td><td class="v">56293</td></tr>
 <tr><td class="e">_SERVER["GATEWAY_INTERFACE"]</td><td class="v">CGI/1.1</td></tr>
 <tr><td class="e">_SERVER["SERVER_PROTOCOL"]</td><td class="v">HTTP/1.1</td></tr>
 <tr><td class="e">_SERVER["REQUEST_METHOD"]</td><td class="v">GET</td></tr>
@@ -4336,7 +4448,7 @@ Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar full
 <tr><td class="e">_SERVER["PHP_SELF"]</td><td class="v">/testbed/index.php/configMgmt</td></tr>
 <tr><td class="e">_SERVER["PHP_AUTH_USER"]</td><td class="v">apc</td></tr>
 <tr><td class="e">_SERVER["PHP_AUTH_PW"]</td><td class="v">apc</td></tr>
-<tr><td class="e">_SERVER["REQUEST_TIME"]</td><td class="v">1347042691</td></tr>
+<tr><td class="e">_SERVER["REQUEST_TIME"]</td><td class="v">1347052167</td></tr>
 </table><br />
 <h2>PHP License</h2>
 <table border="0" cellpadding="3" width="600">
