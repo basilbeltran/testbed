@@ -39,6 +39,7 @@
                   <code>
                         if($this->cache->get($this->table_name)){ 
                         $this->cache->delete($this->table_name)};
+                        $this->db->cache_delete_all();
                   </code>
                        
                        Implies general cache entries (currently; file, memcached, APC)  
@@ -54,8 +55,8 @@
                         Why? Because the QUERY has been cached in "APPPATH/cache/dbMgmtSql+storage"
               <br/><H2>==> BP1: create and invalidate all QUERY caching in the models: write() informs refresh()</H2>
                         <code>$this->db->cache_delete('dbMgmtSql', 'storage');</code>
-                        When this happens make a call to regenerate $storage the header NAV 
-                        (no controller) use.
+                        When this happens make a call to regenerate $storage the header's Admin NAV 
+                        (no controller involved in rendering NAV).
                         
               </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
@@ -113,9 +114,7 @@
                 extension=apc.so
                 extension=mongo.so
                 extension=redis.so
-
-                [xdebug]
-
+                extension=memcache.so
                 xdebug.default_enable=1
                 xdebug.remote_enable=1
                 xdebug.remote_handler=dbgp

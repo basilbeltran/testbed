@@ -5,6 +5,8 @@ class OptionsSet extends MY_Controller {
     {
         parent::__construct();    
         $this->output->cache(0); // DO NOT CHANGE - page must be cached
+        print_r("DEV NOTICE: This page has output cache set for ".$this->output->get_expiration()." minutes");    
+
         $this->load->model('optionsSet_M');            
         
     }//OptionsSet
@@ -13,6 +15,8 @@ class OptionsSet extends MY_Controller {
 	
     function index()
     {   
+        $data['options'] = $this->retrieve_options();
+        $data['storage'] = $this->retrieve_storage();
 	
         $this->load->view('optionsSet_V/index', $data);             // Display the page
     }//index
@@ -28,11 +32,11 @@ class OptionsSet extends MY_Controller {
     }//update_option
 
     function retrieve_options(){    
-        $data['options'] = $this->optionsSet_M->retrieve_options(); // Retrieve configurable items
+        return $this->optionsSet_M->retrieve_options(); // Retrieve configurable items
     }
     
     function retrieve_storage(){    
-        $data['storage'] = $this->optionsSet_M->retrieve_storage(); // Retrieve storage options		
+         return $this->optionsSet_M->retrieve_storage(); // Retrieve storage options		
 
     }
          

@@ -192,7 +192,7 @@ $config['show_in_log']= array('DEBUG','ERROR','INFO');
 | application/logs/ folder. Use a full server path with trailing slash.
 |
 */
-$config['log_path'] = '/private/var/log/apache2/';
+$config['log_path'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -342,7 +342,7 @@ $config['time_reference'] = 'local';
 | in your view files.  Options are TRUE or FALSE (boolean)
 |
 */
-$config['rewrite_short_tags'] = FALSE;
+$config['rewrite_short_tags'] = TRUE;
 
 
 /*

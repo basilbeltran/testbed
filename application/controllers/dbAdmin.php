@@ -15,6 +15,10 @@ class DbAdmin extends MY_Controller {
                 case "MySQL":
                         redirect(dbMgmtSql);
                         break;
+                case "Memcached":
+                        $data['url']= "http://localhost/testbed/UTIL/memcacheUI.php";
+                        $this->load->view('include/headerFrame', $data);
+                        break;                    
                 case "Redis":
                         $data['url']= "http://127.0.0.1:8080/";
                         $this->load->view('include/headerFrame', $data);

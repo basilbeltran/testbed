@@ -6,7 +6,8 @@ class CartTest extends MY_Controller {              // syntax changed from CI 1.
     function __construct()                          //"function CartTest_C(){" style is depricated in PHP5
     {
         parent::__construct();                      // as of CI 2.x PHP4 style was removed
-        $this->output->cache(0);                    // MUST remain "0"
+        //$this->output->cache(0);                    // MUST remain "0"
+        //print_r("DEV NOTICE: This page has output cache set for ".$this->output->get_expiration()." minutes");    
         $this->load->model('cart_test_M');          // Load MODEL; 
         
     }//cartTest_C
@@ -16,9 +17,8 @@ class CartTest extends MY_Controller {              // syntax changed from CI 1.
     function index()                                // The codeigniter default function class 
     {
                                                     // Use MODEL
-        $this->db->cache_on();
+        
         $data['products'] = $this->cart_test_M->retrieve_products();
-        $this->db->cache_off();
         // DEBUG: print_r($data['products']);       // Leave debugs, add to logging later
 
         $this->load->view('cartTest_V/index', $data); // Load and Call VIEW

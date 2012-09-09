@@ -4,7 +4,9 @@ class Cart_test_M extends CI_Model {
 
 // Function to retrieve an array with all product information
     function retrieve_products(){
+            //$this->db->cache_on();
             $query = $this->db->get('products');
+            //$this->db->cache_on();
             return $query->result_array();
     }
 	
@@ -12,7 +14,7 @@ class Cart_test_M extends CI_Model {
 
 // Update shopping cart from shopping cart
 	function validate_update_cart(){
-		
+	    //$this->db->cache_delete_all();
 		// Get the total number of rows in cart
                 $rows = $this->input->post('rows');
                
@@ -47,6 +49,7 @@ class Cart_test_M extends CI_Model {
 	
 // Update shopping cart from product widget
 	function validate_add_cart_item(){
+            //$this->db->cache_delete_all();
 		
 		$id = $this->input->post('product_id');     // Assign posted product_id to $id
 		$cty = $this->input->post('quantity');      // Assign posted quantity to $cty

@@ -5,8 +5,8 @@
            <td></td>    
            <td> <?php echo anchor('optionsSet/persistLink', 'Persistence', 'class="persist"');?> </td> 
            <td> <?php echo anchor('optionsSet/cachetLink', 'Caching', 'class="cache"');?> </td> 
-           <td> <?php echo anchor('optionsSet/loggingLink', 'Logging', 'class="logging"');?> </td>
-           <td> <?php echo anchor('optionsSet/testingLink', 'Testing', 'class="testing"');?> </td> 
+           <td> <?php echo anchor('optionsSet/loggingLink', 'Backup', 'class="backup"');?> </td>
+           <td> <?php echo anchor('optionsSet/testingLink', 'Logging', 'class="testing"');?> </td> 
       </tr>
   </thead>   
   

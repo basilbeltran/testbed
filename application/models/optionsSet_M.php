@@ -18,11 +18,18 @@ class optionsSet_M extends CI_Model {
             return $query->result_array();
     }	
 
-// Update shopping cart from product widget
+// Update persistence matrix
 	function update_persistence($item, $value){
-
+            //$this->db->cache_delete("default","index");
+            //$this->db->cache_delete("optionsSet","index");
+            //$this->db->cache_delete("optionsSet","update_persistence");
+            //so how lame was that?
+            $this->db->cache_delete_all(); // RX: B
+            //lastitol
+            
             $updates = array(storage => $value);
-            $this->db->update('options', $updates, array(item => $item)); 
+            $this->db->update('options', $updates, array(item => $item));
+            
 	} //validate_update_persistence
 	
                 
@@ -30,5 +37,5 @@ class optionsSet_M extends CI_Model {
 } //class
 
 
-/* End of file cart_model.php */
-/* Location: ./application/models/cart_model.php */
+/* End of file optionsSet_M.php */
+/* Location: ./application/models/optionsSet_M.php */
