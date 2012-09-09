@@ -51,6 +51,14 @@ class DbAdmin extends MY_Controller {
                         $data['url']= "https://console.aws.amazon.com/elasticache/home#cache-clusters:region=us-west-1";
                         $this->load->view('include/headerFrame', $data); 
                         break; 
+                case "MongoLab":
+                        $data['url']= "https://mongolab.com/home";
+                        $this->load->view('include/headerFrame', $data); 
+                        break; 
+                    case "BigTable":
+                        $data['url']= "https://storage.cloud.google.com";
+                        $this->load->view('include/headerFrame', $data); 
+                        break; 
                     default:
                         echo "Admin UI not found";
                         break;

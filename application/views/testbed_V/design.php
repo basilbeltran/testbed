@@ -59,6 +59,7 @@
                  <br/>in *whatever* "OH MY GOD" controller (model?) 
                  <br/>whenever you do a write. 
               <br/>(Would memory caching differ significantly to this file based caching?) 
+              http://codeigniter.com/forums/viewthread/125699/
                     <br/>At what cost? 
                     <br/>There needs to be a matrix.
               <br/>Data_Type X Persistence_Type  X Cashing_Type X Invalidate/Delete_Strategy X Refresh_Strategy
@@ -157,6 +158,29 @@
           </div><!--/row-->            
         </div> <!--/HinFront-->  
 
+
+        <div   class="row-fluid">          
+        <div class="span5">
+        <h2>FUNCTINALITY</h2>
+              <p>
+                  https://cloudtools.rackspace.com/apps/347?940574911  
+                  
+              </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            
+            
+            
+            <div class="span5">
+    <h2>General</h2>
+              <p>
+              <li>Log page (or new window?) interleave apache. php & CI via AJAX</li>
+              <li>rewrite CI database core (no reasonable DB cache expiration)</li>
+                  
+              </p>
+            </div><!--/span-->   
+          </div><!--/row-->            
+        </div> <!--/HinFront-->  
 
 
 

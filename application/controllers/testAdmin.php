@@ -1,25 +1,21 @@
 <?php
 
-class Unit extends MY_Controller
+class TestAdmin extends MY_Controller
 {
+    function __construct()                          
+    {
+        parent::__construct();                      
+        $this->load->library('testbed');
 
+    }//__construct();                      
+
+    
+    
    public function index()
    {
       
-      $this->load->library('unit_test');
-      $this->load->model('unit_model');
-      $tests = $this->unit_model->retrieve_tests();
+      $this->testbed->memcachSetGet();
 
-      foreach ($tests as $test)
-         $this->unit->run($test['rv'], $test['ev'], $test['t'], $test['n']);
-      
-      $data['tests'] = $this->unit->result();
-      $data['count'] = count($data['tests']);
-      $data['failed'] = $this->unit_model->count_failed_tests($data['tests']);
-
-      $this->load->view('include/header');
-      $this->load->view('templates/unit', $data);
-      $this->load->view('include/footer');
    }
 
 }

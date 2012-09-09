@@ -66,7 +66,7 @@
 <div class="row-fluid">
     
              <div class="span5">
-              <h2>Object Caching</h2>
+<h2>Object Caching</h2>
                <p>  Currently caching sessions in Mongo. Redis config is in base_url/index.php
                    and sets php vbls. This is overwritten by MY_Session
                    which uses Mongo. Sessions would be a good starting place to 
@@ -77,7 +77,7 @@
                
             
             <div class="span5">
-              <h2>In Memory Caching</h2>             
+<h2>In Memory Caching</h2>             
               <p>
               Memcached, ACP and file options added to extended Controller.
               Added front end for APC to ADMIN | APC  
@@ -89,7 +89,7 @@
 </div><!--/row-->          
 <div   class="row-fluid">          
             <div class="span5">
-              <h2>NoSQL Storage</h2>
+<h2>NoSQL Storage</h2>
               <p>
                Session storage now defaults to Mongo   
               </p>
@@ -99,9 +99,9 @@
             
             
             <div class="span5">
-              <h2>Cloud Storage</h2>
+<h2>CONFIG settings</h2>
               <p>
-               Not yet implemented
+               Migration from file based not yet implemented
               </p>
             </div><!--/span-->   
  </div><!--/row-->  
@@ -109,7 +109,7 @@
          
 <div   class="row-fluid">          
             <div class="span5">
-              <h2>Environment</h2>
+<h2>Environment</h2>
               <p><code>
                 extension=apc.so
                 extension=mongo.so
@@ -133,6 +133,8 @@
               <h2>Cloud Storage</h2>
               <p>
                Amazon, RackSpace, and MongoLab implemented
+               <br/>https://github.com/mongodb/mongo-php-driver
+              <br/>https://mongolab.com/ 
               </p>
             </div><!--/span-->   
  </div><!--/row-->  

@@ -129,7 +129,6 @@
 
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-1.8.0.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/core.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/prettify.js"></script>    
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
   
     
